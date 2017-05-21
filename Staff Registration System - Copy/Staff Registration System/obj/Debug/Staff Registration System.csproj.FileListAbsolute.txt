@@ -1,0 +1,21 @@
+F:\Projects\C#\Staff Registration System\Staff Registration System\bin\Debug\Staff Registration System.exe.config
+F:\Projects\C#\Staff Registration System\Staff Registration System\bin\Debug\Staff Registration System.exe
+F:\Projects\C#\Staff Registration System\Staff Registration System\bin\Debug\Staff Registration System.pdb
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff Registration System.csprojResolveAssemblyReference.cache
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff_Registration_System.home.resources
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff_Registration_System.Properties.Resources.resources
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff Registration System.csproj.GenerateResource.Cache
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff Registration System.exe
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff Registration System.pdb
+F:\Projects\C#\Staff Registration System\Staff Registration System\obj\Debug\Staff_Registration_System.Form2.resources
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\bin\Debug\Staff Registration System.exe.config
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff Registration System.exe
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff Registration System.pdb
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\bin\Debug\Staff Registration System.exe
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\bin\Debug\Staff Registration System.pdb
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff Registration System.csprojResolveAssemblyReference.cache
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff_Registration_System.home.resources
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff_Registration_System.Form2.resources
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff_Registration_System.Properties.Resources.resources
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\obj\Debug\Staff Registration System.csproj.GenerateResource.Cache
+F:\Projects\C#\Staff Registration System - Copy\Staff Registration System\bin\Debug\Bunifu_UI_v1.52.dll
