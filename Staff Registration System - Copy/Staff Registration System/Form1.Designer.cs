@@ -31,11 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
             this.option_bar = new System.Windows.Forms.Panel();
+            this.picbarAddMember = new System.Windows.Forms.PictureBox();
+            this.picbarSearchMember = new System.Windows.Forms.PictureBox();
+            this.picbarReports = new System.Windows.Forms.PictureBox();
+            this.picbarAlerts = new System.Windows.Forms.PictureBox();
+            this.picbarOptions = new System.Windows.Forms.PictureBox();
+            this.picbtnAddMember = new System.Windows.Forms.PictureBox();
+            this.picbtnSearchMember = new System.Windows.Forms.PictureBox();
+            this.picbtnReports = new System.Windows.Forms.PictureBox();
             this.picbtnAlerts = new System.Windows.Forms.PictureBox();
             this.picbtnOptions = new System.Windows.Forms.PictureBox();
-            this.picbtnReports = new System.Windows.Forms.PictureBox();
-            this.picbtnSearchMember = new System.Windows.Forms.PictureBox();
-            this.picbtnAddMember = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.title_bar = new System.Windows.Forms.Panel();
             this.picbtnMinimize = new System.Windows.Forms.PictureBox();
@@ -107,6 +112,130 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblNextPdetail1_light = new System.Windows.Forms.Label();
             this.panel_container = new System.Windows.Forms.Panel();
+            this.settings = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.personal_detail2 = new System.Windows.Forms.Panel();
+            this.panelMatrimonialInformation = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.label62 = new System.Windows.Forms.Label();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label99 = new System.Windows.Forms.Label();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.panelWorkInformation = new System.Windows.Forms.Panel();
+            this.label98 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.lblPrevPdetail2_dark = new System.Windows.Forms.Label();
+            this.lblNextPdetail2_dark = new System.Windows.Forms.Label();
+            this.lblPrevPdetail2_light = new System.Windows.Forms.Label();
+            this.lblNextPdetail2_light = new System.Windows.Forms.Label();
+            this.alerts = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.btnAlertRead = new System.Windows.Forms.Button();
+            this.btnAlertDelete = new System.Windows.Forms.Button();
+            this.btnAlertView = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.colAlertName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reports = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.label71 = new System.Windows.Forms.Label();
+            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.label72 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.search = new System.Windows.Forms.Panel();
+            this.bttnUpdate = new System.Windows.Forms.Button();
+            this.bttnDelete = new System.Windows.Forms.Button();
+            this.bttnSearch = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.label56 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
             this.other_positions = new System.Windows.Forms.Panel();
             this.bttnSave = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -169,145 +298,22 @@
             this.lblNextEduQualif_dark = new System.Windows.Forms.Label();
             this.lblPrevEduQualif_light = new System.Windows.Forms.Label();
             this.lblNextEduQualif_light = new System.Windows.Forms.Label();
-            this.personal_detail2 = new System.Windows.Forms.Panel();
-            this.panelMatrimonialInformation = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
-            this.label62 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label100 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label99 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.panelWorkInformation = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label38 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.lblPrevPdetail2_dark = new System.Windows.Forms.Label();
-            this.lblNextPdetail2_dark = new System.Windows.Forms.Label();
-            this.lblPrevPdetail2_light = new System.Windows.Forms.Label();
-            this.lblNextPdetail2_light = new System.Windows.Forms.Label();
-            this.reports = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label57 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
-            this.label71 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
-            this.label72 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.search = new System.Windows.Forms.Panel();
-            this.bttnUpdate = new System.Windows.Forms.Button();
-            this.bttnDelete = new System.Windows.Forms.Button();
-            this.bttnSearch = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
-            this.label56 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.picbarSearchMember = new System.Windows.Forms.PictureBox();
-            this.picbarReports = new System.Windows.Forms.PictureBox();
-            this.picbarAlerts = new System.Windows.Forms.PictureBox();
-            this.picbarOptions = new System.Windows.Forms.PictureBox();
-            this.picbarAddMember = new System.Windows.Forms.PictureBox();
-            this.alerts = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.btnAlertView = new System.Windows.Forms.Button();
-            this.btnAlertDelete = new System.Windows.Forms.Button();
-            this.btnAlertRead = new System.Windows.Forms.Button();
-            this.colAlertName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.settings = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
             this.option_bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarReports)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarAlerts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarOptions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnAddMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnSearchMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnReports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnAlerts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnOptions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnReports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnSearchMember)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnAddMember)).BeginInit();
             this.title_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnClose)).BeginInit();
@@ -321,17 +327,9 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel_container.SuspendLayout();
-            this.other_positions.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.educational_qualifications.SuspendLayout();
-            this.panelServiceRecords.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panelEduQualifications.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.settings.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.personal_detail2.SuspendLayout();
             this.panelMatrimonialInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -339,6 +337,11 @@
             this.panel8.SuspendLayout();
             this.panelWorkInformation.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.alerts.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.reports.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -350,19 +353,17 @@
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarReports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarAlerts)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarOptions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
-            this.alerts.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            this.panel16.SuspendLayout();
-            this.settings.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
+            this.other_positions.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.educational_qualifications.SuspendLayout();
+            this.panelServiceRecords.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelEduQualifications.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // option_bar
@@ -383,6 +384,100 @@
             this.option_bar.Name = "option_bar";
             this.option_bar.Size = new System.Drawing.Size(91, 735);
             this.option_bar.TabIndex = 0;
+            // 
+            // picbarAddMember
+            // 
+            this.picbarAddMember.BackColor = System.Drawing.Color.White;
+            this.picbarAddMember.Location = new System.Drawing.Point(81, 0);
+            this.picbarAddMember.Name = "picbarAddMember";
+            this.picbarAddMember.Size = new System.Drawing.Size(10, 65);
+            this.picbarAddMember.TabIndex = 13;
+            this.picbarAddMember.TabStop = false;
+            this.picbarAddMember.Visible = false;
+            // 
+            // picbarSearchMember
+            // 
+            this.picbarSearchMember.BackColor = System.Drawing.Color.White;
+            this.picbarSearchMember.Location = new System.Drawing.Point(81, 64);
+            this.picbarSearchMember.Name = "picbarSearchMember";
+            this.picbarSearchMember.Size = new System.Drawing.Size(10, 65);
+            this.picbarSearchMember.TabIndex = 9;
+            this.picbarSearchMember.TabStop = false;
+            this.picbarSearchMember.Visible = false;
+            // 
+            // picbarReports
+            // 
+            this.picbarReports.BackColor = System.Drawing.Color.White;
+            this.picbarReports.Location = new System.Drawing.Point(81, 128);
+            this.picbarReports.Name = "picbarReports";
+            this.picbarReports.Size = new System.Drawing.Size(10, 65);
+            this.picbarReports.TabIndex = 10;
+            this.picbarReports.TabStop = false;
+            this.picbarReports.Visible = false;
+            // 
+            // picbarAlerts
+            // 
+            this.picbarAlerts.BackColor = System.Drawing.Color.White;
+            this.picbarAlerts.Location = new System.Drawing.Point(81, 192);
+            this.picbarAlerts.Name = "picbarAlerts";
+            this.picbarAlerts.Size = new System.Drawing.Size(10, 65);
+            this.picbarAlerts.TabIndex = 11;
+            this.picbarAlerts.TabStop = false;
+            this.picbarAlerts.Visible = false;
+            // 
+            // picbarOptions
+            // 
+            this.picbarOptions.BackColor = System.Drawing.Color.White;
+            this.picbarOptions.Location = new System.Drawing.Point(81, 256);
+            this.picbarOptions.Name = "picbarOptions";
+            this.picbarOptions.Size = new System.Drawing.Size(10, 65);
+            this.picbarOptions.TabIndex = 12;
+            this.picbarOptions.TabStop = false;
+            this.picbarOptions.Visible = false;
+            // 
+            // picbtnAddMember
+            // 
+            this.picbtnAddMember.BackColor = System.Drawing.Color.Teal;
+            this.picbtnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("picbtnAddMember.Image")));
+            this.picbtnAddMember.Location = new System.Drawing.Point(0, 0);
+            this.picbtnAddMember.Name = "picbtnAddMember";
+            this.picbtnAddMember.Size = new System.Drawing.Size(91, 65);
+            this.picbtnAddMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picbtnAddMember.TabIndex = 3;
+            this.picbtnAddMember.TabStop = false;
+            this.toolTip1.SetToolTip(this.picbtnAddMember, "New Staff Member");
+            this.picbtnAddMember.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picbtnAddMember.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.picbtnAddMember.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.picbtnAddMember.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
+            // picbtnSearchMember
+            // 
+            this.picbtnSearchMember.Image = ((System.Drawing.Image)(resources.GetObject("picbtnSearchMember.Image")));
+            this.picbtnSearchMember.Location = new System.Drawing.Point(0, 64);
+            this.picbtnSearchMember.Name = "picbtnSearchMember";
+            this.picbtnSearchMember.Size = new System.Drawing.Size(91, 65);
+            this.picbtnSearchMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picbtnSearchMember.TabIndex = 4;
+            this.picbtnSearchMember.TabStop = false;
+            this.toolTip1.SetToolTip(this.picbtnSearchMember, "Search Staff Member");
+            this.picbtnSearchMember.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picbtnSearchMember.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.picbtnSearchMember.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
+            // 
+            // picbtnReports
+            // 
+            this.picbtnReports.Image = ((System.Drawing.Image)(resources.GetObject("picbtnReports.Image")));
+            this.picbtnReports.Location = new System.Drawing.Point(0, 128);
+            this.picbtnReports.Name = "picbtnReports";
+            this.picbtnReports.Size = new System.Drawing.Size(91, 65);
+            this.picbtnReports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picbtnReports.TabIndex = 5;
+            this.picbtnReports.TabStop = false;
+            this.toolTip1.SetToolTip(this.picbtnReports, "Reports");
+            this.picbtnReports.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picbtnReports.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.picbtnReports.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
             // 
             // picbtnAlerts
             // 
@@ -411,50 +506,6 @@
             this.picbtnOptions.Click += new System.EventHandler(this.picbtnOptions_Click);
             this.picbtnOptions.MouseEnter += new System.EventHandler(this.pictureBox4_MouseEnter);
             this.picbtnOptions.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
-            // 
-            // picbtnReports
-            // 
-            this.picbtnReports.Image = ((System.Drawing.Image)(resources.GetObject("picbtnReports.Image")));
-            this.picbtnReports.Location = new System.Drawing.Point(0, 128);
-            this.picbtnReports.Name = "picbtnReports";
-            this.picbtnReports.Size = new System.Drawing.Size(91, 65);
-            this.picbtnReports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picbtnReports.TabIndex = 5;
-            this.picbtnReports.TabStop = false;
-            this.toolTip1.SetToolTip(this.picbtnReports, "Reports");
-            this.picbtnReports.Click += new System.EventHandler(this.pictureBox3_Click);
-            this.picbtnReports.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
-            this.picbtnReports.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
-            // 
-            // picbtnSearchMember
-            // 
-            this.picbtnSearchMember.Image = ((System.Drawing.Image)(resources.GetObject("picbtnSearchMember.Image")));
-            this.picbtnSearchMember.Location = new System.Drawing.Point(0, 64);
-            this.picbtnSearchMember.Name = "picbtnSearchMember";
-            this.picbtnSearchMember.Size = new System.Drawing.Size(91, 65);
-            this.picbtnSearchMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picbtnSearchMember.TabIndex = 4;
-            this.picbtnSearchMember.TabStop = false;
-            this.toolTip1.SetToolTip(this.picbtnSearchMember, "Search Staff Member");
-            this.picbtnSearchMember.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.picbtnSearchMember.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
-            this.picbtnSearchMember.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
-            // 
-            // picbtnAddMember
-            // 
-            this.picbtnAddMember.BackColor = System.Drawing.Color.Teal;
-            this.picbtnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("picbtnAddMember.Image")));
-            this.picbtnAddMember.Location = new System.Drawing.Point(0, 0);
-            this.picbtnAddMember.Name = "picbtnAddMember";
-            this.picbtnAddMember.Size = new System.Drawing.Size(91, 65);
-            this.picbtnAddMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picbtnAddMember.TabIndex = 3;
-            this.picbtnAddMember.TabStop = false;
-            this.toolTip1.SetToolTip(this.picbtnAddMember, "New Staff Member");
-            this.picbtnAddMember.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.picbtnAddMember.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
-            this.picbtnAddMember.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
-            this.picbtnAddMember.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // title_bar
             // 
@@ -1144,596 +1195,90 @@
             this.panel_container.Size = new System.Drawing.Size(1366, 768);
             this.panel_container.TabIndex = 46;
             // 
-            // other_positions
-            // 
-            this.other_positions.Controls.Add(this.bttnSave);
-            this.other_positions.Controls.Add(this.label15);
-            this.other_positions.Controls.Add(this.label10);
-            this.other_positions.Controls.Add(this.progressBar4);
-            this.other_positions.Controls.Add(this.lblPrevOtherPostns_dark);
-            this.other_positions.Controls.Add(this.lblPrevOtherPostns_light);
-            this.other_positions.Controls.Add(this.panel2);
-            this.other_positions.Location = new System.Drawing.Point(90, 33);
-            this.other_positions.Name = "other_positions";
-            this.other_positions.Size = new System.Drawing.Size(1276, 735);
-            this.other_positions.TabIndex = 32;
-            this.other_positions.Visible = false;
-            // 
-            // bttnSave
-            // 
-            this.bttnSave.BackColor = System.Drawing.Color.Teal;
-            this.bttnSave.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.bttnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.bttnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnSave.Image = ((System.Drawing.Image)(resources.GetObject("bttnSave.Image")));
-            this.bttnSave.Location = new System.Drawing.Point(1189, 597);
-            this.bttnSave.Name = "bttnSave";
-            this.bttnSave.Size = new System.Drawing.Size(66, 50);
-            this.bttnSave.TabIndex = 65;
-            this.toolTip1.SetToolTip(this.bttnSave, "Save");
-            this.bttnSave.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.Image = ((System.Drawing.Image)(resources.GetObject("label15.Image")));
-            this.label15.Location = new System.Drawing.Point(1213, 663);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 48);
-            this.label15.TabIndex = 64;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(94, 660);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 16);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "Step";
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(97, 679);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(1076, 20);
-            this.progressBar4.TabIndex = 62;
-            // 
-            // lblPrevOtherPostns_dark
-            // 
-            this.lblPrevOtherPostns_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_dark.Image")));
-            this.lblPrevOtherPostns_dark.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevOtherPostns_dark.Name = "lblPrevOtherPostns_dark";
-            this.lblPrevOtherPostns_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevOtherPostns_dark.TabIndex = 61;
-            this.lblPrevOtherPostns_dark.MouseEnter += new System.EventHandler(this.lblPrevOtherPostns_dark_MouseEnter);
-            // 
-            // lblPrevOtherPostns_light
-            // 
-            this.lblPrevOtherPostns_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_light.Image")));
-            this.lblPrevOtherPostns_light.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevOtherPostns_light.Name = "lblPrevOtherPostns_light";
-            this.lblPrevOtherPostns_light.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevOtherPostns_light.TabIndex = 72;
-            this.toolTip1.SetToolTip(this.lblPrevOtherPostns_light, "Previous");
-            this.lblPrevOtherPostns_light.Click += new System.EventHandler(this.lblPrevOtherPostns_light_Click);
-            this.lblPrevOtherPostns_light.MouseLeave += new System.EventHandler(this.lblPrevOtherPostns_light_MouseLeave);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.dateTimePicker5);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.dataGridView4);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.dateTimePicker6);
-            this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label32);
-            this.panel2.Location = new System.Drawing.Point(21, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1234, 548);
-            this.panel2.TabIndex = 48;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Teal;
-            this.panel7.Controls.Add(this.label45);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1232, 30);
-            this.panel7.TabIndex = 48;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label45.Location = new System.Drawing.Point(8, 8);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(223, 16);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Other Positions held in the University";
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(117, 108);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(289, 20);
-            this.dateTimePicker5.TabIndex = 47;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 110);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(20, 13);
-            this.label12.TabIndex = 46;
-            this.label12.Text = "To";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dataGridView4.Location = new System.Drawing.Point(487, 47);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(734, 262);
-            this.dataGridView4.TabIndex = 45;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Position";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "From";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "To";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 170;
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(250, 133);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 42;
-            this.button7.Text = "Remove";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(331, 133);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 41;
-            this.button10.Text = "Add";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker6
-            // 
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker6.Location = new System.Drawing.Point(117, 80);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(289, 20);
-            this.dateTimePicker6.TabIndex = 38;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(20, 82);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(30, 13);
-            this.label31.TabIndex = 37;
-            this.label31.Text = "From";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(117, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(289, 20);
-            this.textBox4.TabIndex = 36;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(20, 55);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(44, 13);
-            this.label32.TabIndex = 35;
-            this.label32.Text = "Position";
-            // 
-            // educational_qualifications
-            // 
-            this.educational_qualifications.Controls.Add(this.panelServiceRecords);
-            this.educational_qualifications.Controls.Add(this.label39);
-            this.educational_qualifications.Controls.Add(this.progressBar3);
-            this.educational_qualifications.Controls.Add(this.panelEduQualifications);
-            this.educational_qualifications.Controls.Add(this.lblPrevEduQualif_dark);
-            this.educational_qualifications.Controls.Add(this.lblNextEduQualif_dark);
-            this.educational_qualifications.Controls.Add(this.lblPrevEduQualif_light);
-            this.educational_qualifications.Controls.Add(this.lblNextEduQualif_light);
-            this.educational_qualifications.Location = new System.Drawing.Point(90, 33);
-            this.educational_qualifications.Name = "educational_qualifications";
-            this.educational_qualifications.Size = new System.Drawing.Size(1276, 735);
-            this.educational_qualifications.TabIndex = 30;
-            this.educational_qualifications.Visible = false;
-            // 
-            // panelServiceRecords
-            // 
-            this.panelServiceRecords.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelServiceRecords.Controls.Add(this.panel5);
-            this.panelServiceRecords.Controls.Add(this.dateTimePicker4);
-            this.panelServiceRecords.Controls.Add(this.label2);
-            this.panelServiceRecords.Controls.Add(this.dataGridView1);
-            this.panelServiceRecords.Controls.Add(this.button4);
-            this.panelServiceRecords.Controls.Add(this.button3);
-            this.panelServiceRecords.Controls.Add(this.dateTimePicker1);
-            this.panelServiceRecords.Controls.Add(this.label8);
-            this.panelServiceRecords.Controls.Add(this.textBox2);
-            this.panelServiceRecords.Controls.Add(this.label7);
-            this.panelServiceRecords.Location = new System.Drawing.Point(22, 317);
-            this.panelServiceRecords.Name = "panelServiceRecords";
-            this.panelServiceRecords.Size = new System.Drawing.Size(1230, 319);
-            this.panelServiceRecords.TabIndex = 70;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Teal;
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1228, 30);
-            this.panel5.TabIndex = 70;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 16);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Service Records";
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(166, 109);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(239, 20);
-            this.dateTimePicker4.TabIndex = 69;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 13);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "To";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name1,
-            this.Dob,
-            this.bcn});
-            this.dataGridView1.Location = new System.Drawing.Point(490, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(705, 242);
-            this.dataGridView1.TabIndex = 67;
-            // 
-            // Name1
-            // 
-            this.Name1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Name1.HeaderText = "Position";
-            this.Name1.Name = "Name1";
-            this.Name1.Width = 300;
-            // 
-            // Dob
-            // 
-            this.Dob.HeaderText = "From";
-            this.Dob.Name = "Dob";
-            this.Dob.Width = 170;
-            // 
-            // bcn
-            // 
-            this.bcn.HeaderText = "To";
-            this.bcn.Name = "bcn";
-            this.bcn.Width = 170;
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(244, 140);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Remove";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(330, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(166, 81);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(239, 20);
-            this.dateTimePicker1.TabIndex = 64;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 83);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 13);
-            this.label8.TabIndex = 63;
-            this.label8.Text = "From";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(166, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 20);
-            this.textBox2.TabIndex = 62;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
-            this.label7.TabIndex = 61;
-            this.label7.Text = "Position";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(94, 660);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(36, 16);
-            this.label39.TabIndex = 60;
-            this.label39.Text = "Step";
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(97, 679);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(1076, 20);
-            this.progressBar3.TabIndex = 59;
-            // 
-            // panelEduQualifications
-            // 
-            this.panelEduQualifications.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEduQualifications.Controls.Add(this.panel10);
-            this.panelEduQualifications.Controls.Add(this.button5);
-            this.panelEduQualifications.Controls.Add(this.textBox1);
-            this.panelEduQualifications.Controls.Add(this.label9);
-            this.panelEduQualifications.Controls.Add(this.dataGridView2);
-            this.panelEduQualifications.Controls.Add(this.button6);
-            this.panelEduQualifications.Controls.Add(this.dateTimePicker2);
-            this.panelEduQualifications.Controls.Add(this.label13);
-            this.panelEduQualifications.Controls.Add(this.textBox7);
-            this.panelEduQualifications.Controls.Add(this.label34);
-            this.panelEduQualifications.Controls.Add(this.textBox8);
-            this.panelEduQualifications.Controls.Add(this.label36);
-            this.panelEduQualifications.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.panelEduQualifications.Location = new System.Drawing.Point(21, 22);
-            this.panelEduQualifications.Name = "panelEduQualifications";
-            this.panelEduQualifications.Size = new System.Drawing.Size(1234, 264);
-            this.panelEduQualifications.TabIndex = 49;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Teal;
-            this.panel10.Controls.Add(this.label37);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1232, 30);
-            this.panel10.TabIndex = 0;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label37.Location = new System.Drawing.Point(13, 7);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(162, 16);
-            this.label37.TabIndex = 56;
-            this.label37.Text = "Educational Qualifications";
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(294, 172);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 48;
-            this.button5.Text = "Remove";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(166, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 20);
-            this.textBox1.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 146);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Grade";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.Column1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.dataGridView2.Location = new System.Drawing.Point(490, 55);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(711, 184);
-            this.dataGridView2.TabIndex = 45;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Qualification Obtained";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 300;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Result";
-            this.Column1.Name = "Column1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "University";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 130;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Effective Date";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(376, 172);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 41;
-            this.button6.Text = "Add";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(166, 114);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(239, 20);
-            this.dateTimePicker2.TabIndex = 38;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(22, 117);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 13);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "Effective Date";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(166, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(285, 20);
-            this.textBox7.TabIndex = 30;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(23, 88);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(53, 13);
-            this.label34.TabIndex = 29;
-            this.label34.Text = "University";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(166, 57);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(285, 20);
-            this.textBox8.TabIndex = 6;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(23, 60);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(111, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Qualification Obtained";
-            // 
-            // lblPrevEduQualif_dark
-            // 
-            this.lblPrevEduQualif_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevEduQualif_dark.Image")));
-            this.lblPrevEduQualif_dark.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevEduQualif_dark.Name = "lblPrevEduQualif_dark";
-            this.lblPrevEduQualif_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevEduQualif_dark.TabIndex = 44;
-            this.lblPrevEduQualif_dark.MouseEnter += new System.EventHandler(this.lblPrevEduQualif_dark_MouseEnter);
-            // 
-            // lblNextEduQualif_dark
-            // 
-            this.lblNextEduQualif_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblNextEduQualif_dark.Image")));
-            this.lblNextEduQualif_dark.Location = new System.Drawing.Point(1213, 663);
-            this.lblNextEduQualif_dark.Name = "lblNextEduQualif_dark";
-            this.lblNextEduQualif_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblNextEduQualif_dark.TabIndex = 28;
-            this.lblNextEduQualif_dark.MouseEnter += new System.EventHandler(this.lblNextEduQualif_dark_MouseEnter);
-            // 
-            // lblPrevEduQualif_light
-            // 
-            this.lblPrevEduQualif_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevEduQualif_light.Image")));
-            this.lblPrevEduQualif_light.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevEduQualif_light.Name = "lblPrevEduQualif_light";
-            this.lblPrevEduQualif_light.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevEduQualif_light.TabIndex = 71;
-            this.toolTip1.SetToolTip(this.lblPrevEduQualif_light, "Previous");
-            this.lblPrevEduQualif_light.Click += new System.EventHandler(this.lblPrevEduQualif_light_Click);
-            this.lblPrevEduQualif_light.MouseLeave += new System.EventHandler(this.lblPrevEduQualif_light_MouseLeave);
-            // 
-            // lblNextEduQualif_light
-            // 
-            this.lblNextEduQualif_light.Image = ((System.Drawing.Image)(resources.GetObject("lblNextEduQualif_light.Image")));
-            this.lblNextEduQualif_light.Location = new System.Drawing.Point(1213, 663);
-            this.lblNextEduQualif_light.Name = "lblNextEduQualif_light";
-            this.lblNextEduQualif_light.Size = new System.Drawing.Size(41, 48);
-            this.lblNextEduQualif_light.TabIndex = 72;
-            this.toolTip1.SetToolTip(this.lblNextEduQualif_light, "Next");
-            this.lblNextEduQualif_light.Click += new System.EventHandler(this.lblNextEduQualif_light_Click);
-            this.lblNextEduQualif_light.MouseLeave += new System.EventHandler(this.lblNextEduQualif_light_MouseLeave);
+            // settings
+            // 
+            this.settings.Controls.Add(this.button13);
+            this.settings.Controls.Add(this.button14);
+            this.settings.Controls.Add(this.button15);
+            this.settings.Controls.Add(this.panel20);
+            this.settings.Location = new System.Drawing.Point(90, 33);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(1276, 735);
+            this.settings.TabIndex = 37;
+            this.settings.Visible = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Teal;
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.Location = new System.Drawing.Point(1045, 661);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(66, 50);
+            this.button13.TabIndex = 68;
+            this.toolTip1.SetToolTip(this.button13, "Edit ");
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Teal;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
+            this.button14.Location = new System.Drawing.Point(1117, 661);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(66, 50);
+            this.button14.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.button14, "Delete ");
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Teal;
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.Location = new System.Drawing.Point(1189, 661);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(66, 50);
+            this.button15.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.button15, "Search ");
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // panel20
+            // 
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.button16);
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Location = new System.Drawing.Point(21, 22);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(1234, 617);
+            this.panel20.TabIndex = 33;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.Teal;
+            this.panel21.Controls.Add(this.label11);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(0, 0);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(1232, 30);
+            this.panel21.TabIndex = 32;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(16, 7);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 16);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Settings";
             // 
             // personal_detail2
             // 
@@ -2169,6 +1714,145 @@
             this.toolTip1.SetToolTip(this.lblNextPdetail2_light, "Next");
             this.lblNextPdetail2_light.Click += new System.EventHandler(this.lblNextPdetail2_light_Click);
             this.lblNextPdetail2_light.MouseLeave += new System.EventHandler(this.label66_MouseLeave);
+            // 
+            // alerts
+            // 
+            this.alerts.Controls.Add(this.panel17);
+            this.alerts.Location = new System.Drawing.Point(90, 33);
+            this.alerts.Name = "alerts";
+            this.alerts.Size = new System.Drawing.Size(1276, 735);
+            this.alerts.TabIndex = 36;
+            this.alerts.Visible = false;
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.panel16);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Controls.Add(this.dataGridView6);
+            this.panel17.Location = new System.Drawing.Point(21, 22);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(1234, 677);
+            this.panel17.TabIndex = 33;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.btnAlertRead);
+            this.panel16.Controls.Add(this.btnAlertDelete);
+            this.panel16.Controls.Add(this.btnAlertView);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(0, 30);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1232, 33);
+            this.panel16.TabIndex = 30;
+            // 
+            // btnAlertRead
+            // 
+            this.btnAlertRead.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertRead.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertRead.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertRead.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertRead.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertRead.Image")));
+            this.btnAlertRead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertRead.Location = new System.Drawing.Point(155, 0);
+            this.btnAlertRead.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAlertRead.Name = "btnAlertRead";
+            this.btnAlertRead.Size = new System.Drawing.Size(120, 31);
+            this.btnAlertRead.TabIndex = 2;
+            this.btnAlertRead.Text = "Mark as Read";
+            this.btnAlertRead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertRead.UseVisualStyleBackColor = false;
+            // 
+            // btnAlertDelete
+            // 
+            this.btnAlertDelete.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertDelete.Image")));
+            this.btnAlertDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertDelete.Location = new System.Drawing.Point(71, 0);
+            this.btnAlertDelete.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAlertDelete.Name = "btnAlertDelete";
+            this.btnAlertDelete.Size = new System.Drawing.Size(83, 31);
+            this.btnAlertDelete.TabIndex = 1;
+            this.btnAlertDelete.Text = "Delete";
+            this.btnAlertDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertDelete.UseVisualStyleBackColor = false;
+            this.btnAlertDelete.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // btnAlertView
+            // 
+            this.btnAlertView.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertView.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertView.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertView.Image")));
+            this.btnAlertView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertView.Location = new System.Drawing.Point(-2, 0);
+            this.btnAlertView.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAlertView.Name = "btnAlertView";
+            this.btnAlertView.Size = new System.Drawing.Size(72, 31);
+            this.btnAlertView.TabIndex = 0;
+            this.btnAlertView.Text = "View";
+            this.btnAlertView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertView.UseVisualStyleBackColor = false;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Teal;
+            this.panel18.Controls.Add(this.label3);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(1232, 30);
+            this.panel18.TabIndex = 32;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(16, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Alerts";
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colAlertName,
+            this.colDate,
+            this.colStatus});
+            this.dataGridView6.Location = new System.Drawing.Point(30, 96);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(1166, 541);
+            this.dataGridView6.TabIndex = 31;
+            // 
+            // colAlertName
+            // 
+            this.colAlertName.HeaderText = "Alert Name";
+            this.colAlertName.Name = "colAlertName";
+            this.colAlertName.Width = 350;
+            // 
+            // colDate
+            // 
+            this.colDate.HeaderText = "Triggered on";
+            this.colDate.Name = "colDate";
+            this.colDate.Width = 200;
+            // 
+            // colStatus
+            // 
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.Width = 150;
             // 
             // reports
             // 
@@ -2826,278 +2510,605 @@
             this.label47.TabIndex = 1;
             this.label47.Text = "Name";
             // 
-            // picbarSearchMember
+            // other_positions
             // 
-            this.picbarSearchMember.BackColor = System.Drawing.Color.White;
-            this.picbarSearchMember.Location = new System.Drawing.Point(81, 64);
-            this.picbarSearchMember.Name = "picbarSearchMember";
-            this.picbarSearchMember.Size = new System.Drawing.Size(10, 65);
-            this.picbarSearchMember.TabIndex = 9;
-            this.picbarSearchMember.TabStop = false;
-            this.picbarSearchMember.Visible = false;
+            this.other_positions.Controls.Add(this.bttnSave);
+            this.other_positions.Controls.Add(this.label15);
+            this.other_positions.Controls.Add(this.label10);
+            this.other_positions.Controls.Add(this.progressBar4);
+            this.other_positions.Controls.Add(this.lblPrevOtherPostns_dark);
+            this.other_positions.Controls.Add(this.lblPrevOtherPostns_light);
+            this.other_positions.Controls.Add(this.panel2);
+            this.other_positions.Location = new System.Drawing.Point(90, 33);
+            this.other_positions.Name = "other_positions";
+            this.other_positions.Size = new System.Drawing.Size(1276, 735);
+            this.other_positions.TabIndex = 32;
+            this.other_positions.Visible = false;
             // 
-            // picbarReports
+            // bttnSave
             // 
-            this.picbarReports.BackColor = System.Drawing.Color.White;
-            this.picbarReports.Location = new System.Drawing.Point(81, 128);
-            this.picbarReports.Name = "picbarReports";
-            this.picbarReports.Size = new System.Drawing.Size(10, 65);
-            this.picbarReports.TabIndex = 10;
-            this.picbarReports.TabStop = false;
-            this.picbarReports.Visible = false;
+            this.bttnSave.BackColor = System.Drawing.Color.Teal;
+            this.bttnSave.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.bttnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.bttnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnSave.Image = ((System.Drawing.Image)(resources.GetObject("bttnSave.Image")));
+            this.bttnSave.Location = new System.Drawing.Point(1189, 597);
+            this.bttnSave.Name = "bttnSave";
+            this.bttnSave.Size = new System.Drawing.Size(66, 50);
+            this.bttnSave.TabIndex = 65;
+            this.toolTip1.SetToolTip(this.bttnSave, "Save");
+            this.bttnSave.UseVisualStyleBackColor = false;
             // 
-            // picbarAlerts
+            // label15
             // 
-            this.picbarAlerts.BackColor = System.Drawing.Color.White;
-            this.picbarAlerts.Location = new System.Drawing.Point(81, 192);
-            this.picbarAlerts.Name = "picbarAlerts";
-            this.picbarAlerts.Size = new System.Drawing.Size(10, 65);
-            this.picbarAlerts.TabIndex = 11;
-            this.picbarAlerts.TabStop = false;
-            this.picbarAlerts.Visible = false;
+            this.label15.Image = ((System.Drawing.Image)(resources.GetObject("label15.Image")));
+            this.label15.Location = new System.Drawing.Point(1213, 663);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 48);
+            this.label15.TabIndex = 64;
             // 
-            // picbarOptions
+            // label10
             // 
-            this.picbarOptions.BackColor = System.Drawing.Color.White;
-            this.picbarOptions.Location = new System.Drawing.Point(81, 256);
-            this.picbarOptions.Name = "picbarOptions";
-            this.picbarOptions.Size = new System.Drawing.Size(10, 65);
-            this.picbarOptions.TabIndex = 12;
-            this.picbarOptions.TabStop = false;
-            this.picbarOptions.Visible = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(94, 660);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 16);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "Step";
             // 
-            // picbarAddMember
+            // progressBar4
             // 
-            this.picbarAddMember.BackColor = System.Drawing.Color.White;
-            this.picbarAddMember.Location = new System.Drawing.Point(81, 0);
-            this.picbarAddMember.Name = "picbarAddMember";
-            this.picbarAddMember.Size = new System.Drawing.Size(10, 65);
-            this.picbarAddMember.TabIndex = 13;
-            this.picbarAddMember.TabStop = false;
-            this.picbarAddMember.Visible = false;
+            this.progressBar4.Location = new System.Drawing.Point(97, 679);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(1076, 20);
+            this.progressBar4.TabIndex = 62;
             // 
-            // alerts
+            // lblPrevOtherPostns_dark
             // 
-            this.alerts.Controls.Add(this.panel17);
-            this.alerts.Location = new System.Drawing.Point(90, 33);
-            this.alerts.Name = "alerts";
-            this.alerts.Size = new System.Drawing.Size(1276, 735);
-            this.alerts.TabIndex = 36;
-            this.alerts.Visible = false;
+            this.lblPrevOtherPostns_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_dark.Image")));
+            this.lblPrevOtherPostns_dark.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevOtherPostns_dark.Name = "lblPrevOtherPostns_dark";
+            this.lblPrevOtherPostns_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevOtherPostns_dark.TabIndex = 61;
+            this.lblPrevOtherPostns_dark.MouseEnter += new System.EventHandler(this.lblPrevOtherPostns_dark_MouseEnter);
             // 
-            // panel17
+            // lblPrevOtherPostns_light
             // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.panel16);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Controls.Add(this.dataGridView6);
-            this.panel17.Location = new System.Drawing.Point(21, 22);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1234, 677);
-            this.panel17.TabIndex = 33;
+            this.lblPrevOtherPostns_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_light.Image")));
+            this.lblPrevOtherPostns_light.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevOtherPostns_light.Name = "lblPrevOtherPostns_light";
+            this.lblPrevOtherPostns_light.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevOtherPostns_light.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.lblPrevOtherPostns_light, "Previous");
+            this.lblPrevOtherPostns_light.Click += new System.EventHandler(this.lblPrevOtherPostns_light_Click);
+            this.lblPrevOtherPostns_light.MouseLeave += new System.EventHandler(this.lblPrevOtherPostns_light_MouseLeave);
             // 
-            // panel18
+            // panel2
             // 
-            this.panel18.BackColor = System.Drawing.Color.Teal;
-            this.panel18.Controls.Add(this.label3);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(1232, 30);
-            this.panel18.TabIndex = 32;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.dateTimePicker5);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.dataGridView4);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.dateTimePicker6);
+            this.panel2.Controls.Add(this.label31);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.label32);
+            this.panel2.Location = new System.Drawing.Point(21, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1234, 548);
+            this.panel2.TabIndex = 48;
             // 
-            // label3
+            // panel7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(16, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Alerts";
+            this.panel7.BackColor = System.Drawing.Color.Teal;
+            this.panel7.Controls.Add(this.label45);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1232, 30);
+            this.panel7.TabIndex = 48;
             // 
-            // dataGridView6
+            // label45
             // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colAlertName,
-            this.colDate,
-            this.colStatus});
-            this.dataGridView6.Location = new System.Drawing.Point(30, 96);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(1166, 541);
-            this.dataGridView6.TabIndex = 31;
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label45.Location = new System.Drawing.Point(8, 8);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(223, 16);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Other Positions held in the University";
             // 
-            // panel16
+            // dateTimePicker5
             // 
-            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.btnAlertRead);
-            this.panel16.Controls.Add(this.btnAlertDelete);
-            this.panel16.Controls.Add(this.btnAlertView);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 30);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1232, 33);
-            this.panel16.TabIndex = 30;
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker5.Location = new System.Drawing.Point(117, 108);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(289, 20);
+            this.dateTimePicker5.TabIndex = 47;
             // 
-            // btnAlertView
+            // label12
             // 
-            this.btnAlertView.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertView.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertView.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertView.Image")));
-            this.btnAlertView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertView.Location = new System.Drawing.Point(-2, 0);
-            this.btnAlertView.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAlertView.Name = "btnAlertView";
-            this.btnAlertView.Size = new System.Drawing.Size(72, 31);
-            this.btnAlertView.TabIndex = 0;
-            this.btnAlertView.Text = "View";
-            this.btnAlertView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertView.UseVisualStyleBackColor = false;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(20, 110);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(20, 13);
+            this.label12.TabIndex = 46;
+            this.label12.Text = "To";
             // 
-            // btnAlertDelete
+            // dataGridView4
             // 
-            this.btnAlertDelete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertDelete.Image")));
-            this.btnAlertDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertDelete.Location = new System.Drawing.Point(71, 0);
-            this.btnAlertDelete.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAlertDelete.Name = "btnAlertDelete";
-            this.btnAlertDelete.Size = new System.Drawing.Size(83, 31);
-            this.btnAlertDelete.TabIndex = 1;
-            this.btnAlertDelete.Text = "Delete";
-            this.btnAlertDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertDelete.UseVisualStyleBackColor = false;
-            this.btnAlertDelete.Click += new System.EventHandler(this.button13_Click);
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dataGridView4.Location = new System.Drawing.Point(487, 47);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(734, 262);
+            this.dataGridView4.TabIndex = 45;
             // 
-            // btnAlertRead
+            // dataGridViewTextBoxColumn7
             // 
-            this.btnAlertRead.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertRead.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertRead.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertRead.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertRead.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertRead.Image")));
-            this.btnAlertRead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertRead.Location = new System.Drawing.Point(155, 0);
-            this.btnAlertRead.Margin = new System.Windows.Forms.Padding(1);
-            this.btnAlertRead.Name = "btnAlertRead";
-            this.btnAlertRead.Size = new System.Drawing.Size(120, 31);
-            this.btnAlertRead.TabIndex = 2;
-            this.btnAlertRead.Text = "Mark as Read";
-            this.btnAlertRead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertRead.UseVisualStyleBackColor = false;
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Position";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 300;
             // 
-            // colAlertName
+            // dataGridViewTextBoxColumn8
             // 
-            this.colAlertName.HeaderText = "Alert Name";
-            this.colAlertName.Name = "colAlertName";
-            this.colAlertName.Width = 350;
+            this.dataGridViewTextBoxColumn8.HeaderText = "From";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 170;
             // 
-            // colDate
+            // dataGridViewTextBoxColumn9
             // 
-            this.colDate.HeaderText = "Triggered on";
-            this.colDate.Name = "colDate";
-            this.colDate.Width = 200;
+            this.dataGridViewTextBoxColumn9.HeaderText = "To";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 170;
             // 
-            // colStatus
+            // button7
             // 
-            this.colStatus.HeaderText = "Status";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.Width = 150;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(250, 133);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 42;
+            this.button7.Text = "Remove";
+            this.button7.UseVisualStyleBackColor = true;
             // 
-            // settings
+            // button10
             // 
-            this.settings.Controls.Add(this.button13);
-            this.settings.Controls.Add(this.button14);
-            this.settings.Controls.Add(this.button15);
-            this.settings.Controls.Add(this.panel20);
-            this.settings.Location = new System.Drawing.Point(90, 33);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(1276, 735);
-            this.settings.TabIndex = 37;
-            this.settings.Visible = false;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(331, 133);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 41;
+            this.button10.Text = "Add";
+            this.button10.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // dateTimePicker6
             // 
-            this.button13.BackColor = System.Drawing.Color.Teal;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(1045, 661);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(66, 50);
-            this.button13.TabIndex = 68;
-            this.toolTip1.SetToolTip(this.button13, "Edit ");
-            this.button13.UseVisualStyleBackColor = false;
+            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker6.Location = new System.Drawing.Point(117, 80);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(289, 20);
+            this.dateTimePicker6.TabIndex = 38;
             // 
-            // button14
+            // label31
             // 
-            this.button14.BackColor = System.Drawing.Color.Teal;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(1117, 661);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(66, 50);
-            this.button14.TabIndex = 67;
-            this.toolTip1.SetToolTip(this.button14, "Delete ");
-            this.button14.UseVisualStyleBackColor = false;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(20, 82);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(30, 13);
+            this.label31.TabIndex = 37;
+            this.label31.Text = "From";
             // 
-            // button15
+            // textBox4
             // 
-            this.button15.BackColor = System.Drawing.Color.Teal;
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(1189, 661);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(66, 50);
-            this.button15.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.button15, "Search ");
-            this.button15.UseVisualStyleBackColor = false;
+            this.textBox4.Location = new System.Drawing.Point(117, 53);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(289, 20);
+            this.textBox4.TabIndex = 36;
             // 
-            // panel20
+            // label32
             // 
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.panel21);
-            this.panel20.Location = new System.Drawing.Point(21, 22);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(1234, 617);
-            this.panel20.TabIndex = 33;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(20, 55);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(44, 13);
+            this.label32.TabIndex = 35;
+            this.label32.Text = "Position";
             // 
-            // panel21
+            // educational_qualifications
             // 
-            this.panel21.BackColor = System.Drawing.Color.Teal;
-            this.panel21.Controls.Add(this.label11);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 0);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(1232, 30);
-            this.panel21.TabIndex = 32;
+            this.educational_qualifications.Controls.Add(this.panelServiceRecords);
+            this.educational_qualifications.Controls.Add(this.label39);
+            this.educational_qualifications.Controls.Add(this.progressBar3);
+            this.educational_qualifications.Controls.Add(this.panelEduQualifications);
+            this.educational_qualifications.Controls.Add(this.lblPrevEduQualif_dark);
+            this.educational_qualifications.Controls.Add(this.lblNextEduQualif_dark);
+            this.educational_qualifications.Controls.Add(this.lblPrevEduQualif_light);
+            this.educational_qualifications.Controls.Add(this.lblNextEduQualif_light);
+            this.educational_qualifications.Location = new System.Drawing.Point(90, 33);
+            this.educational_qualifications.Name = "educational_qualifications";
+            this.educational_qualifications.Size = new System.Drawing.Size(1276, 735);
+            this.educational_qualifications.TabIndex = 30;
+            this.educational_qualifications.Visible = false;
             // 
-            // label11
+            // panelServiceRecords
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(16, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Settings";
+            this.panelServiceRecords.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelServiceRecords.Controls.Add(this.panel5);
+            this.panelServiceRecords.Controls.Add(this.dateTimePicker4);
+            this.panelServiceRecords.Controls.Add(this.label2);
+            this.panelServiceRecords.Controls.Add(this.dataGridView1);
+            this.panelServiceRecords.Controls.Add(this.button4);
+            this.panelServiceRecords.Controls.Add(this.button3);
+            this.panelServiceRecords.Controls.Add(this.dateTimePicker1);
+            this.panelServiceRecords.Controls.Add(this.label8);
+            this.panelServiceRecords.Controls.Add(this.textBox2);
+            this.panelServiceRecords.Controls.Add(this.label7);
+            this.panelServiceRecords.Location = new System.Drawing.Point(22, 317);
+            this.panelServiceRecords.Name = "panelServiceRecords";
+            this.panelServiceRecords.Size = new System.Drawing.Size(1230, 319);
+            this.panelServiceRecords.TabIndex = 70;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Teal;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1228, 30);
+            this.panel5.TabIndex = 70;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 16);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Service Records";
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker4.Location = new System.Drawing.Point(166, 109);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(239, 20);
+            this.dateTimePicker4.TabIndex = 69;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "To";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name1,
+            this.Dob,
+            this.bcn});
+            this.dataGridView1.Location = new System.Drawing.Point(490, 53);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(705, 242);
+            this.dataGridView1.TabIndex = 67;
+            // 
+            // Name1
+            // 
+            this.Name1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Name1.HeaderText = "Position";
+            this.Name1.Name = "Name1";
+            this.Name1.Width = 300;
+            // 
+            // Dob
+            // 
+            this.Dob.HeaderText = "From";
+            this.Dob.Name = "Dob";
+            this.Dob.Width = 170;
+            // 
+            // bcn
+            // 
+            this.bcn.HeaderText = "To";
+            this.bcn.Name = "bcn";
+            this.bcn.Width = 170;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(244, 140);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "Remove";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(330, 141);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 65;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(166, 81);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(239, 20);
+            this.dateTimePicker1.TabIndex = 64;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(22, 83);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(30, 13);
+            this.label8.TabIndex = 63;
+            this.label8.Text = "From";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(166, 54);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(289, 20);
+            this.textBox2.TabIndex = 62;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 56);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "Position";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(94, 660);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(36, 16);
+            this.label39.TabIndex = 60;
+            this.label39.Text = "Step";
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(97, 679);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(1076, 20);
+            this.progressBar3.TabIndex = 59;
+            // 
+            // panelEduQualifications
+            // 
+            this.panelEduQualifications.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEduQualifications.Controls.Add(this.panel10);
+            this.panelEduQualifications.Controls.Add(this.button5);
+            this.panelEduQualifications.Controls.Add(this.textBox1);
+            this.panelEduQualifications.Controls.Add(this.label9);
+            this.panelEduQualifications.Controls.Add(this.dataGridView2);
+            this.panelEduQualifications.Controls.Add(this.button6);
+            this.panelEduQualifications.Controls.Add(this.dateTimePicker2);
+            this.panelEduQualifications.Controls.Add(this.label13);
+            this.panelEduQualifications.Controls.Add(this.textBox7);
+            this.panelEduQualifications.Controls.Add(this.label34);
+            this.panelEduQualifications.Controls.Add(this.textBox8);
+            this.panelEduQualifications.Controls.Add(this.label36);
+            this.panelEduQualifications.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.panelEduQualifications.Location = new System.Drawing.Point(21, 22);
+            this.panelEduQualifications.Name = "panelEduQualifications";
+            this.panelEduQualifications.Size = new System.Drawing.Size(1234, 264);
+            this.panelEduQualifications.TabIndex = 49;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Teal;
+            this.panel10.Controls.Add(this.label37);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1232, 30);
+            this.panel10.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label37.Location = new System.Drawing.Point(13, 7);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(162, 16);
+            this.label37.TabIndex = 56;
+            this.label37.Text = "Educational Qualifications";
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(294, 172);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 48;
+            this.button5.Text = "Remove";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(166, 143);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(285, 20);
+            this.textBox1.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(23, 146);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Grade";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.Column1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridView2.Location = new System.Drawing.Point(490, 55);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(711, 184);
+            this.dataGridView2.TabIndex = 45;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Qualification Obtained";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 300;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Result";
+            this.Column1.Name = "Column1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "University";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Effective Date";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 200;
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(376, 172);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 41;
+            this.button6.Text = "Add";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(166, 114);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(239, 20);
+            this.dateTimePicker2.TabIndex = 38;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(22, 117);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 13);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Effective Date";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(166, 85);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(285, 20);
+            this.textBox7.TabIndex = 30;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(23, 88);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(53, 13);
+            this.label34.TabIndex = 29;
+            this.label34.Text = "University";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(166, 57);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(285, 20);
+            this.textBox8.TabIndex = 6;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(23, 60);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(111, 13);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Qualification Obtained";
+            // 
+            // lblPrevEduQualif_dark
+            // 
+            this.lblPrevEduQualif_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevEduQualif_dark.Image")));
+            this.lblPrevEduQualif_dark.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevEduQualif_dark.Name = "lblPrevEduQualif_dark";
+            this.lblPrevEduQualif_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevEduQualif_dark.TabIndex = 44;
+            this.lblPrevEduQualif_dark.MouseEnter += new System.EventHandler(this.lblPrevEduQualif_dark_MouseEnter);
+            // 
+            // lblNextEduQualif_dark
+            // 
+            this.lblNextEduQualif_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblNextEduQualif_dark.Image")));
+            this.lblNextEduQualif_dark.Location = new System.Drawing.Point(1213, 663);
+            this.lblNextEduQualif_dark.Name = "lblNextEduQualif_dark";
+            this.lblNextEduQualif_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblNextEduQualif_dark.TabIndex = 28;
+            this.lblNextEduQualif_dark.MouseEnter += new System.EventHandler(this.lblNextEduQualif_dark_MouseEnter);
+            // 
+            // lblPrevEduQualif_light
+            // 
+            this.lblPrevEduQualif_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevEduQualif_light.Image")));
+            this.lblPrevEduQualif_light.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevEduQualif_light.Name = "lblPrevEduQualif_light";
+            this.lblPrevEduQualif_light.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevEduQualif_light.TabIndex = 71;
+            this.toolTip1.SetToolTip(this.lblPrevEduQualif_light, "Previous");
+            this.lblPrevEduQualif_light.Click += new System.EventHandler(this.lblPrevEduQualif_light_Click);
+            this.lblPrevEduQualif_light.MouseLeave += new System.EventHandler(this.lblPrevEduQualif_light_MouseLeave);
+            // 
+            // lblNextEduQualif_light
+            // 
+            this.lblNextEduQualif_light.Image = ((System.Drawing.Image)(resources.GetObject("lblNextEduQualif_light.Image")));
+            this.lblNextEduQualif_light.Location = new System.Drawing.Point(1213, 663);
+            this.lblNextEduQualif_light.Name = "lblNextEduQualif_light";
+            this.lblNextEduQualif_light.Size = new System.Drawing.Size(41, 48);
+            this.lblNextEduQualif_light.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.lblNextEduQualif_light, "Next");
+            this.lblNextEduQualif_light.Click += new System.EventHandler(this.lblNextEduQualif_light_Click);
+            this.lblNextEduQualif_light.MouseLeave += new System.EventHandler(this.lblNextEduQualif_light_MouseLeave);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(47, 76);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 33;
+            this.button16.Text = "button16";
+            this.button16.UseVisualStyleBackColor = true;
             // 
             // home
             // 
@@ -3116,11 +3127,16 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.home_Load);
             this.option_bar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarReports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarAlerts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbarOptions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnAddMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnSearchMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbtnReports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnAlerts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnOptions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnReports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnSearchMember)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbtnAddMember)).EndInit();
             this.title_bar.ResumeLayout(false);
             this.title_bar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbtnMinimize)).EndInit();
@@ -3143,25 +3159,10 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel_container.ResumeLayout(false);
-            this.other_positions.ResumeLayout(false);
-            this.other_positions.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.educational_qualifications.ResumeLayout(false);
-            this.educational_qualifications.PerformLayout();
-            this.panelServiceRecords.ResumeLayout(false);
-            this.panelServiceRecords.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panelEduQualifications.ResumeLayout(false);
-            this.panelEduQualifications.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.settings.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
             this.personal_detail2.ResumeLayout(false);
             this.personal_detail2.PerformLayout();
             this.panelMatrimonialInformation.ResumeLayout(false);
@@ -3174,6 +3175,12 @@
             this.panelWorkInformation.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.alerts.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.reports.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
@@ -3193,21 +3200,25 @@
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarReports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarAlerts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarOptions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).EndInit();
-            this.alerts.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            this.panel16.ResumeLayout(false);
-            this.settings.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
+            this.other_positions.ResumeLayout(false);
+            this.other_positions.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.educational_qualifications.ResumeLayout(false);
+            this.educational_qualifications.PerformLayout();
+            this.panelServiceRecords.ResumeLayout(false);
+            this.panelServiceRecords.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelEduQualifications.ResumeLayout(false);
+            this.panelEduQualifications.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3486,6 +3497,7 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button16;
     }
 }
 
