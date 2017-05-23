@@ -18,6 +18,14 @@ namespace Staff_Registration_System
             InitializeComponent();
         }
 
+        String ConnectionString = @"Data Source=DESKTOPCHARI\\SQLEXPRESS;Initial Catalog=AcadamicStaff;Integrated Security=True";
+
+        //mycon.ConnectionString = "User=docman;Password=test1;Server=localhost;Database=docman; Integrated Security=false";
+        SqlConnection conn;
+        SqlCommand comm;
+
+        
+
         
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -389,6 +397,33 @@ namespace Staff_Registration_System
 
         private void button13_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(ConnectionString);
+
+            comm = new SqlCommand();
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                conn = new SqlConnection(ConnectionString);
+                
+
+                comm.Connection = conn;
+                String q = "";
+                conn.Open();
+                comm = new SqlCommand(q,conn);
+                comm.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
 
         }
 
