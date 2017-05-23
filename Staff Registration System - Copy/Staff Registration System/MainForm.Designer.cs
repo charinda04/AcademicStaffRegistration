@@ -56,7 +56,6 @@
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label94 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.panelHomeAddress = new System.Windows.Forms.Panel();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -303,6 +302,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.option_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
@@ -576,6 +576,7 @@
             // panelMailingAddress
             // 
             this.panelMailingAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMailingAddress.Controls.Add(this.textBox15);
             this.panelMailingAddress.Controls.Add(this.label90);
             this.panelMailingAddress.Controls.Add(this.label91);
             this.panelMailingAddress.Controls.Add(this.label92);
@@ -583,7 +584,6 @@
             this.panelMailingAddress.Controls.Add(this.textBox29);
             this.panelMailingAddress.Controls.Add(this.label94);
             this.panelMailingAddress.Controls.Add(this.textBox30);
-            this.panelMailingAddress.Controls.Add(this.textBox31);
             this.panelMailingAddress.Controls.Add(this.textBox32);
             this.panelMailingAddress.Location = new System.Drawing.Point(20, 367);
             this.panelMailingAddress.Name = "panelMailingAddress";
@@ -660,13 +660,6 @@
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(324, 20);
             this.textBox30.TabIndex = 47;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(150, 145);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(191, 20);
-            this.textBox31.TabIndex = 48;
             // 
             // textBox32
             // 
@@ -1118,10 +1111,10 @@
             // 
             // panel_container
             // 
+            this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.personal_detail2);
             this.panel_container.Controls.Add(this.educational_qualifications);
             this.panel_container.Controls.Add(this.other_positions);
-            this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.settings);
             this.panel_container.Controls.Add(this.alerts);
             this.panel_container.Controls.Add(this.reports);
@@ -3112,6 +3105,13 @@
             this.label29.TabIndex = 63;
             this.label29.Text = "Retirement Date";
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(150, 148);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(167, 20);
+            this.textBox15.TabIndex = 54;
+            // 
             // home
             // 
             this.AllowDrop = true;
@@ -3361,7 +3361,6 @@
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.ProgressBar progressBar1;
@@ -3500,6 +3499,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.DateTimePicker dateTimePicker12;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
 
