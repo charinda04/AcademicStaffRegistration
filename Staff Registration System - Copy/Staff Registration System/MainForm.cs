@@ -411,18 +411,19 @@ namespace Staff_Registration_System
         {
             try
             {
-                conn = new SqlConnection(ConnectionString);
-                
+                //conn = new SqlConnection(ConnectionString);
+                //conn.Open();
 
-                comm.Connection = conn;
-                String q = "";
-                conn.Open();
-                comm = new SqlCommand(q,conn);
-                comm.ExecuteNonQuery();
+               // comm.Connection = conn;
+                String q = "insert into PersonalDetail values (3,'zcsf','sfd','sf','sss','db','db','db',13,13,'gf','fg','sfd','2002-02-02','sf','sdf','sf','fsd','fsd','sfd','2002-02-02');";
+                
+                //comm = new SqlCommand(q,conn);
+                //comm.ExecuteNonQuery();
+                MessageBox.Show("run");
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("error");
             }
 
         }
