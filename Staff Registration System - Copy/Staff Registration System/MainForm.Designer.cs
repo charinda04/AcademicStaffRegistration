@@ -53,50 +53,49 @@
             this.label92 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.txtAddress2Mail = new System.Windows.Forms.TextBox();
             this.label94 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.txtCityMail = new System.Windows.Forms.TextBox();
+            this.txtAddress1Mail = new System.Windows.Forms.TextBox();
             this.panelHomeAddress = new System.Windows.Forms.Panel();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.chkBxSame = new System.Windows.Forms.CheckBox();
             this.label89 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtAddress2Home = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.txtCityHome = new System.Windows.Forms.TextBox();
+            this.txtHomeZipCode = new System.Windows.Forms.TextBox();
+            this.txtAddress1Home = new System.Windows.Forms.TextBox();
             this.panelPersonalInformation = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rdoBtnFemale = new System.Windows.Forms.RadioButton();
+            this.rdoBtnMale = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.dateDob = new System.Windows.Forms.DateTimePicker();
+            this.txtPassport = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtEmailOffice = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtTelePrivate = new System.Windows.Forms.TextBox();
+            this.txtEmailPrivate = new System.Windows.Forms.TextBox();
             this.label81 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtTeleOffice = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.lblNextPdetail1_dark = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
@@ -297,12 +296,13 @@
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtInitials = new System.Windows.Forms.TextBox();
             this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtMailZipCode = new System.Windows.Forms.TextBox();
+            this.txtNIC = new System.Windows.Forms.MaskedTextBox();
             this.option_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
@@ -382,7 +382,7 @@
             this.option_bar.Dock = System.Windows.Forms.DockStyle.Left;
             this.option_bar.Location = new System.Drawing.Point(0, 33);
             this.option_bar.Name = "option_bar";
-            this.option_bar.Size = new System.Drawing.Size(91, 735);
+            this.option_bar.Size = new System.Drawing.Size(91, 708);
             this.option_bar.TabIndex = 0;
             // 
             // picbarAddMember
@@ -516,7 +516,7 @@
             this.title_bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_bar.Location = new System.Drawing.Point(0, 0);
             this.title_bar.Name = "title_bar";
-            this.title_bar.Size = new System.Drawing.Size(1366, 33);
+            this.title_bar.Size = new System.Drawing.Size(1362, 33);
             this.title_bar.TabIndex = 1;
             this.title_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.title_bar_MouseDown);
             this.title_bar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.title_bar_MouseMove);
@@ -576,15 +576,15 @@
             // panelMailingAddress
             // 
             this.panelMailingAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMailingAddress.Controls.Add(this.textBox15);
+            this.panelMailingAddress.Controls.Add(this.txtMailZipCode);
             this.panelMailingAddress.Controls.Add(this.label90);
             this.panelMailingAddress.Controls.Add(this.label91);
             this.panelMailingAddress.Controls.Add(this.label92);
             this.panelMailingAddress.Controls.Add(this.panel4);
-            this.panelMailingAddress.Controls.Add(this.textBox29);
+            this.panelMailingAddress.Controls.Add(this.txtAddress2Mail);
             this.panelMailingAddress.Controls.Add(this.label94);
-            this.panelMailingAddress.Controls.Add(this.textBox30);
-            this.panelMailingAddress.Controls.Add(this.textBox32);
+            this.panelMailingAddress.Controls.Add(this.txtCityMail);
+            this.panelMailingAddress.Controls.Add(this.txtAddress1Mail);
             this.panelMailingAddress.Location = new System.Drawing.Point(20, 367);
             this.panelMailingAddress.Name = "panelMailingAddress";
             this.panelMailingAddress.Size = new System.Drawing.Size(608, 265);
@@ -638,12 +638,12 @@
             this.label93.TabIndex = 1;
             this.label93.Text = "Mailing Address";
             // 
-            // textBox29
+            // txtAddress2Mail
             // 
-            this.textBox29.Location = new System.Drawing.Point(150, 93);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(323, 20);
-            this.textBox29.TabIndex = 51;
+            this.txtAddress2Mail.Location = new System.Drawing.Point(150, 93);
+            this.txtAddress2Mail.Name = "txtAddress2Mail";
+            this.txtAddress2Mail.Size = new System.Drawing.Size(323, 20);
+            this.txtAddress2Mail.TabIndex = 51;
             // 
             // label94
             // 
@@ -654,47 +654,47 @@
             this.label94.TabIndex = 49;
             this.label94.Text = "Address 1";
             // 
-            // textBox30
+            // txtCityMail
             // 
-            this.textBox30.Location = new System.Drawing.Point(150, 119);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(324, 20);
-            this.textBox30.TabIndex = 47;
+            this.txtCityMail.Location = new System.Drawing.Point(150, 119);
+            this.txtCityMail.Name = "txtCityMail";
+            this.txtCityMail.Size = new System.Drawing.Size(324, 20);
+            this.txtCityMail.TabIndex = 47;
             // 
-            // textBox32
+            // txtAddress1Mail
             // 
-            this.textBox32.Location = new System.Drawing.Point(150, 67);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(323, 20);
-            this.textBox32.TabIndex = 50;
+            this.txtAddress1Mail.Location = new System.Drawing.Point(150, 67);
+            this.txtAddress1Mail.Name = "txtAddress1Mail";
+            this.txtAddress1Mail.Size = new System.Drawing.Size(323, 20);
+            this.txtAddress1Mail.TabIndex = 50;
             // 
             // panelHomeAddress
             // 
             this.panelHomeAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelHomeAddress.Controls.Add(this.checkBox7);
+            this.panelHomeAddress.Controls.Add(this.chkBxSame);
             this.panelHomeAddress.Controls.Add(this.label89);
             this.panelHomeAddress.Controls.Add(this.label88);
             this.panelHomeAddress.Controls.Add(this.label27);
             this.panelHomeAddress.Controls.Add(this.panel3);
-            this.panelHomeAddress.Controls.Add(this.textBox18);
+            this.panelHomeAddress.Controls.Add(this.txtAddress2Home);
             this.panelHomeAddress.Controls.Add(this.label84);
-            this.panelHomeAddress.Controls.Add(this.textBox26);
-            this.panelHomeAddress.Controls.Add(this.textBox28);
-            this.panelHomeAddress.Controls.Add(this.textBox27);
+            this.panelHomeAddress.Controls.Add(this.txtCityHome);
+            this.panelHomeAddress.Controls.Add(this.txtHomeZipCode);
+            this.panelHomeAddress.Controls.Add(this.txtAddress1Home);
             this.panelHomeAddress.Location = new System.Drawing.Point(650, 368);
             this.panelHomeAddress.Name = "panelHomeAddress";
             this.panelHomeAddress.Size = new System.Drawing.Size(604, 264);
             this.panelHomeAddress.TabIndex = 45;
             // 
-            // checkBox7
+            // chkBxSame
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(306, 50);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(144, 17);
-            this.checkBox7.TabIndex = 2;
-            this.checkBox7.Text = "Same as Mailing Address";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chkBxSame.AutoSize = true;
+            this.chkBxSame.Location = new System.Drawing.Point(306, 50);
+            this.chkBxSame.Name = "chkBxSame";
+            this.chkBxSame.Size = new System.Drawing.Size(144, 17);
+            this.chkBxSame.TabIndex = 2;
+            this.chkBxSame.Text = "Same as Mailing Address";
+            this.chkBxSame.UseVisualStyleBackColor = true;
             // 
             // label89
             // 
@@ -744,12 +744,12 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "Home Address";
             // 
-            // textBox18
+            // txtAddress2Home
             // 
-            this.textBox18.Location = new System.Drawing.Point(150, 114);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(299, 20);
-            this.textBox18.TabIndex = 51;
+            this.txtAddress2Home.Location = new System.Drawing.Point(150, 114);
+            this.txtAddress2Home.Name = "txtAddress2Home";
+            this.txtAddress2Home.Size = new System.Drawing.Size(299, 20);
+            this.txtAddress2Home.TabIndex = 51;
             // 
             // label84
             // 
@@ -760,55 +760,55 @@
             this.label84.TabIndex = 49;
             this.label84.Text = "Address 1";
             // 
-            // textBox26
+            // txtCityHome
             // 
-            this.textBox26.Location = new System.Drawing.Point(150, 140);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(300, 20);
-            this.textBox26.TabIndex = 47;
+            this.txtCityHome.Location = new System.Drawing.Point(150, 140);
+            this.txtCityHome.Name = "txtCityHome";
+            this.txtCityHome.Size = new System.Drawing.Size(300, 20);
+            this.txtCityHome.TabIndex = 47;
             // 
-            // textBox28
+            // txtHomeZipCode
             // 
-            this.textBox28.Location = new System.Drawing.Point(150, 166);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(167, 20);
-            this.textBox28.TabIndex = 48;
+            this.txtHomeZipCode.Location = new System.Drawing.Point(150, 166);
+            this.txtHomeZipCode.Name = "txtHomeZipCode";
+            this.txtHomeZipCode.Size = new System.Drawing.Size(167, 20);
+            this.txtHomeZipCode.TabIndex = 48;
             // 
-            // textBox27
+            // txtAddress1Home
             // 
-            this.textBox27.Location = new System.Drawing.Point(150, 88);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(299, 20);
-            this.textBox27.TabIndex = 50;
+            this.txtAddress1Home.Location = new System.Drawing.Point(150, 88);
+            this.txtAddress1Home.Name = "txtAddress1Home";
+            this.txtAddress1Home.Size = new System.Drawing.Size(299, 20);
+            this.txtAddress1Home.TabIndex = 50;
             // 
             // panelPersonalInformation
             // 
             this.panelPersonalInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPersonalInformation.Controls.Add(this.textBox9);
+            this.panelPersonalInformation.Controls.Add(this.txtNIC);
+            this.panelPersonalInformation.Controls.Add(this.txtInitials);
             this.panelPersonalInformation.Controls.Add(this.groupBox3);
             this.panelPersonalInformation.Controls.Add(this.panel1);
             this.panelPersonalInformation.Controls.Add(this.label20);
-            this.panelPersonalInformation.Controls.Add(this.textBox3);
+            this.panelPersonalInformation.Controls.Add(this.txtFullName);
             this.panelPersonalInformation.Controls.Add(this.button2);
             this.panelPersonalInformation.Controls.Add(this.label23);
             this.panelPersonalInformation.Controls.Add(this.lblFullName);
             this.panelPersonalInformation.Controls.Add(this.pictureBox7);
-            this.panelPersonalInformation.Controls.Add(this.dateTimePicker11);
-            this.panelPersonalInformation.Controls.Add(this.textBox16);
+            this.panelPersonalInformation.Controls.Add(this.dateDob);
+            this.panelPersonalInformation.Controls.Add(this.txtPassport);
             this.panelPersonalInformation.Controls.Add(this.label24);
             this.panelPersonalInformation.Controls.Add(this.label28);
-            this.panelPersonalInformation.Controls.Add(this.textBox17);
             this.panelPersonalInformation.Controls.Add(this.label83);
             this.panelPersonalInformation.Controls.Add(this.label25);
             this.panelPersonalInformation.Controls.Add(this.label22);
             this.panelPersonalInformation.Controls.Add(this.label21);
-            this.panelPersonalInformation.Controls.Add(this.textBox11);
+            this.panelPersonalInformation.Controls.Add(this.txtEmailOffice);
             this.panelPersonalInformation.Controls.Add(this.label17);
-            this.panelPersonalInformation.Controls.Add(this.textBox14);
-            this.panelPersonalInformation.Controls.Add(this.textBox12);
+            this.panelPersonalInformation.Controls.Add(this.txtTelePrivate);
+            this.panelPersonalInformation.Controls.Add(this.txtEmailPrivate);
             this.panelPersonalInformation.Controls.Add(this.label81);
             this.panelPersonalInformation.Controls.Add(this.label18);
-            this.panelPersonalInformation.Controls.Add(this.textBox13);
+            this.panelPersonalInformation.Controls.Add(this.txtTeleOffice);
             this.panelPersonalInformation.Controls.Add(this.label19);
             this.panelPersonalInformation.Location = new System.Drawing.Point(20, 22);
             this.panelPersonalInformation.Name = "panelPersonalInformation";
@@ -817,35 +817,35 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton6);
-            this.groupBox3.Controls.Add(this.radioButton5);
+            this.groupBox3.Controls.Add(this.rdoBtnFemale);
+            this.groupBox3.Controls.Add(this.rdoBtnMale);
             this.groupBox3.Location = new System.Drawing.Point(183, 212);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(206, 27);
             this.groupBox3.TabIndex = 45;
             this.groupBox3.TabStop = false;
             // 
-            // radioButton6
+            // rdoBtnFemale
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(112, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(59, 17);
-            this.radioButton6.TabIndex = 39;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Female";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdoBtnFemale.AutoSize = true;
+            this.rdoBtnFemale.Location = new System.Drawing.Point(112, 3);
+            this.rdoBtnFemale.Name = "rdoBtnFemale";
+            this.rdoBtnFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdoBtnFemale.TabIndex = 39;
+            this.rdoBtnFemale.TabStop = true;
+            this.rdoBtnFemale.Text = "Female";
+            this.rdoBtnFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdoBtnMale
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(0, 2);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(48, 17);
-            this.radioButton5.TabIndex = 38;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Male";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdoBtnMale.AutoSize = true;
+            this.rdoBtnMale.Location = new System.Drawing.Point(0, 2);
+            this.rdoBtnMale.Name = "rdoBtnMale";
+            this.rdoBtnMale.Size = new System.Drawing.Size(48, 17);
+            this.rdoBtnMale.TabIndex = 38;
+            this.rdoBtnMale.TabStop = true;
+            this.rdoBtnMale.Text = "Male";
+            this.rdoBtnMale.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -877,13 +877,13 @@
             this.label20.TabIndex = 43;
             this.label20.Text = "Office";
             // 
-            // textBox3
+            // txtFullName
             // 
-            this.textBox3.Location = new System.Drawing.Point(183, 63);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(302, 62);
-            this.textBox3.TabIndex = 30;
+            this.txtFullName.Location = new System.Drawing.Point(183, 63);
+            this.txtFullName.Multiline = true;
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(302, 62);
+            this.txtFullName.TabIndex = 30;
             // 
             // button2
             // 
@@ -923,20 +923,21 @@
             this.pictureBox7.TabIndex = 26;
             this.pictureBox7.TabStop = false;
             // 
-            // dateTimePicker11
+            // dateDob
             // 
-            this.dateTimePicker11.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker11.Location = new System.Drawing.Point(683, 219);
-            this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(189, 20);
-            this.dateTimePicker11.TabIndex = 41;
+            this.dateDob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDob.Location = new System.Drawing.Point(683, 219);
+            this.dateDob.Name = "dateDob";
+            this.dateDob.Size = new System.Drawing.Size(189, 20);
+            this.dateDob.TabIndex = 41;
             // 
-            // textBox16
+            // txtPassport
             // 
-            this.textBox16.Location = new System.Drawing.Point(683, 193);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(257, 20);
-            this.textBox16.TabIndex = 12;
+            this.txtPassport.Location = new System.Drawing.Point(683, 193);
+            this.txtPassport.Name = "txtPassport";
+            this.txtPassport.Size = new System.Drawing.Size(257, 20);
+            this.txtPassport.TabIndex = 12;
+            this.txtPassport.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // label24
             // 
@@ -955,13 +956,6 @@
             this.label28.Size = new System.Drawing.Size(89, 13);
             this.label28.TabIndex = 3;
             this.label28.Text = "Name with Initials";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(683, 167);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(257, 20);
-            this.textBox17.TabIndex = 10;
             // 
             // label83
             // 
@@ -999,12 +993,12 @@
             this.label21.TabIndex = 17;
             this.label21.Text = "Private";
             // 
-            // textBox11
+            // txtEmailOffice
             // 
-            this.textBox11.Location = new System.Drawing.Point(683, 89);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(257, 20);
-            this.textBox11.TabIndex = 25;
+            this.txtEmailOffice.Location = new System.Drawing.Point(683, 89);
+            this.txtEmailOffice.Name = "txtEmailOffice";
+            this.txtEmailOffice.Size = new System.Drawing.Size(257, 20);
+            this.txtEmailOffice.TabIndex = 25;
             // 
             // label17
             // 
@@ -1015,19 +1009,19 @@
             this.label17.TabIndex = 24;
             this.label17.Text = "Office";
             // 
-            // textBox14
+            // txtTelePrivate
             // 
-            this.textBox14.Location = new System.Drawing.Point(683, 115);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(258, 20);
-            this.textBox14.TabIndex = 18;
+            this.txtTelePrivate.Location = new System.Drawing.Point(683, 115);
+            this.txtTelePrivate.Name = "txtTelePrivate";
+            this.txtTelePrivate.Size = new System.Drawing.Size(258, 20);
+            this.txtTelePrivate.TabIndex = 18;
             // 
-            // textBox12
+            // txtEmailPrivate
             // 
-            this.textBox12.Location = new System.Drawing.Point(683, 63);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(257, 20);
-            this.textBox12.TabIndex = 23;
+            this.txtEmailPrivate.Location = new System.Drawing.Point(683, 63);
+            this.txtEmailPrivate.Name = "txtEmailPrivate";
+            this.txtEmailPrivate.Size = new System.Drawing.Size(257, 20);
+            this.txtEmailPrivate.TabIndex = 23;
             // 
             // label81
             // 
@@ -1047,12 +1041,12 @@
             this.label18.TabIndex = 22;
             this.label18.Text = "Private";
             // 
-            // textBox13
+            // txtTeleOffice
             // 
-            this.textBox13.Location = new System.Drawing.Point(683, 141);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(258, 20);
-            this.textBox13.TabIndex = 20;
+            this.txtTeleOffice.Location = new System.Drawing.Point(683, 141);
+            this.txtTeleOffice.Name = "txtTeleOffice";
+            this.txtTeleOffice.Size = new System.Drawing.Size(258, 20);
+            this.txtTeleOffice.TabIndex = 20;
             // 
             // label19
             // 
@@ -1111,9 +1105,9 @@
             // 
             // panel_container
             // 
-            this.panel_container.Controls.Add(this.other_positions);
-            this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.personal_detail2);
+            this.panel_container.Controls.Add(this.personal_detail1);
+            this.panel_container.Controls.Add(this.other_positions);
             this.panel_container.Controls.Add(this.educational_qualifications);
             this.panel_container.Controls.Add(this.settings);
             this.panel_container.Controls.Add(this.alerts);
@@ -1355,6 +1349,7 @@
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(1076, 20);
             this.progressBar2.TabIndex = 57;
+            this.progressBar2.Value = 25;
             // 
             // panelWorkInformation
             // 
@@ -3063,13 +3058,13 @@
             this.lblNextEduQualif_light.Click += new System.EventHandler(this.lblNextEduQualif_light_Click);
             this.lblNextEduQualif_light.MouseLeave += new System.EventHandler(this.lblNextEduQualif_light_MouseLeave);
             // 
-            // textBox9
+            // txtInitials
             // 
-            this.textBox9.Location = new System.Drawing.Point(183, 147);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(302, 48);
-            this.textBox9.TabIndex = 46;
+            this.txtInitials.Location = new System.Drawing.Point(183, 147);
+            this.txtInitials.Multiline = true;
+            this.txtInitials.Name = "txtInitials";
+            this.txtInitials.Size = new System.Drawing.Size(302, 48);
+            this.txtInitials.TabIndex = 46;
             // 
             // dateTimePicker12
             // 
@@ -3105,12 +3100,20 @@
             this.label29.TabIndex = 63;
             this.label29.Text = "Retirement Date";
             // 
-            // textBox15
+            // txtMailZipCode
             // 
-            this.textBox15.Location = new System.Drawing.Point(150, 148);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(167, 20);
-            this.textBox15.TabIndex = 54;
+            this.txtMailZipCode.Location = new System.Drawing.Point(150, 148);
+            this.txtMailZipCode.Name = "txtMailZipCode";
+            this.txtMailZipCode.Size = new System.Drawing.Size(167, 20);
+            this.txtMailZipCode.TabIndex = 54;
+            // 
+            // txtNIC
+            // 
+            this.txtNIC.Location = new System.Drawing.Point(683, 167);
+            this.txtNIC.Mask = "000000000V";
+            this.txtNIC.Name = "txtNIC";
+            this.txtNIC.Size = new System.Drawing.Size(257, 20);
+            this.txtNIC.TabIndex = 47;
             // 
             // home
             // 
@@ -3118,7 +3121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.option_bar);
             this.Controls.Add(this.title_bar);
             this.Controls.Add(this.panel_container);
@@ -3238,9 +3241,8 @@
         private System.Windows.Forms.Label lblNextPdetail1_dark;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtPassport;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel_container;
         private System.Windows.Forms.Panel educational_qualifications;
@@ -3315,24 +3317,24 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblFullName;
-        private System.Windows.Forms.DateTimePicker dateTimePicker11;
+        private System.Windows.Forms.DateTimePicker dateDob;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton rdoBtnFemale;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rdoBtnMale;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtTelePrivate;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtTeleOffice;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtEmailPrivate;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtEmailOffice;
         private System.Windows.Forms.PictureBox picbtnReports;
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
         private System.Windows.Forms.Panel panelPersonalInformation;
@@ -3346,11 +3348,11 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtAddress2Home;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox txtCityHome;
+        private System.Windows.Forms.TextBox txtHomeZipCode;
+        private System.Windows.Forms.TextBox txtAddress1Home;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Panel panelMailingAddress;
         private System.Windows.Forms.Label label90;
@@ -3358,11 +3360,11 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox txtAddress2Mail;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.TextBox txtCityMail;
+        private System.Windows.Forms.TextBox txtAddress1Mail;
+        private System.Windows.Forms.CheckBox chkBxSame;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label4;
@@ -3494,12 +3496,13 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtInitials;
         private System.Windows.Forms.DateTimePicker dateTimePicker13;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.DateTimePicker dateTimePicker12;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtMailZipCode;
+        private System.Windows.Forms.MaskedTextBox txtNIC;
     }
 }
 

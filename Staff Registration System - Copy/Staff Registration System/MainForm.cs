@@ -13,16 +13,26 @@ namespace Staff_Registration_System
 {
     public partial class home : Form
     {
+
+        SqlConnection conn;
+        SqlCommand comm;
+        //conn.ConnectionString = @"User=DESKTOPCHARI\Charinda;Password=;Server=DESKTOPCHARI\SQLEXPRESS;Database=AcadamicStaff; Integrated Security=True";
+
+
         public home()
         {
             InitializeComponent();
+            //Connection c = new Connection();
+            //conn = c.connConnection();
+            conn = new SqlConnection(ConnectionString);
+            comm = new SqlCommand();
+            comm.Connection = conn;
         }
 
-        String ConnectionString = @"Data Source=DESKTOPCHARI\\SQLEXPRESS;Initial Catalog=AcadamicStaff;Integrated Security=True";
+        String ConnectionString = @"Data Source=DESKTOPCHARI\SQLEXPRESS;Initial Catalog=AcadamicStaff;Integrated Security=True";
 
-        //mycon.ConnectionString = "User=docman;Password=test1;Server=localhost;Database=docman; Integrated Security=false";
-        SqlConnection conn;
-        SqlCommand comm;
+        
+       
 
         
 
@@ -411,20 +421,52 @@ namespace Staff_Registration_System
         {
             try
             {
-                //conn = new SqlConnection(ConnectionString);
+                /*
+               // conn = new SqlConnection(ConnectionString);
                 //conn.Open();
 
-               // comm.Connection = conn;
+                comm.Connection = conn;
                 String q = "insert into PersonalDetail values (3,'zcsf','sfd','sf','sss','db','db','db',13,13,'gf','fg','sfd','2002-02-02','sf','sdf','sf','fsd','fsd','sfd','2002-02-02');";
                 
-                //comm = new SqlCommand(q,conn);
-                //comm.ExecuteNonQuery();
+                comm = new SqlCommand(q,conn);
+                comm.ExecuteNonQuery();
                 MessageBox.Show("run");
+                conn.Close();
+                */
+
+                
+
+                conn.Open();
+                SqlCommand cmd = conn.CreateCommand();
+                //cmd.CommandType = CommandType.Text;
+                //cmd.CommandText = "insert into PersonalDetail values ('','sfd','sf','sss','db','db','db',13,13,'gf','fg','sfd','2002-02-02','sf','sdf','sf','fsd','fsd','sfd','2002-02-02');";
+
+                cmd = new SqlCommand("insert into ServiceRecords values(@1, @2, @3,@4)",conn);
+                cmd.Parameters.AddWithValue("@1","1");
+                cmd.Parameters.AddWithValue("@2", "dfdf");
+                cmd.Parameters.AddWithValue("@3", "2002-02-02");
+                cmd.Parameters.AddWithValue("@4", "2002-02-02");
+                //SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                //cmd.Prepare();
+                //SqlDataReader res = cmd.ExecuteReader();
+                // insert into ServiceRecords values ('@1','@2','@3',@4);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("run");
+
+
+
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error");
+                MessageBox.Show(ex.ToString());
             }
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
