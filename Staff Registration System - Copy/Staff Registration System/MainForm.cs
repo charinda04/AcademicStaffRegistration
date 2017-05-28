@@ -49,7 +49,7 @@ namespace Staff_Registration_System
 
         private void home_Load(object sender, EventArgs e)
         {
-
+            dateEffective.CustomFormat = "yyyy-MM-dd";
         }
 
        int mouseX = 0, mouseY = 0;
@@ -397,6 +397,11 @@ namespace Staff_Registration_System
 
         private void picbtnOptions_Click(object sender, EventArgs e)
         {
+
+            settings.Visible = true;
+            settings.BringToFront();
+
+           
             //Make button bar visible
             picbarAddMember.Visible = false;
             picbarSearchMember.Visible = false;
@@ -468,6 +473,100 @@ namespace Staff_Registration_System
         private void textBox16_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddEducation_Click(object sender, EventArgs e)
+        {
+            if (txtQulification.Text.Length == 0 || txtUniversity.Text.Length == 0 || txtGrade.Text.Length == 0)
+            {
+                MessageBox.Show("Fill all the fields first");
+            }
+            else
+            {
+                tblEducation.Rows.Add(txtQulification.Text, txtUniversity.Text, dateEffective.Text, txtGrade.Text);
+                txtQulification.Text = "";
+                txtUniversity.Text = "";
+                dateEffective.Value = DateTime.Now;
+                txtGrade.Text = "";
+            }
+        }
+
+        private void btnServiceAdd_Click(object sender, EventArgs e)
+        {
+            if(txtServicePosition.Text.Length == 0 )
+            {
+                MessageBox.Show("Fill all the fields first");
+            }
+            else
+            {
+                tblService.Rows.Add(txtServicePosition.Text, dateServiceFrom.Text, dateServiceTo.Text);
+                txtServicePosition.Text = "";
+                dateServiceFrom.Value = DateTime.Now;
+                dateServiceTo.Value = DateTime.Now;
+            }
+            
+        }
+
+        private void btnRemoveEducation_Click(object sender, EventArgs e)
+        {
+            if (tblEducation.Rows.Count == 0)
+            {
+                MessageBox.Show("The table is empty. No record has been selected");
+            }
+            else
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    tblEducation.Rows.Remove(tblEducation.Rows[tblEducation.SelectedCells[0].RowIndex]);
+            }
+
+
+        }
+
+        private void btnServiceRemove_Click(object sender, EventArgs e)
+        {
+            if (tblService.Rows.Count == 0)
+            {
+                MessageBox.Show("The table is empty. No record has been selected");
+            }
+            else
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    tblService.Rows.Remove(tblService.Rows[tblService.SelectedCells[0].RowIndex]);
+            }
+        }
+
+        private void btnAddOtherPosition_Click(object sender, EventArgs e)
+        {
+            if (txtOtherPosition.Text.Length == 0)
+            {
+                MessageBox.Show("Fill all the fields first");
+            }
+            else
+            {
+                tblOtherPositions.Rows.Add(txtOtherPosition.Text, dateOtherPositionFrom.Text, dateOtherPosistionTo.Text);
+                txtOtherPosition.Text = "";
+                dateOtherPositionFrom.Value = DateTime.Now;
+                dateOtherPosistionTo.Value = DateTime.Now;
+            }
+        }
+
+        private void btnRemoveOtherPosition_Click(object sender, EventArgs e)
+        {
+            if (tblOtherPositions.Rows.Count == 0)
+            {
+                MessageBox.Show("The table is empty. No record has been selected");
+            }
+            else
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    tblOtherPositions.Rows.Remove(tblOtherPositions.Rows[tblOtherPositions.SelectedCells[0].RowIndex]);
+            }
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)
