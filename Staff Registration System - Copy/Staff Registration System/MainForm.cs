@@ -867,7 +867,7 @@ namespace Staff_Registration_System
             {
                 conn.Open();
                 SqlCommand cmd = conn.CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM PersonalDetail where [First Name] = @1; ", conn);
+                cmd = new SqlCommand("SELECT * FROM PersonalDetail where [First Name] like '%'+@1+'%'; ", conn);
                 cmd.Parameters.AddWithValue("@1", txtSearchName.Text);
 
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
@@ -875,7 +875,11 @@ namespace Staff_Registration_System
                 DataTable table = new DataTable();
                 dataAdapter.Fill(table);
 
-                tblSearch.DataSource = table; 
+                tblSearch.DataSource = table;
+                conn.Close();
+
+                cmd.Dispose();
+                dataAdapter.Dispose();
 
                 /*SqlDataReader read = cmd.ExecuteReader();
 
