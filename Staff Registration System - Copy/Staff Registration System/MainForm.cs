@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using Staff_Registration_System.AddAcademicStaff;
+using Staff_Registration_System.SearchAcademicStaff;
 
 namespace Staff_Registration_System
 {
@@ -35,15 +37,15 @@ namespace Staff_Registration_System
         String marriageCertificateLoc;
         Boolean PersonalPic = false;
         Boolean certificatePic = false;
-        
-       
 
-        
 
-        
+        AddStaff add = new AddStaff();
+        SearchStaff staff = new SearchStaff();
+
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -63,6 +65,13 @@ namespace Staff_Registration_System
             dateOtherPosistionTo.CustomFormat = "yyyy-MM-dd";
             dateServiceFrom.CustomFormat = "yyyy-MM-dd";
             dateServiceTo.CustomFormat = "yyyy-MM-dd";
+
+            add.departmentComboBox(cmbBxDepartment);
+            add.facultyComboBox(cmbBxFaculty);
+            add.salaryCodeComboBox(cmbBxSalaryCode);
+            add.salaryScaleComboBox(cmbBxScale);
+            add.salaryStepComboBox(cmbBxSalaryStep);
+            add.designationComboBox(cmbBxDesignation);
         }
 
        int mouseX = 0, mouseY = 0;
@@ -135,11 +144,6 @@ namespace Staff_Registration_System
         }
 
         private void dateTimePicker7_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -502,172 +506,19 @@ namespace Staff_Registration_System
                     gender = "Male";
                 else if (rdoBtnFemale.Checked)
                     gender = "Female";
-                /*
-               // conn = new SqlConnection(ConnectionString);
-                //conn.Open();
 
-                comm.Connection = conn;
-                String q = "insert into PersonalDetail values (3,'zcsf','sfd','sf','sss','db','db','db',13,13,'gf','fg','sfd','2002-02-02','sf','sdf','sf','fsd','fsd','sfd','2002-02-02');";
-                
-                comm = new SqlCommand(q,conn);
-                comm.ExecuteNonQuery();
-                MessageBox.Show("run");
-                conn.Close();
-                */
-                if (true)
-                {
-                    byte[] img = null;
-                    FileStream fs = new FileStream(personalPicLoc, FileMode.Open, FileAccess.Read);
-                    BinaryReader br = new BinaryReader(fs);
-                    img = br.ReadBytes((int)fs.Length);
-                    conn.Open();
-                    SqlCommand cmd = conn.CreateCommand();
-                    cmd = new SqlCommand("insert into PersonalDetail values (@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19,@20,@21,@22);", conn);
+                add.saveAcademicStaff(title, txtFullName.Text, txtInitials.Text, dateDob.Text, gender, txtTelePrivate.Text, txtTeleOffice.Text, txtEmailPrivate.Text,
+                     txtEmailOffice.Text, txtNIC.Text, txtPassport.Text, cmbBxDesignation.Text, cmbBxFaculty.Text, cmbBxDepartment.Text, txtUPF.Text, dateAppointment.Text,
+                     dateRetirement.Text, txtMarriageCertificate.Text,
+                     txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
+                add.addAddress();
+                add.addChildrenDetail(tblChildren);
+                add.addQulifications(tblEducation);
+                add.addServiceRecords(tblService);
+                add.addOtherPositions(tblOtherPositions);
 
 
-                    cmd.Parameters.AddWithValue("@1", title);
-                    cmd.Parameters.AddWithValue("@2", txtFullName.Text);
-                    cmd.Parameters.AddWithValue("@3", txtInitials.Text);
-                    cmd.Parameters.AddWithValue("@4", dateDob.Text);
-                    cmd.Parameters.AddWithValue("@5", gender);
 
-                    cmd.Parameters.AddWithValue("@6", txtTelePrivate.Text);
-                    cmd.Parameters.AddWithValue("@7", txtTeleOffice.Text);
-                    cmd.Parameters.AddWithValue("@8", txtEmailPrivate.Text);
-                    cmd.Parameters.AddWithValue("@9", txtEmailOffice.Text);
-                    cmd.Parameters.AddWithValue("@10", txtNIC.Text);
-                    cmd.Parameters.AddWithValue("@11", txtPassport.Text);
-                    cmd.Parameters.AddWithValue("@12", cmbBxDesignation.Text);
-                    cmd.Parameters.AddWithValue("@13", cmbBxFaculty.Text);
-                    cmd.Parameters.AddWithValue("@14", cmbBxDepartment.Text);
-                    cmd.Parameters.AddWithValue("@15", txtUPF.Text);
-                    cmd.Parameters.AddWithValue("@16", dateAppointment.Value);
-                    cmd.Parameters.AddWithValue("@17", dateRetirement.Value);
-                    cmd.Parameters.AddWithValue("@18", txtMarriageCertificate.Text);
-                    cmd.Parameters.AddWithValue("@19", "1");
-                    cmd.Parameters.AddWithValue("@20", img);
-                    cmd.Parameters.AddWithValue("@21", "Permanent");
-                    cmd.Parameters.AddWithValue("@22", txtServiceNo.Text);
-
-                    /*
-                    //cmd.Parameters.AddWithValue("@1", "1");
-                    //cmd.Parameters.AddWithValue("@2", "1");
-                    //cmd.Parameters.AddWithValue("@3", "1");
-                    //cmd.Parameters.AddWithValue("@4", "2002-02-02");
-                    //cmd.Parameters.AddWithValue("@5", "1");
-                    cmd.Parameters.AddWithValue("@6", "1");
-                    cmd.Parameters.AddWithValue("@7", "1");
-                    cmd.Parameters.AddWithValue("@8", "1");
-                    cmd.Parameters.AddWithValue("@9", "1");
-                    cmd.Parameters.AddWithValue("@10", "1");
-                    cmd.Parameters.AddWithValue("@11", "1");
-                    cmd.Parameters.AddWithValue("@12", "1");
-                    cmd.Parameters.AddWithValue("@13", "1");
-                    cmd.Parameters.AddWithValue("@14", "1");
-                    cmd.Parameters.AddWithValue("@15", "1");
-                    cmd.Parameters.AddWithValue("@16", "2002-02-02");
-                    cmd.Parameters.AddWithValue("@17", "2002-02-02");
-                    cmd.Parameters.AddWithValue("@18", "1");
-                    cmd.Parameters.AddWithValue("@19", "1");
-                    cmd.Parameters.AddWithValue("@20", "1");
-                    cmd.Parameters.AddWithValue("@21", "1");
-                    cmd.Parameters.AddWithValue("@22", "1");
-                    */
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-
-                    conn.Open();
-
-                    cmd = new SqlCommand("SELECT PDID FROM PersonalDetail where [NIC No] = @1; ", conn);
-                    cmd.Parameters.AddWithValue("@1", txtNIC.Text);
-
-                    SqlDataReader read = cmd.ExecuteReader();
-
-                    while (read.Read())
-                    {
-                        primaryKey = read[0].ToString();
-
-                    }
-                    read.Close();
-
-                    int childrenCount = tblChildren.Rows.Count;
-                    int serviceCount = tblService.Rows.Count;
-                    int otherPositionsCount = tblOtherPositions.Rows.Count;
-                    int educationCount = tblEducation.Rows.Count;
-
-                   // for (int i = 0; i < childrenCount; i++) 
-                        //MessageBox.Show(tblChildren.Rows[i].Cells[0].Value.ToString() + tblChildren.Rows[i].Cells[1].Value.ToString() + tblChildren.Rows[i].Cells[2].Value.ToString());
-                    //MessageBox.Show(tblChildren.Rows[1].Cells.Count.ToString());
-
-                    for (int i = 0; i < childrenCount; i++)
-                    {
-                        cmd = conn.CreateCommand();
-                        cmd = new SqlCommand("insert into ChildrenDetail values(@1, @2, @3,@4)", conn);
-                        cmd.Parameters.AddWithValue("@1", primaryKey);
-                        cmd.Parameters.AddWithValue("@2", tblChildren.Rows[i].Cells[0].Value.ToString());
-                        cmd.Parameters.AddWithValue("@3", tblChildren.Rows[i].Cells[1].Value.ToString());
-                        cmd.Parameters.AddWithValue("@4", tblChildren.Rows[i].Cells[2].Value.ToString());
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    for (int i = 0; i < serviceCount; i++)
-                    {
-                        cmd = conn.CreateCommand();
-                        cmd = new SqlCommand("insert into ServiceRecords values(@1, @2, @3,@4)", conn);
-                        cmd.Parameters.AddWithValue("@1", primaryKey);
-                        cmd.Parameters.AddWithValue("@2", tblService.Rows[i].Cells[0].Value.ToString());
-                        cmd.Parameters.AddWithValue("@3", tblService.Rows[i].Cells[1].Value.ToString());
-                        cmd.Parameters.AddWithValue("@4", tblService.Rows[i].Cells[2].Value.ToString());
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    for (int i = 0; i < otherPositionsCount; i++)
-                    {
-                        cmd = conn.CreateCommand();
-                        cmd = new SqlCommand("insert into OtherPositions values(@1, @2, @3,@4)", conn);
-                        cmd.Parameters.AddWithValue("@1", primaryKey);
-                        cmd.Parameters.AddWithValue("@2", tblOtherPositions.Rows[i].Cells[0].Value.ToString());
-                        cmd.Parameters.AddWithValue("@3", tblOtherPositions.Rows[i].Cells[1].Value.ToString());
-                        cmd.Parameters.AddWithValue("@4", tblOtherPositions.Rows[i].Cells[2].Value.ToString());
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    for (int i = 0; i < educationCount; i++)
-                    {
-                        cmd = conn.CreateCommand();
-                        cmd = new SqlCommand("insert into EducationalQulifications values(@1, @2, @3,@4,@5)", conn);
-                        cmd.Parameters.AddWithValue("@1", primaryKey);
-                        cmd.Parameters.AddWithValue("@2", tblEducation.Rows[i].Cells[0].Value.ToString());
-                        cmd.Parameters.AddWithValue("@3", tblEducation.Rows[i].Cells[1].Value.ToString());
-                        cmd.Parameters.AddWithValue("@4", tblEducation.Rows[i].Cells[2].Value.ToString());
-                        cmd.Parameters.AddWithValue("@5", tblEducation.Rows[i].Cells[3].Value.ToString());
-                        cmd.ExecuteNonQuery();
-                    }
-
-
-                    conn.Close();
-                   
-
-                }
-                /*
-                conn.Open();
-                SqlCommand cmd = conn.CreateCommand();
-                //cmd.CommandType = CommandType.Text;
-                //cmd.CommandText = "insert into PersonalDetail values ('','sfd','sf','sss','db','db','db',13,13,'gf','fg','sfd','2002-02-02','sf','sdf','sf','fsd','fsd','sfd','2002-02-02');";
-
-                cmd = new SqlCommand("insert into ServiceRecords values(@1, @2, @3,@4)",conn);
-                cmd.Parameters.AddWithValue("@1","1");
-                cmd.Parameters.AddWithValue("@2", "dfdf");
-                cmd.Parameters.AddWithValue("@3", "2002-02-02");
-                cmd.Parameters.AddWithValue("@4", "2002-02-02");
-                //SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                //cmd.Prepare();
-                //SqlDataReader res = cmd.ExecuteReader();
-                // insert into ServiceRecords values ('@1','@2','@3',@4);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-
-                */
 
 
                 MessageBox.Show("record saved");
@@ -863,37 +714,42 @@ namespace Staff_Registration_System
 
         private void txtSearchName_TextChanged(object sender, EventArgs e)
         {
-            try
+            
+            staff.searchByName(txtSearchName.Text, tblSearch);
+        }
+
+        private void picbtnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bttnUpdate_Click(object sender, EventArgs e)
+        {
+            if (tblSearch.SelectedRows.Count == 1)
             {
-                conn.Open();
-                SqlCommand cmd = conn.CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM PersonalDetail where [First Name] like '%'+@1+'%'; ", conn);
-                cmd.Parameters.AddWithValue("@1", txtSearchName.Text);
-
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-
-                DataTable table = new DataTable();
-                dataAdapter.Fill(table);
-
-                tblSearch.DataSource = table;
-                conn.Close();
-
-                cmd.Dispose();
-                dataAdapter.Dispose();
-
-                /*SqlDataReader read = cmd.ExecuteReader();
-
-                while (read.Read())
-                {
-                    primaryKey = read[0].ToString();
-
-                }
-                read.Close();*/
+                tblSearch.Columns[0].ToString();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+        }
+
+        private void txtSearchNIC_TextChanged(object sender, EventArgs e)
+        {
+            
+            staff.searchByNIC(txtSearchNIC.Text, tblSearch);
+        }
+
+        private void txtSearchUPF_TextChanged(object sender, EventArgs e)
+        {
+            staff.searchByUPF(txtSearchUPF.Text, tblSearch);
+        }
+
+        private void l_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPassportNo_TextChanged(object sender, EventArgs e)
+        {
+            staff.searchByPassport(txtPassportNo.Text, tblSearch);
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)

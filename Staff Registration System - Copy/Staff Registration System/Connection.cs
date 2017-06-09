@@ -27,6 +27,12 @@ namespace Staff_Registration_System
             }
         }
 
+        public void connOpen()
+        {
+            if (conn.State == System.Data.ConnectionState.Closed)
+                conn.Open();
+        }
+
         public SqlConnection connConnection()
         {
             return conn;
