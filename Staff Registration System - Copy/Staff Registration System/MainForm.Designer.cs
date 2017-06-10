@@ -1381,9 +1381,12 @@
             // 
             // tblSearch
             // 
+            this.tblSearch.AllowUserToAddRows = false;
+            this.tblSearch.AllowUserToDeleteRows = false;
             this.tblSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblSearch.Location = new System.Drawing.Point(35, 224);
             this.tblSearch.Name = "tblSearch";
+            this.tblSearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblSearch.Size = new System.Drawing.Size(1166, 323);
             this.tblSearch.TabIndex = 31;
             // 

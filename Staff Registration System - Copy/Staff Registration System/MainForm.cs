@@ -727,7 +727,13 @@ namespace Staff_Registration_System
         {
             if (tblSearch.SelectedRows.Count == 1)
             {
-                tblSearch.Columns[0].ToString();
+                String ID = tblSearch[0, tblSearch.CurrentRow.Index].Value.ToString();
+                personal_detail1.Visible = true;
+                personal_detail1.BringToFront();
+                UpdateStaff upstaff = new UpdateStaff();
+                upstaff.fillForm(ID,ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement);
+                
             }
         }
 
