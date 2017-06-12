@@ -312,19 +312,19 @@
             this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reports = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.chkBxOtherPositions = new System.Windows.Forms.CheckBox();
+            this.chkBxService = new System.Windows.Forms.CheckBox();
+            this.chkBxEducational = new System.Windows.Forms.CheckBox();
+            this.chkBxFamily = new System.Windows.Forms.CheckBox();
+            this.chkBxPersonal = new System.Windows.Forms.CheckBox();
+            this.chkLBxOtherPositions = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxService = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxEducational = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxFamily = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxPersonal = new System.Windows.Forms.CheckedListBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -354,6 +354,11 @@
             this.openFileDialogPersonalPic = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogMarriageCertificate = new System.Windows.Forms.OpenFileDialog();
             this.chkBxSame = new System.Windows.Forms.CheckBox();
+            this.report_view = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tblReport = new System.Windows.Forms.DataGridView();
+            this.btnPrintPdf = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.option_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
@@ -434,6 +439,8 @@
             this.panel13.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.report_view.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblReport)).BeginInit();
             this.SuspendLayout();
             // 
             // option_bar
@@ -1213,6 +1220,8 @@
             // 
             // panel_container
             // 
+            this.panel_container.Controls.Add(this.report_view);
+            this.panel_container.Controls.Add(this.reports);
             this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.personal_detail2);
             this.panel_container.Controls.Add(this.search);
@@ -1220,7 +1229,6 @@
             this.panel_container.Controls.Add(this.settings);
             this.panel_container.Controls.Add(this.other_positions);
             this.panel_container.Controls.Add(this.alerts);
-            this.panel_container.Controls.Add(this.reports);
             this.panel_container.Location = new System.Drawing.Point(0, 0);
             this.panel_container.Name = "panel_container";
             this.panel_container.Size = new System.Drawing.Size(1366, 768);
@@ -3290,7 +3298,7 @@
             // 
             // reports
             // 
-            this.reports.Controls.Add(this.button1);
+            this.reports.Controls.Add(this.btnReport);
             this.reports.Controls.Add(this.panel14);
             this.reports.Controls.Add(this.panel12);
             this.reports.Controls.Add(this.groupBox2);
@@ -3300,177 +3308,192 @@
             this.reports.TabIndex = 35;
             this.reports.Visible = false;
             // 
-            // button1
+            // btnReport
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1189, 661);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 50);
-            this.button1.TabIndex = 67;
-            this.toolTip1.SetToolTip(this.button1, "Generate");
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnReport.BackColor = System.Drawing.Color.Teal;
+            this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.Location = new System.Drawing.Point(1189, 661);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(66, 50);
+            this.btnReport.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.btnReport, "Generate");
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // panel14
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.button8);
-            this.panel14.Controls.Add(this.checkBox8);
-            this.panel14.Controls.Add(this.checkBox9);
-            this.panel14.Controls.Add(this.checkBox10);
-            this.panel14.Controls.Add(this.checkBox11);
-            this.panel14.Controls.Add(this.checkBox12);
-            this.panel14.Controls.Add(this.checkedListBox1);
-            this.panel14.Controls.Add(this.checkedListBox2);
-            this.panel14.Controls.Add(this.checkedListBox3);
-            this.panel14.Controls.Add(this.checkedListBox4);
-            this.panel14.Controls.Add(this.checkedListBox5);
+            this.panel14.Controls.Add(this.btnClearAll);
+            this.panel14.Controls.Add(this.chkBxOtherPositions);
+            this.panel14.Controls.Add(this.chkBxService);
+            this.panel14.Controls.Add(this.chkBxEducational);
+            this.panel14.Controls.Add(this.chkBxFamily);
+            this.panel14.Controls.Add(this.chkBxPersonal);
+            this.panel14.Controls.Add(this.chkLBxOtherPositions);
+            this.panel14.Controls.Add(this.chkLBxService);
+            this.panel14.Controls.Add(this.chkLBxEducational);
+            this.panel14.Controls.Add(this.chkLBxFamily);
+            this.panel14.Controls.Add(this.chkLBxPersonal);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Location = new System.Drawing.Point(433, 23);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(822, 617);
             this.panel14.TabIndex = 64;
             // 
-            // button8
+            // btnClearAll
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(707, 51);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(74, 21);
-            this.button8.TabIndex = 78;
-            this.button8.Text = "Clear All";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearAll.Location = new System.Drawing.Point(707, 51);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(74, 21);
+            this.btnClearAll.TabIndex = 78;
+            this.btnClearAll.Text = "Clear All";
+            this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
-            // checkBox8
+            // chkBxOtherPositions
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(665, 89);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(97, 17);
-            this.checkBox8.TabIndex = 77;
-            this.checkBox8.Text = "Other Positions";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chkBxOtherPositions.AutoSize = true;
+            this.chkBxOtherPositions.Location = new System.Drawing.Point(665, 89);
+            this.chkBxOtherPositions.Name = "chkBxOtherPositions";
+            this.chkBxOtherPositions.Size = new System.Drawing.Size(97, 17);
+            this.chkBxOtherPositions.TabIndex = 77;
+            this.chkBxOtherPositions.Text = "Other Positions";
+            this.chkBxOtherPositions.UseVisualStyleBackColor = true;
+            this.chkBxOtherPositions.CheckedChanged += new System.EventHandler(this.chkBxOtherPositions_CheckedChanged);
             // 
-            // checkBox9
+            // chkBxService
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(545, 89);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(100, 17);
-            this.checkBox9.TabIndex = 76;
-            this.checkBox9.Text = "Service Record";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chkBxService.AutoSize = true;
+            this.chkBxService.Location = new System.Drawing.Point(545, 89);
+            this.chkBxService.Name = "chkBxService";
+            this.chkBxService.Size = new System.Drawing.Size(100, 17);
+            this.chkBxService.TabIndex = 76;
+            this.chkBxService.Text = "Service Record";
+            this.chkBxService.UseVisualStyleBackColor = true;
+            this.chkBxService.CheckedChanged += new System.EventHandler(this.chkBxService_CheckedChanged);
             // 
-            // checkBox10
+            // chkBxEducational
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(400, 87);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(82, 17);
-            this.checkBox10.TabIndex = 75;
-            this.checkBox10.Text = "Educational";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.chkBxEducational.AutoSize = true;
+            this.chkBxEducational.Location = new System.Drawing.Point(400, 87);
+            this.chkBxEducational.Name = "chkBxEducational";
+            this.chkBxEducational.Size = new System.Drawing.Size(82, 17);
+            this.chkBxEducational.TabIndex = 75;
+            this.chkBxEducational.Text = "Educational";
+            this.chkBxEducational.UseVisualStyleBackColor = true;
+            this.chkBxEducational.CheckedChanged += new System.EventHandler(this.chkBxEducational_CheckedChanged);
             // 
-            // checkBox11
+            // chkBxFamily
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(262, 86);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(55, 17);
-            this.checkBox11.TabIndex = 74;
-            this.checkBox11.Text = "Family";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.chkBxFamily.AutoSize = true;
+            this.chkBxFamily.Location = new System.Drawing.Point(262, 86);
+            this.chkBxFamily.Name = "chkBxFamily";
+            this.chkBxFamily.Size = new System.Drawing.Size(55, 17);
+            this.chkBxFamily.TabIndex = 74;
+            this.chkBxFamily.Text = "Family";
+            this.chkBxFamily.UseVisualStyleBackColor = true;
+            this.chkBxFamily.CheckedChanged += new System.EventHandler(this.chkBxFamily_CheckedChanged);
             // 
-            // checkBox12
+            // chkBxPersonal
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(45, 87);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(67, 17);
-            this.checkBox12.TabIndex = 73;
-            this.checkBox12.Text = "Personal";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.chkBxPersonal.AutoSize = true;
+            this.chkBxPersonal.Location = new System.Drawing.Point(45, 87);
+            this.chkBxPersonal.Name = "chkBxPersonal";
+            this.chkBxPersonal.Size = new System.Drawing.Size(67, 17);
+            this.chkBxPersonal.TabIndex = 73;
+            this.chkBxPersonal.Text = "Personal";
+            this.chkBxPersonal.UseVisualStyleBackColor = true;
+            this.chkBxPersonal.CheckedChanged += new System.EventHandler(this.chkBxPersonal_CheckedChanged);
             // 
-            // checkedListBox1
+            // chkLBxOtherPositions
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.chkLBxOtherPositions.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxOtherPositions.FormattingEnabled = true;
+            this.chkLBxOtherPositions.Items.AddRange(new object[] {
             "Position",
             "From",
             "To"});
-            this.checkedListBox1.Location = new System.Drawing.Point(665, 114);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(116, 244);
-            this.checkedListBox1.TabIndex = 72;
+            this.chkLBxOtherPositions.Location = new System.Drawing.Point(665, 114);
+            this.chkLBxOtherPositions.Name = "chkLBxOtherPositions";
+            this.chkLBxOtherPositions.Size = new System.Drawing.Size(116, 244);
+            this.chkLBxOtherPositions.TabIndex = 72;
             // 
-            // checkedListBox2
+            // chkLBxService
             // 
-            this.checkedListBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.chkLBxService.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxService.FormattingEnabled = true;
+            this.chkLBxService.Items.AddRange(new object[] {
             "Position",
             "From",
             "To"});
-            this.checkedListBox2.Location = new System.Drawing.Point(543, 114);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(116, 244);
-            this.checkedListBox2.TabIndex = 71;
+            this.chkLBxService.Location = new System.Drawing.Point(543, 114);
+            this.chkLBxService.Name = "chkLBxService";
+            this.chkLBxService.Size = new System.Drawing.Size(116, 244);
+            this.chkLBxService.TabIndex = 71;
             // 
-            // checkedListBox3
+            // chkLBxEducational
             // 
-            this.checkedListBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.chkLBxEducational.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxEducational.FormattingEnabled = true;
+            this.chkLBxEducational.Items.AddRange(new object[] {
             "Qulification Obtained",
             "University",
-            "Date and Results"});
-            this.checkedListBox3.Location = new System.Drawing.Point(398, 116);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(139, 244);
-            this.checkedListBox3.TabIndex = 70;
+            "Effective Date",
+            "Grade"});
+            this.chkLBxEducational.Location = new System.Drawing.Point(398, 116);
+            this.chkLBxEducational.Name = "chkLBxEducational";
+            this.chkLBxEducational.Size = new System.Drawing.Size(139, 244);
+            this.chkLBxEducational.TabIndex = 70;
             // 
-            // checkedListBox4
+            // chkLBxFamily
             // 
-            this.checkedListBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Items.AddRange(new object[] {
-            "Name of Child",
-            "Date of Birth",
+            this.chkLBxFamily.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxFamily.FormattingEnabled = true;
+            this.chkLBxFamily.Items.AddRange(new object[] {
+            "Name",
+            "DOB",
             "Birth Certificate No"});
-            this.checkedListBox4.Location = new System.Drawing.Point(260, 116);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(132, 244);
-            this.checkedListBox4.TabIndex = 69;
+            this.chkLBxFamily.Location = new System.Drawing.Point(260, 116);
+            this.chkLBxFamily.Name = "chkLBxFamily";
+            this.chkLBxFamily.Size = new System.Drawing.Size(132, 244);
+            this.chkLBxFamily.TabIndex = 69;
             // 
-            // checkedListBox5
+            // chkLBxPersonal
             // 
-            this.checkedListBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkedListBox5.FormattingEnabled = true;
-            this.checkedListBox5.Items.AddRange(new object[] {
+            this.chkLBxPersonal.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxPersonal.FormattingEnabled = true;
+            this.chkLBxPersonal.Items.AddRange(new object[] {
+            "Title",
             "Full Name",
             "Name with Initials",
-            "Designation",
-            "Faculty / Department",
-            "National ID Number",
-            "Passport Number",
-            "Present Personal Address",
-            "Present Contact No ( Private )",
-            "Present Contact No ( Official )",
-            "Email Address ( Official )",
-            "Email Address ( Private )",
-            "University Provident Fund Number",
+            "DOB",
+            "Gender",
+            "Private Contact No",
+            "Office Contact No",
+            "Private Email",
+            "Office Email",
+            "NIC No",
+            "Passport No",
+            "UPF No",
+            "Appointment Date",
+            "Retirement Date",
             "Marriage Certificate No",
-            "Salary Scale",
+            "Type",
+            "ServiceNo",
+            "Department Name",
+            "Designation",
+            "Salary Step",
+            "Increment Date",
             "Salary Step",
             "Increment date"});
-            this.checkedListBox5.Location = new System.Drawing.Point(42, 116);
-            this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(212, 244);
-            this.checkedListBox5.TabIndex = 68;
+            this.chkLBxPersonal.Location = new System.Drawing.Point(42, 116);
+            this.chkLBxPersonal.Name = "chkLBxPersonal";
+            this.chkLBxPersonal.Size = new System.Drawing.Size(212, 379);
+            this.chkLBxPersonal.TabIndex = 68;
             // 
             // panel15
             // 
@@ -3714,6 +3737,61 @@
             this.chkBxSame.Text = "Same as the Mailing address";
             this.chkBxSame.UseVisualStyleBackColor = true;
             // 
+            // report_view
+            // 
+            this.report_view.Controls.Add(this.button4);
+            this.report_view.Controls.Add(this.btnPrintPdf);
+            this.report_view.Controls.Add(this.tblReport);
+            this.report_view.Controls.Add(this.button2);
+            this.report_view.Location = new System.Drawing.Point(90, 33);
+            this.report_view.Name = "report_view";
+            this.report_view.Size = new System.Drawing.Size(1276, 735);
+            this.report_view.TabIndex = 38;
+            this.report_view.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(1189, 661);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 50);
+            this.button2.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.button2, "Generate");
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // tblReport
+            // 
+            this.tblReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblReport.Location = new System.Drawing.Point(20, 22);
+            this.tblReport.Name = "tblReport";
+            this.tblReport.Size = new System.Drawing.Size(1234, 314);
+            this.tblReport.TabIndex = 68;
+            // 
+            // btnPrintPdf
+            // 
+            this.btnPrintPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintPdf.Location = new System.Drawing.Point(42, 397);
+            this.btnPrintPdf.Name = "btnPrintPdf";
+            this.btnPrintPdf.Size = new System.Drawing.Size(105, 21);
+            this.btnPrintPdf.TabIndex = 79;
+            this.btnPrintPdf.Text = "PrintPdf";
+            this.btnPrintPdf.UseVisualStyleBackColor = true;
+            this.btnPrintPdf.Click += new System.EventHandler(this.btnPrintPdf_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(42, 457);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(105, 21);
+            this.button4.TabIndex = 80;
+            this.button4.Text = "Show in excel";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // home
             // 
             this.AllowDrop = true;
@@ -3856,6 +3934,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.report_view.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tblReport)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4073,22 +4153,22 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
-        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.CheckBox chkBxOtherPositions;
+        private System.Windows.Forms.CheckBox chkBxService;
+        private System.Windows.Forms.CheckBox chkBxEducational;
+        private System.Windows.Forms.CheckBox chkBxFamily;
+        private System.Windows.Forms.CheckBox chkBxPersonal;
+        private System.Windows.Forms.CheckedListBox chkLBxOtherPositions;
+        private System.Windows.Forms.CheckedListBox chkLBxService;
+        private System.Windows.Forms.CheckedListBox chkLBxEducational;
+        private System.Windows.Forms.CheckedListBox chkLBxFamily;
+        private System.Windows.Forms.CheckedListBox chkLBxPersonal;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnReport;
+        private System.Windows.Forms.Button btnClearAll;
         private System.Windows.Forms.Label lblPrevEduQualif_light;
         private System.Windows.Forms.Label lblNextEduQualif_light;
         private System.Windows.Forms.Label lblPrevOtherPostns_light;
@@ -4186,6 +4266,11 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogPersonalPic;
         private System.Windows.Forms.OpenFileDialog openFileDialogMarriageCertificate;
         private System.Windows.Forms.CheckBox chkBxSame;
+        private System.Windows.Forms.Panel report_view;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPrintPdf;
+        private System.Windows.Forms.DataGridView tblReport;
+        private System.Windows.Forms.Button button2;
     }
 }
 

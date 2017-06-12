@@ -200,5 +200,10 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public void updateAcademicStaff()
+        {
+
+        }
     }
 }

@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.IO;
 using Staff_Registration_System.AddAcademicStaff;
 using Staff_Registration_System.SearchAcademicStaff;
+using Staff_Registration_System.Reports;
 
 namespace Staff_Registration_System
 {
@@ -42,6 +43,7 @@ namespace Staff_Registration_System
         AddStaff add = new AddStaff();
         SearchStaff staff = new SearchStaff();
         UpdateStaff upstaff = new UpdateStaff();
+        CustomReport report = new CustomReport();
 
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -819,6 +821,140 @@ namespace Staff_Registration_System
         private void cmbBxFaculty_SelectedIndexChanged(object sender, EventArgs e)
         {
             add.selectDepartment(cmbBxDepartment,cmbBxFaculty.Text);
+        }
+
+        private void chkBxPersonal_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxPersonal.Checked)
+            {
+                for (int i = 0; i < chkLBxPersonal.Items.Count; i++)
+                {
+                    chkLBxPersonal.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxPersonal.Checked)
+            {
+                for (int i = 0; i < chkLBxPersonal.Items.Count; i++)
+                {
+                    chkLBxPersonal.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void chkBxFamily_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxFamily.Checked)
+            {
+                for (int i = 0; i < chkLBxFamily.Items.Count; i++)
+                {
+                    chkLBxFamily.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxFamily.Checked)
+            {
+                for (int i = 0; i < chkLBxFamily.Items.Count; i++)
+                {
+                    chkLBxFamily.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void chkBxEducational_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxEducational.Checked)
+            {
+                for (int i = 0; i < chkLBxEducational.Items.Count; i++)
+                {
+                    chkLBxEducational.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxEducational.Checked)
+            {
+                for (int i = 0; i < chkLBxEducational.Items.Count; i++)
+                {
+                    chkLBxEducational.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void chkBxService_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxService.Checked)
+            {
+                for (int i = 0; i < chkLBxService.Items.Count; i++)
+                {
+                    chkLBxService.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxService.Checked)
+            {
+                for (int i = 0; i < chkLBxService.Items.Count; i++)
+                {
+                    chkLBxService.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void chkBxOtherPositions_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxOtherPositions.Checked)
+            {
+                for (int i = 0; i < chkLBxOtherPositions.Items.Count; i++)
+                {
+                    chkLBxOtherPositions.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxOtherPositions.Checked)
+            {
+                for (int i = 0; i < chkLBxOtherPositions.Items.Count; i++)
+                {
+                    chkLBxOtherPositions.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < chkLBxOtherPositions.Items.Count; i++)
+            {
+                chkLBxOtherPositions.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBxService.Items.Count; i++)
+            {
+                chkLBxService.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBxEducational.Items.Count; i++)
+            {
+                chkLBxEducational.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBxFamily.Items.Count; i++)
+            {
+                chkLBxFamily.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBxPersonal.Items.Count; i++)
+            {
+                chkLBxPersonal.SetItemChecked(i, false);
+            }
+            chkBxOtherPositions.Checked = false;
+            chkBxService.Checked = false;
+            chkBxEducational.Checked = false;
+            chkBxFamily.Checked = false;
+            chkBxPersonal.Checked = false;
+
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            report.loadReportTable(chkLBxPersonal,chkLBxFamily,chkLBxEducational,chkLBxService,chkLBxOtherPositions, tblReport);
+
+            report_view.Visible = true;
+            report_view.BringToFront();
+
+        }
+
+        private void btnPrintPdf_Click(object sender, EventArgs e)
+        {
+            report.dataGridPdf(tblReport);
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)
