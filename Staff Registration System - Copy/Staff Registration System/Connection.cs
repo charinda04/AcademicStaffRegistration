@@ -13,7 +13,7 @@ namespace Staff_Registration_System
 
         public Connection()
         {
-            conn.ConnectionString = @"Data Source = DESKTOPCHARI\SQLEXPRESS; Initial Catalog = AcadamicStaff; Integrated Security = True";
+            conn.ConnectionString = @"Data Source = DESKTOPCHARI\SQLEXPRESS; Initial Catalog = AcadamicStaff; Integrated Security = True; MultipleActiveResultSets=true";
 
             try
             {

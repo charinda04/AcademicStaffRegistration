@@ -50,22 +50,17 @@
             this.panelMailingAddress = new System.Windows.Forms.Panel();
             this.txtMailZipCode = new System.Windows.Forms.TextBox();
             this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
-            this.txtAddress2Mail = new System.Windows.Forms.TextBox();
             this.label94 = new System.Windows.Forms.Label();
             this.txtCityMail = new System.Windows.Forms.TextBox();
             this.txtAddress1Mail = new System.Windows.Forms.TextBox();
             this.panelHomeAddress = new System.Windows.Forms.Panel();
-            this.chkBxSame = new System.Windows.Forms.CheckBox();
             this.label89 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
-            this.txtAddress2Home = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
             this.txtCityHome = new System.Windows.Forms.TextBox();
             this.txtHomeZipCode = new System.Windows.Forms.TextBox();
@@ -111,6 +106,59 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblNextPdetail1_light = new System.Windows.Forms.Label();
             this.panel_container = new System.Windows.Forms.Panel();
+            this.personal_detail2 = new System.Windows.Forms.Panel();
+            this.panelMatrimonialInformation = new System.Windows.Forms.Panel();
+            this.ptBxMarriageCertificate = new System.Windows.Forms.PictureBox();
+            this.tblChildren = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRemoveChildren = new System.Windows.Forms.Button();
+            this.btnAddChildren = new System.Windows.Forms.Button();
+            this.txtChildBirthCertificate = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.dateChildDob = new System.Windows.Forms.DateTimePicker();
+            this.label62 = new System.Windows.Forms.Label();
+            this.txtChildName = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.txtMarriageCertificate = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.btnAddMarriageCertificate = new System.Windows.Forms.Button();
+            this.label99 = new System.Windows.Forms.Label();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.panelWorkInformation = new System.Windows.Forms.Panel();
+            this.txtServiceNo = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.dateRetirement = new System.Windows.Forms.DateTimePicker();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dateAppointment = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cmbBxSalaryCode = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.cmbBxDepartment = new System.Windows.Forms.ComboBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.cmbBxFaculty = new System.Windows.Forms.ComboBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.cmbBxDesignation = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.dateIncrement = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.cmbBxSalaryStep = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbBxScale = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUPF = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.lblPrevPdetail2_dark = new System.Windows.Forms.Label();
+            this.lblNextPdetail2_dark = new System.Windows.Forms.Label();
+            this.lblPrevPdetail2_light = new System.Windows.Forms.Label();
+            this.lblNextPdetail2_light = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.Panel();
             this.bttnUpdate = new System.Windows.Forms.Button();
             this.bttnDelete = new System.Windows.Forms.Button();
@@ -175,59 +223,6 @@
             this.lblNextEduQualif_dark = new System.Windows.Forms.Label();
             this.lblPrevEduQualif_light = new System.Windows.Forms.Label();
             this.lblNextEduQualif_light = new System.Windows.Forms.Label();
-            this.personal_detail2 = new System.Windows.Forms.Panel();
-            this.panelMatrimonialInformation = new System.Windows.Forms.Panel();
-            this.ptBxMarriageCertificate = new System.Windows.Forms.PictureBox();
-            this.tblChildren = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRemoveChildren = new System.Windows.Forms.Button();
-            this.btnAddChildren = new System.Windows.Forms.Button();
-            this.txtChildBirthCertificate = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.dateChildDob = new System.Windows.Forms.DateTimePicker();
-            this.label62 = new System.Windows.Forms.Label();
-            this.txtChildName = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label100 = new System.Windows.Forms.Label();
-            this.txtMarriageCertificate = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.btnAddMarriageCertificate = new System.Windows.Forms.Button();
-            this.label99 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.panelWorkInformation = new System.Windows.Forms.Panel();
-            this.txtServiceNo = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.dateRetirement = new System.Windows.Forms.DateTimePicker();
-            this.label29 = new System.Windows.Forms.Label();
-            this.dateAppointment = new System.Windows.Forms.DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cmbBxSalaryCode = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.cmbBxDepartment = new System.Windows.Forms.ComboBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.cmbBxFaculty = new System.Windows.Forms.ComboBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.cmbBxDesignation = new System.Windows.Forms.ComboBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.dateIncrement = new System.Windows.Forms.DateTimePicker();
-            this.label38 = new System.Windows.Forms.Label();
-            this.cmbBxSalaryStep = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cmbBxScale = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtUPF = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.lblPrevPdetail2_dark = new System.Windows.Forms.Label();
-            this.lblNextPdetail2_dark = new System.Windows.Forms.Label();
-            this.lblPrevPdetail2_light = new System.Windows.Forms.Label();
-            this.lblNextPdetail2_light = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.Panel();
             this.panelEditorPanelContainer = new System.Windows.Forms.Panel();
             this.panelChangeDesignation = new System.Windows.Forms.Panel();
@@ -358,6 +353,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogPersonalPic = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogMarriageCertificate = new System.Windows.Forms.OpenFileDialog();
+            this.chkBxSame = new System.Windows.Forms.CheckBox();
             this.option_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
@@ -383,6 +379,13 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBxPersonalPic)).BeginInit();
             this.panel_container.SuspendLayout();
+            this.personal_detail2.SuspendLayout();
+            this.panelMatrimonialInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptBxMarriageCertificate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblChildren)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panelWorkInformation.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.search.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -394,13 +397,6 @@
             this.panelEduQualifications.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).BeginInit();
-            this.personal_detail2.SuspendLayout();
-            this.panelMatrimonialInformation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptBxMarriageCertificate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblChildren)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panelWorkInformation.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.settings.SuspendLayout();
             this.panelEditorPanelContainer.SuspendLayout();
             this.panelChangeDesignation.SuspendLayout();
@@ -654,10 +650,8 @@
             this.panelMailingAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMailingAddress.Controls.Add(this.txtMailZipCode);
             this.panelMailingAddress.Controls.Add(this.label90);
-            this.panelMailingAddress.Controls.Add(this.label91);
             this.panelMailingAddress.Controls.Add(this.label92);
             this.panelMailingAddress.Controls.Add(this.panel4);
-            this.panelMailingAddress.Controls.Add(this.txtAddress2Mail);
             this.panelMailingAddress.Controls.Add(this.label94);
             this.panelMailingAddress.Controls.Add(this.txtCityMail);
             this.panelMailingAddress.Controls.Add(this.txtAddress1Mail);
@@ -681,15 +675,6 @@
             this.label90.Size = new System.Drawing.Size(50, 13);
             this.label90.TabIndex = 53;
             this.label90.Text = "Zip Code";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(41, 96);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(54, 13);
-            this.label91.TabIndex = 52;
-            this.label91.Text = "Address 2";
             // 
             // label92
             // 
@@ -721,17 +706,10 @@
             this.label93.TabIndex = 1;
             this.label93.Text = "Mailing Address";
             // 
-            // txtAddress2Mail
-            // 
-            this.txtAddress2Mail.Location = new System.Drawing.Point(150, 93);
-            this.txtAddress2Mail.Name = "txtAddress2Mail";
-            this.txtAddress2Mail.Size = new System.Drawing.Size(323, 20);
-            this.txtAddress2Mail.TabIndex = 51;
-            // 
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(41, 70);
+            this.label94.Location = new System.Drawing.Point(41, 92);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(54, 13);
             this.label94.TabIndex = 49;
@@ -746,7 +724,7 @@
             // 
             // txtAddress1Mail
             // 
-            this.txtAddress1Mail.Location = new System.Drawing.Point(150, 67);
+            this.txtAddress1Mail.Location = new System.Drawing.Point(150, 89);
             this.txtAddress1Mail.Name = "txtAddress1Mail";
             this.txtAddress1Mail.Size = new System.Drawing.Size(323, 20);
             this.txtAddress1Mail.TabIndex = 50;
@@ -756,10 +734,8 @@
             this.panelHomeAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHomeAddress.Controls.Add(this.chkBxSame);
             this.panelHomeAddress.Controls.Add(this.label89);
-            this.panelHomeAddress.Controls.Add(this.label88);
             this.panelHomeAddress.Controls.Add(this.label27);
             this.panelHomeAddress.Controls.Add(this.panel3);
-            this.panelHomeAddress.Controls.Add(this.txtAddress2Home);
             this.panelHomeAddress.Controls.Add(this.label84);
             this.panelHomeAddress.Controls.Add(this.txtCityHome);
             this.panelHomeAddress.Controls.Add(this.txtHomeZipCode);
@@ -769,17 +745,6 @@
             this.panelHomeAddress.Size = new System.Drawing.Size(604, 264);
             this.panelHomeAddress.TabIndex = 45;
             // 
-            // chkBxSame
-            // 
-            this.chkBxSame.AutoSize = true;
-            this.chkBxSame.Location = new System.Drawing.Point(306, 50);
-            this.chkBxSame.Name = "chkBxSame";
-            this.chkBxSame.Size = new System.Drawing.Size(144, 17);
-            this.chkBxSame.TabIndex = 2;
-            this.chkBxSame.Text = "Same as Mailing Address";
-            this.chkBxSame.UseVisualStyleBackColor = true;
-            this.chkBxSame.CheckedChanged += new System.EventHandler(this.chkBxSame_CheckedChanged);
-            // 
             // label89
             // 
             this.label89.AutoSize = true;
@@ -788,15 +753,6 @@
             this.label89.Size = new System.Drawing.Size(50, 13);
             this.label89.TabIndex = 53;
             this.label89.Text = "Zip Code";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(41, 117);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(54, 13);
-            this.label88.TabIndex = 52;
-            this.label88.Text = "Address 2";
             // 
             // label27
             // 
@@ -828,17 +784,10 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "Home Address";
             // 
-            // txtAddress2Home
-            // 
-            this.txtAddress2Home.Location = new System.Drawing.Point(150, 114);
-            this.txtAddress2Home.Name = "txtAddress2Home";
-            this.txtAddress2Home.Size = new System.Drawing.Size(299, 20);
-            this.txtAddress2Home.TabIndex = 51;
-            // 
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(41, 91);
+            this.label84.Location = new System.Drawing.Point(41, 113);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(54, 13);
             this.label84.TabIndex = 49;
@@ -860,7 +809,7 @@
             // 
             // txtAddress1Home
             // 
-            this.txtAddress1Home.Location = new System.Drawing.Point(150, 88);
+            this.txtAddress1Home.Location = new System.Drawing.Point(150, 110);
             this.txtAddress1Home.Name = "txtAddress1Home";
             this.txtAddress1Home.Size = new System.Drawing.Size(299, 20);
             this.txtAddress1Home.TabIndex = 50;
@@ -1264,10 +1213,10 @@
             // 
             // panel_container
             // 
+            this.panel_container.Controls.Add(this.personal_detail1);
+            this.panel_container.Controls.Add(this.personal_detail2);
             this.panel_container.Controls.Add(this.search);
             this.panel_container.Controls.Add(this.educational_qualifications);
-            this.panel_container.Controls.Add(this.personal_detail2);
-            this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.settings);
             this.panel_container.Controls.Add(this.other_positions);
             this.panel_container.Controls.Add(this.alerts);
@@ -1276,6 +1225,543 @@
             this.panel_container.Name = "panel_container";
             this.panel_container.Size = new System.Drawing.Size(1366, 768);
             this.panel_container.TabIndex = 46;
+            // 
+            // personal_detail2
+            // 
+            this.personal_detail2.Controls.Add(this.panelMatrimonialInformation);
+            this.personal_detail2.Controls.Add(this.label99);
+            this.personal_detail2.Controls.Add(this.progressBar2);
+            this.personal_detail2.Controls.Add(this.panelWorkInformation);
+            this.personal_detail2.Controls.Add(this.lblPrevPdetail2_dark);
+            this.personal_detail2.Controls.Add(this.lblNextPdetail2_dark);
+            this.personal_detail2.Controls.Add(this.lblPrevPdetail2_light);
+            this.personal_detail2.Controls.Add(this.lblNextPdetail2_light);
+            this.personal_detail2.Location = new System.Drawing.Point(90, 33);
+            this.personal_detail2.Name = "personal_detail2";
+            this.personal_detail2.Size = new System.Drawing.Size(1276, 735);
+            this.personal_detail2.TabIndex = 31;
+            this.personal_detail2.Visible = false;
+            // 
+            // panelMatrimonialInformation
+            // 
+            this.panelMatrimonialInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMatrimonialInformation.Controls.Add(this.ptBxMarriageCertificate);
+            this.panelMatrimonialInformation.Controls.Add(this.tblChildren);
+            this.panelMatrimonialInformation.Controls.Add(this.btnRemoveChildren);
+            this.panelMatrimonialInformation.Controls.Add(this.btnAddChildren);
+            this.panelMatrimonialInformation.Controls.Add(this.txtChildBirthCertificate);
+            this.panelMatrimonialInformation.Controls.Add(this.label61);
+            this.panelMatrimonialInformation.Controls.Add(this.dateChildDob);
+            this.panelMatrimonialInformation.Controls.Add(this.label62);
+            this.panelMatrimonialInformation.Controls.Add(this.txtChildName);
+            this.panelMatrimonialInformation.Controls.Add(this.label63);
+            this.panelMatrimonialInformation.Controls.Add(this.label64);
+            this.panelMatrimonialInformation.Controls.Add(this.panel8);
+            this.panelMatrimonialInformation.Controls.Add(this.txtMarriageCertificate);
+            this.panelMatrimonialInformation.Controls.Add(this.label41);
+            this.panelMatrimonialInformation.Controls.Add(this.label40);
+            this.panelMatrimonialInformation.Controls.Add(this.btnAddMarriageCertificate);
+            this.panelMatrimonialInformation.Location = new System.Drawing.Point(21, 275);
+            this.panelMatrimonialInformation.Name = "panelMatrimonialInformation";
+            this.panelMatrimonialInformation.Size = new System.Drawing.Size(1234, 363);
+            this.panelMatrimonialInformation.TabIndex = 59;
+            // 
+            // ptBxMarriageCertificate
+            // 
+            this.ptBxMarriageCertificate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptBxMarriageCertificate.Location = new System.Drawing.Point(1054, 55);
+            this.ptBxMarriageCertificate.Name = "ptBxMarriageCertificate";
+            this.ptBxMarriageCertificate.Size = new System.Drawing.Size(126, 161);
+            this.ptBxMarriageCertificate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptBxMarriageCertificate.TabIndex = 56;
+            this.ptBxMarriageCertificate.TabStop = false;
+            // 
+            // tblChildren
+            // 
+            this.tblChildren.AllowUserToAddRows = false;
+            this.tblChildren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblChildren.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.tblChildren.Location = new System.Drawing.Point(41, 230);
+            this.tblChildren.Name = "tblChildren";
+            this.tblChildren.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblChildren.Size = new System.Drawing.Size(705, 110);
+            this.tblChildren.TabIndex = 55;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn10.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Date of Birth";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Bith Cirtificate Number";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 200;
+            // 
+            // btnRemoveChildren
+            // 
+            this.btnRemoveChildren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveChildren.Location = new System.Drawing.Point(671, 155);
+            this.btnRemoveChildren.Name = "btnRemoveChildren";
+            this.btnRemoveChildren.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveChildren.TabIndex = 54;
+            this.btnRemoveChildren.Text = "Remove";
+            this.btnRemoveChildren.UseVisualStyleBackColor = true;
+            this.btnRemoveChildren.Click += new System.EventHandler(this.btnRemoveChildren_Click);
+            // 
+            // btnAddChildren
+            // 
+            this.btnAddChildren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddChildren.Location = new System.Drawing.Point(671, 126);
+            this.btnAddChildren.Name = "btnAddChildren";
+            this.btnAddChildren.Size = new System.Drawing.Size(75, 23);
+            this.btnAddChildren.TabIndex = 53;
+            this.btnAddChildren.Text = "Add";
+            this.btnAddChildren.UseVisualStyleBackColor = true;
+            this.btnAddChildren.Click += new System.EventHandler(this.btnAddChildren_Click);
+            // 
+            // txtChildBirthCertificate
+            // 
+            this.txtChildBirthCertificate.Location = new System.Drawing.Point(223, 180);
+            this.txtChildBirthCertificate.Name = "txtChildBirthCertificate";
+            this.txtChildBirthCertificate.Size = new System.Drawing.Size(289, 20);
+            this.txtChildBirthCertificate.TabIndex = 52;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(38, 183);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(117, 13);
+            this.label61.TabIndex = 51;
+            this.label61.Text = "Birth Cietificate Number";
+            // 
+            // dateChildDob
+            // 
+            this.dateChildDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateChildDob.Location = new System.Drawing.Point(223, 149);
+            this.dateChildDob.Name = "dateChildDob";
+            this.dateChildDob.Size = new System.Drawing.Size(180, 20);
+            this.dateChildDob.TabIndex = 50;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(38, 147);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(66, 13);
+            this.label62.TabIndex = 49;
+            this.label62.Text = "Date of Birth";
+            // 
+            // txtChildName
+            // 
+            this.txtChildName.Location = new System.Drawing.Point(223, 123);
+            this.txtChildName.Name = "txtChildName";
+            this.txtChildName.Size = new System.Drawing.Size(289, 20);
+            this.txtChildName.TabIndex = 48;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(38, 121);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(89, 13);
+            this.label63.TabIndex = 47;
+            this.label63.Text = "Name with Initials";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(38, 98);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(126, 15);
+            this.label64.TabIndex = 46;
+            this.label64.Text = "Details of Children";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Teal;
+            this.panel8.Controls.Add(this.label100);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1232, 30);
+            this.panel8.TabIndex = 34;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label100.Location = new System.Drawing.Point(14, 7);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(145, 16);
+            this.label100.TabIndex = 56;
+            this.label100.Text = "Matrimonial Information";
+            // 
+            // txtMarriageCertificate
+            // 
+            this.txtMarriageCertificate.Location = new System.Drawing.Point(227, 52);
+            this.txtMarriageCertificate.Name = "txtMarriageCertificate";
+            this.txtMarriageCertificate.Size = new System.Drawing.Size(285, 20);
+            this.txtMarriageCertificate.TabIndex = 30;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(36, 55);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(178, 13);
+            this.label41.TabIndex = 29;
+            this.label41.Text = "Marriage Certificate Number Number";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(795, 55);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(196, 13);
+            this.label40.TabIndex = 31;
+            this.label40.Text = "Certified Copy of the Marriage Certificate";
+            // 
+            // btnAddMarriageCertificate
+            // 
+            this.btnAddMarriageCertificate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddMarriageCertificate.Location = new System.Drawing.Point(1054, 230);
+            this.btnAddMarriageCertificate.Name = "btnAddMarriageCertificate";
+            this.btnAddMarriageCertificate.Size = new System.Drawing.Size(126, 23);
+            this.btnAddMarriageCertificate.TabIndex = 32;
+            this.btnAddMarriageCertificate.Text = "Add Image";
+            this.btnAddMarriageCertificate.UseVisualStyleBackColor = true;
+            this.btnAddMarriageCertificate.Click += new System.EventHandler(this.btnAddMarriageCertificate_Click);
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.Location = new System.Drawing.Point(94, 661);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(36, 16);
+            this.label99.TabIndex = 58;
+            this.label99.Text = "Step";
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(97, 679);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(1076, 20);
+            this.progressBar2.TabIndex = 57;
+            this.progressBar2.Value = 50;
+            // 
+            // panelWorkInformation
+            // 
+            this.panelWorkInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWorkInformation.Controls.Add(this.txtServiceNo);
+            this.panelWorkInformation.Controls.Add(this.label68);
+            this.panelWorkInformation.Controls.Add(this.dateRetirement);
+            this.panelWorkInformation.Controls.Add(this.label29);
+            this.panelWorkInformation.Controls.Add(this.dateAppointment);
+            this.panelWorkInformation.Controls.Add(this.label16);
+            this.panelWorkInformation.Controls.Add(this.cmbBxSalaryCode);
+            this.panelWorkInformation.Controls.Add(this.label14);
+            this.panelWorkInformation.Controls.Add(this.label98);
+            this.panelWorkInformation.Controls.Add(this.cmbBxDepartment);
+            this.panelWorkInformation.Controls.Add(this.label97);
+            this.panelWorkInformation.Controls.Add(this.cmbBxFaculty);
+            this.panelWorkInformation.Controls.Add(this.label96);
+            this.panelWorkInformation.Controls.Add(this.cmbBxDesignation);
+            this.panelWorkInformation.Controls.Add(this.panel6);
+            this.panelWorkInformation.Controls.Add(this.dateIncrement);
+            this.panelWorkInformation.Controls.Add(this.label38);
+            this.panelWorkInformation.Controls.Add(this.cmbBxSalaryStep);
+            this.panelWorkInformation.Controls.Add(this.label6);
+            this.panelWorkInformation.Controls.Add(this.cmbBxScale);
+            this.panelWorkInformation.Controls.Add(this.label5);
+            this.panelWorkInformation.Controls.Add(this.txtUPF);
+            this.panelWorkInformation.Controls.Add(this.label43);
+            this.panelWorkInformation.Location = new System.Drawing.Point(21, 22);
+            this.panelWorkInformation.Name = "panelWorkInformation";
+            this.panelWorkInformation.Size = new System.Drawing.Size(1234, 231);
+            this.panelWorkInformation.TabIndex = 54;
+            // 
+            // txtServiceNo
+            // 
+            this.txtServiceNo.Location = new System.Drawing.Point(798, 50);
+            this.txtServiceNo.Name = "txtServiceNo";
+            this.txtServiceNo.Size = new System.Drawing.Size(288, 20);
+            this.txtServiceNo.TabIndex = 68;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(665, 53);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(83, 13);
+            this.label68.TabIndex = 67;
+            this.label68.Text = "Service Number";
+            // 
+            // dateRetirement
+            // 
+            this.dateRetirement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateRetirement.Location = new System.Drawing.Point(223, 186);
+            this.dateRetirement.Name = "dateRetirement";
+            this.dateRetirement.Size = new System.Drawing.Size(224, 20);
+            this.dateRetirement.TabIndex = 64;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(33, 192);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(84, 13);
+            this.label29.TabIndex = 63;
+            this.label29.Text = "Retirement Date";
+            // 
+            // dateAppointment
+            // 
+            this.dateAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateAppointment.Location = new System.Drawing.Point(223, 159);
+            this.dateAppointment.Name = "dateAppointment";
+            this.dateAppointment.Size = new System.Drawing.Size(224, 20);
+            this.dateAppointment.TabIndex = 62;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(33, 165);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(92, 13);
+            this.label16.TabIndex = 61;
+            this.label16.Text = "Appointment Date";
+            // 
+            // cmbBxSalaryCode
+            // 
+            this.cmbBxSalaryCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxSalaryCode.FormattingEnabled = true;
+            this.cmbBxSalaryCode.Items.AddRange(new object[] {
+            "aa"});
+            this.cmbBxSalaryCode.Location = new System.Drawing.Point(801, 100);
+            this.cmbBxSalaryCode.Name = "cmbBxSalaryCode";
+            this.cmbBxSalaryCode.Size = new System.Drawing.Size(288, 21);
+            this.cmbBxSalaryCode.TabIndex = 60;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(668, 103);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 13);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Salary Code";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(35, 108);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(62, 13);
+            this.label98.TabIndex = 58;
+            this.label98.Text = "Department";
+            // 
+            // cmbBxDepartment
+            // 
+            this.cmbBxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxDepartment.FormattingEnabled = true;
+            this.cmbBxDepartment.Items.AddRange(new object[] {
+            "IM"});
+            this.cmbBxDepartment.Location = new System.Drawing.Point(223, 105);
+            this.cmbBxDepartment.Name = "cmbBxDepartment";
+            this.cmbBxDepartment.Size = new System.Drawing.Size(284, 21);
+            this.cmbBxDepartment.TabIndex = 57;
+            this.cmbBxDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbBxDepartment_SelectedIndexChanged);
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(35, 82);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(41, 13);
+            this.label97.TabIndex = 56;
+            this.label97.Text = "Faculty";
+            // 
+            // cmbBxFaculty
+            // 
+            this.cmbBxFaculty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxFaculty.FormattingEnabled = true;
+            this.cmbBxFaculty.Items.AddRange(new object[] {
+            "Science"});
+            this.cmbBxFaculty.Location = new System.Drawing.Point(223, 78);
+            this.cmbBxFaculty.Name = "cmbBxFaculty";
+            this.cmbBxFaculty.Size = new System.Drawing.Size(284, 21);
+            this.cmbBxFaculty.TabIndex = 55;
+            this.cmbBxFaculty.SelectedIndexChanged += new System.EventHandler(this.cmbBxFaculty_SelectedIndexChanged);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(35, 55);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(63, 13);
+            this.label96.TabIndex = 54;
+            this.label96.Text = "Designation";
+            // 
+            // cmbBxDesignation
+            // 
+            this.cmbBxDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxDesignation.FormattingEnabled = true;
+            this.cmbBxDesignation.Items.AddRange(new object[] {
+            "Professor"});
+            this.cmbBxDesignation.Location = new System.Drawing.Point(223, 50);
+            this.cmbBxDesignation.Name = "cmbBxDesignation";
+            this.cmbBxDesignation.Size = new System.Drawing.Size(284, 21);
+            this.cmbBxDesignation.TabIndex = 53;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Teal;
+            this.panel6.Controls.Add(this.label44);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1232, 30);
+            this.panel6.TabIndex = 52;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label44.Location = new System.Drawing.Point(13, 8);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(108, 16);
+            this.label44.TabIndex = 55;
+            this.label44.Text = "Work Information";
+            // 
+            // dateIncrement
+            // 
+            this.dateIncrement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateIncrement.Location = new System.Drawing.Point(801, 183);
+            this.dateIncrement.Name = "dateIncrement";
+            this.dateIncrement.Size = new System.Drawing.Size(224, 20);
+            this.dateIncrement.TabIndex = 51;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(666, 189);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 13);
+            this.label38.TabIndex = 50;
+            this.label38.Text = "Increment Date";
+            // 
+            // cmbBxSalaryStep
+            // 
+            this.cmbBxSalaryStep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxSalaryStep.FormattingEnabled = true;
+            this.cmbBxSalaryStep.Items.AddRange(new object[] {
+            "dd"});
+            this.cmbBxSalaryStep.Location = new System.Drawing.Point(801, 155);
+            this.cmbBxSalaryStep.Name = "cmbBxSalaryStep";
+            this.cmbBxSalaryStep.Size = new System.Drawing.Size(288, 21);
+            this.cmbBxSalaryStep.TabIndex = 49;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(668, 158);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "Salary Step";
+            // 
+            // cmbBxScale
+            // 
+            this.cmbBxScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxScale.FormattingEnabled = true;
+            this.cmbBxScale.Items.AddRange(new object[] {
+            "ss"});
+            this.cmbBxScale.Location = new System.Drawing.Point(801, 128);
+            this.cmbBxScale.Name = "cmbBxScale";
+            this.cmbBxScale.Size = new System.Drawing.Size(288, 21);
+            this.cmbBxScale.TabIndex = 47;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(668, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Salary Scale";
+            // 
+            // txtUPF
+            // 
+            this.txtUPF.Location = new System.Drawing.Point(223, 132);
+            this.txtUPF.Name = "txtUPF";
+            this.txtUPF.Size = new System.Drawing.Size(284, 20);
+            this.txtUPF.TabIndex = 6;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(35, 135);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(168, 13);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "University Provident Fund Number";
+            // 
+            // lblPrevPdetail2_dark
+            // 
+            this.lblPrevPdetail2_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevPdetail2_dark.Image")));
+            this.lblPrevPdetail2_dark.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevPdetail2_dark.Name = "lblPrevPdetail2_dark";
+            this.lblPrevPdetail2_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevPdetail2_dark.TabIndex = 44;
+            this.lblPrevPdetail2_dark.Click += new System.EventHandler(this.lblPrevPdetail2_dark_Click);
+            this.lblPrevPdetail2_dark.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            // 
+            // lblNextPdetail2_dark
+            // 
+            this.lblNextPdetail2_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblNextPdetail2_dark.Image")));
+            this.lblNextPdetail2_dark.Location = new System.Drawing.Point(1213, 663);
+            this.lblNextPdetail2_dark.Name = "lblNextPdetail2_dark";
+            this.lblNextPdetail2_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblNextPdetail2_dark.TabIndex = 28;
+            this.lblNextPdetail2_dark.MouseEnter += new System.EventHandler(this.label42_MouseEnter);
+            // 
+            // lblPrevPdetail2_light
+            // 
+            this.lblPrevPdetail2_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevPdetail2_light.Image")));
+            this.lblPrevPdetail2_light.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevPdetail2_light.Name = "lblPrevPdetail2_light";
+            this.lblPrevPdetail2_light.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevPdetail2_light.TabIndex = 53;
+            this.toolTip1.SetToolTip(this.lblPrevPdetail2_light, "Previous");
+            this.lblPrevPdetail2_light.Click += new System.EventHandler(this.lblPrevPdetail2_light_Click);
+            this.lblPrevPdetail2_light.MouseLeave += new System.EventHandler(this.label67_MouseLeave);
+            // 
+            // lblNextPdetail2_light
+            // 
+            this.lblNextPdetail2_light.Image = ((System.Drawing.Image)(resources.GetObject("lblNextPdetail2_light.Image")));
+            this.lblNextPdetail2_light.Location = new System.Drawing.Point(1213, 663);
+            this.lblNextPdetail2_light.Name = "lblNextPdetail2_light";
+            this.lblNextPdetail2_light.Size = new System.Drawing.Size(41, 48);
+            this.lblNextPdetail2_light.TabIndex = 52;
+            this.toolTip1.SetToolTip(this.lblNextPdetail2_light, "Next");
+            this.lblNextPdetail2_light.Click += new System.EventHandler(this.lblNextPdetail2_light_Click);
+            this.lblNextPdetail2_light.MouseLeave += new System.EventHandler(this.label66_MouseLeave);
             // 
             // search
             // 
@@ -1917,541 +2403,6 @@
             this.toolTip1.SetToolTip(this.lblNextEduQualif_light, "Next");
             this.lblNextEduQualif_light.Click += new System.EventHandler(this.lblNextEduQualif_light_Click);
             this.lblNextEduQualif_light.MouseLeave += new System.EventHandler(this.lblNextEduQualif_light_MouseLeave);
-            // 
-            // personal_detail2
-            // 
-            this.personal_detail2.Controls.Add(this.panelMatrimonialInformation);
-            this.personal_detail2.Controls.Add(this.label99);
-            this.personal_detail2.Controls.Add(this.progressBar2);
-            this.personal_detail2.Controls.Add(this.panelWorkInformation);
-            this.personal_detail2.Controls.Add(this.lblPrevPdetail2_dark);
-            this.personal_detail2.Controls.Add(this.lblNextPdetail2_dark);
-            this.personal_detail2.Controls.Add(this.lblPrevPdetail2_light);
-            this.personal_detail2.Controls.Add(this.lblNextPdetail2_light);
-            this.personal_detail2.Location = new System.Drawing.Point(90, 33);
-            this.personal_detail2.Name = "personal_detail2";
-            this.personal_detail2.Size = new System.Drawing.Size(1276, 735);
-            this.personal_detail2.TabIndex = 31;
-            this.personal_detail2.Visible = false;
-            // 
-            // panelMatrimonialInformation
-            // 
-            this.panelMatrimonialInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMatrimonialInformation.Controls.Add(this.ptBxMarriageCertificate);
-            this.panelMatrimonialInformation.Controls.Add(this.tblChildren);
-            this.panelMatrimonialInformation.Controls.Add(this.btnRemoveChildren);
-            this.panelMatrimonialInformation.Controls.Add(this.btnAddChildren);
-            this.panelMatrimonialInformation.Controls.Add(this.txtChildBirthCertificate);
-            this.panelMatrimonialInformation.Controls.Add(this.label61);
-            this.panelMatrimonialInformation.Controls.Add(this.dateChildDob);
-            this.panelMatrimonialInformation.Controls.Add(this.label62);
-            this.panelMatrimonialInformation.Controls.Add(this.txtChildName);
-            this.panelMatrimonialInformation.Controls.Add(this.label63);
-            this.panelMatrimonialInformation.Controls.Add(this.label64);
-            this.panelMatrimonialInformation.Controls.Add(this.panel8);
-            this.panelMatrimonialInformation.Controls.Add(this.txtMarriageCertificate);
-            this.panelMatrimonialInformation.Controls.Add(this.label41);
-            this.panelMatrimonialInformation.Controls.Add(this.label40);
-            this.panelMatrimonialInformation.Controls.Add(this.btnAddMarriageCertificate);
-            this.panelMatrimonialInformation.Location = new System.Drawing.Point(21, 275);
-            this.panelMatrimonialInformation.Name = "panelMatrimonialInformation";
-            this.panelMatrimonialInformation.Size = new System.Drawing.Size(1234, 363);
-            this.panelMatrimonialInformation.TabIndex = 59;
-            // 
-            // ptBxMarriageCertificate
-            // 
-            this.ptBxMarriageCertificate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptBxMarriageCertificate.Location = new System.Drawing.Point(1054, 55);
-            this.ptBxMarriageCertificate.Name = "ptBxMarriageCertificate";
-            this.ptBxMarriageCertificate.Size = new System.Drawing.Size(126, 161);
-            this.ptBxMarriageCertificate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptBxMarriageCertificate.TabIndex = 56;
-            this.ptBxMarriageCertificate.TabStop = false;
-            // 
-            // tblChildren
-            // 
-            this.tblChildren.AllowUserToAddRows = false;
-            this.tblChildren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblChildren.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
-            this.tblChildren.Location = new System.Drawing.Point(41, 230);
-            this.tblChildren.Name = "tblChildren";
-            this.tblChildren.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblChildren.Size = new System.Drawing.Size(705, 110);
-            this.tblChildren.TabIndex = 55;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn10.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Date of Birth";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 130;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "Bith Cirtificate Number";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 200;
-            // 
-            // btnRemoveChildren
-            // 
-            this.btnRemoveChildren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemoveChildren.Location = new System.Drawing.Point(671, 155);
-            this.btnRemoveChildren.Name = "btnRemoveChildren";
-            this.btnRemoveChildren.Size = new System.Drawing.Size(75, 23);
-            this.btnRemoveChildren.TabIndex = 54;
-            this.btnRemoveChildren.Text = "Remove";
-            this.btnRemoveChildren.UseVisualStyleBackColor = true;
-            this.btnRemoveChildren.Click += new System.EventHandler(this.btnRemoveChildren_Click);
-            // 
-            // btnAddChildren
-            // 
-            this.btnAddChildren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddChildren.Location = new System.Drawing.Point(671, 126);
-            this.btnAddChildren.Name = "btnAddChildren";
-            this.btnAddChildren.Size = new System.Drawing.Size(75, 23);
-            this.btnAddChildren.TabIndex = 53;
-            this.btnAddChildren.Text = "Add";
-            this.btnAddChildren.UseVisualStyleBackColor = true;
-            this.btnAddChildren.Click += new System.EventHandler(this.btnAddChildren_Click);
-            // 
-            // txtChildBirthCertificate
-            // 
-            this.txtChildBirthCertificate.Location = new System.Drawing.Point(223, 180);
-            this.txtChildBirthCertificate.Name = "txtChildBirthCertificate";
-            this.txtChildBirthCertificate.Size = new System.Drawing.Size(289, 20);
-            this.txtChildBirthCertificate.TabIndex = 52;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(38, 183);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(117, 13);
-            this.label61.TabIndex = 51;
-            this.label61.Text = "Birth Cietificate Number";
-            // 
-            // dateChildDob
-            // 
-            this.dateChildDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateChildDob.Location = new System.Drawing.Point(223, 149);
-            this.dateChildDob.Name = "dateChildDob";
-            this.dateChildDob.Size = new System.Drawing.Size(180, 20);
-            this.dateChildDob.TabIndex = 50;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(38, 147);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(66, 13);
-            this.label62.TabIndex = 49;
-            this.label62.Text = "Date of Birth";
-            // 
-            // txtChildName
-            // 
-            this.txtChildName.Location = new System.Drawing.Point(223, 123);
-            this.txtChildName.Name = "txtChildName";
-            this.txtChildName.Size = new System.Drawing.Size(289, 20);
-            this.txtChildName.TabIndex = 48;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(38, 121);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(89, 13);
-            this.label63.TabIndex = 47;
-            this.label63.Text = "Name with Initials";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(38, 98);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(126, 15);
-            this.label64.TabIndex = 46;
-            this.label64.Text = "Details of Children";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Teal;
-            this.panel8.Controls.Add(this.label100);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1232, 30);
-            this.panel8.TabIndex = 34;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label100.Location = new System.Drawing.Point(14, 7);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(145, 16);
-            this.label100.TabIndex = 56;
-            this.label100.Text = "Matrimonial Information";
-            // 
-            // txtMarriageCertificate
-            // 
-            this.txtMarriageCertificate.Location = new System.Drawing.Point(227, 52);
-            this.txtMarriageCertificate.Name = "txtMarriageCertificate";
-            this.txtMarriageCertificate.Size = new System.Drawing.Size(285, 20);
-            this.txtMarriageCertificate.TabIndex = 30;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(36, 55);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(178, 13);
-            this.label41.TabIndex = 29;
-            this.label41.Text = "Marriage Certificate Number Number";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(795, 55);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(196, 13);
-            this.label40.TabIndex = 31;
-            this.label40.Text = "Certified Copy of the Marriage Certificate";
-            // 
-            // btnAddMarriageCertificate
-            // 
-            this.btnAddMarriageCertificate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMarriageCertificate.Location = new System.Drawing.Point(1054, 230);
-            this.btnAddMarriageCertificate.Name = "btnAddMarriageCertificate";
-            this.btnAddMarriageCertificate.Size = new System.Drawing.Size(126, 23);
-            this.btnAddMarriageCertificate.TabIndex = 32;
-            this.btnAddMarriageCertificate.Text = "Add Image";
-            this.btnAddMarriageCertificate.UseVisualStyleBackColor = true;
-            this.btnAddMarriageCertificate.Click += new System.EventHandler(this.btnAddMarriageCertificate_Click);
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.Location = new System.Drawing.Point(94, 661);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(36, 16);
-            this.label99.TabIndex = 58;
-            this.label99.Text = "Step";
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(97, 679);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(1076, 20);
-            this.progressBar2.TabIndex = 57;
-            this.progressBar2.Value = 50;
-            // 
-            // panelWorkInformation
-            // 
-            this.panelWorkInformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelWorkInformation.Controls.Add(this.txtServiceNo);
-            this.panelWorkInformation.Controls.Add(this.label68);
-            this.panelWorkInformation.Controls.Add(this.dateRetirement);
-            this.panelWorkInformation.Controls.Add(this.label29);
-            this.panelWorkInformation.Controls.Add(this.dateAppointment);
-            this.panelWorkInformation.Controls.Add(this.label16);
-            this.panelWorkInformation.Controls.Add(this.cmbBxSalaryCode);
-            this.panelWorkInformation.Controls.Add(this.label14);
-            this.panelWorkInformation.Controls.Add(this.label98);
-            this.panelWorkInformation.Controls.Add(this.cmbBxDepartment);
-            this.panelWorkInformation.Controls.Add(this.label97);
-            this.panelWorkInformation.Controls.Add(this.cmbBxFaculty);
-            this.panelWorkInformation.Controls.Add(this.label96);
-            this.panelWorkInformation.Controls.Add(this.cmbBxDesignation);
-            this.panelWorkInformation.Controls.Add(this.panel6);
-            this.panelWorkInformation.Controls.Add(this.dateIncrement);
-            this.panelWorkInformation.Controls.Add(this.label38);
-            this.panelWorkInformation.Controls.Add(this.cmbBxSalaryStep);
-            this.panelWorkInformation.Controls.Add(this.label6);
-            this.panelWorkInformation.Controls.Add(this.cmbBxScale);
-            this.panelWorkInformation.Controls.Add(this.label5);
-            this.panelWorkInformation.Controls.Add(this.txtUPF);
-            this.panelWorkInformation.Controls.Add(this.label43);
-            this.panelWorkInformation.Location = new System.Drawing.Point(21, 22);
-            this.panelWorkInformation.Name = "panelWorkInformation";
-            this.panelWorkInformation.Size = new System.Drawing.Size(1234, 231);
-            this.panelWorkInformation.TabIndex = 54;
-            // 
-            // txtServiceNo
-            // 
-            this.txtServiceNo.Location = new System.Drawing.Point(798, 50);
-            this.txtServiceNo.Name = "txtServiceNo";
-            this.txtServiceNo.Size = new System.Drawing.Size(288, 20);
-            this.txtServiceNo.TabIndex = 68;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(665, 53);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(83, 13);
-            this.label68.TabIndex = 67;
-            this.label68.Text = "Service Number";
-            // 
-            // dateRetirement
-            // 
-            this.dateRetirement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateRetirement.Location = new System.Drawing.Point(223, 186);
-            this.dateRetirement.Name = "dateRetirement";
-            this.dateRetirement.Size = new System.Drawing.Size(224, 20);
-            this.dateRetirement.TabIndex = 64;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(33, 192);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(84, 13);
-            this.label29.TabIndex = 63;
-            this.label29.Text = "Retirement Date";
-            // 
-            // dateAppointment
-            // 
-            this.dateAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateAppointment.Location = new System.Drawing.Point(223, 159);
-            this.dateAppointment.Name = "dateAppointment";
-            this.dateAppointment.Size = new System.Drawing.Size(224, 20);
-            this.dateAppointment.TabIndex = 62;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(33, 165);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 13);
-            this.label16.TabIndex = 61;
-            this.label16.Text = "Appointment Date";
-            // 
-            // cmbBxSalaryCode
-            // 
-            this.cmbBxSalaryCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxSalaryCode.FormattingEnabled = true;
-            this.cmbBxSalaryCode.Items.AddRange(new object[] {
-            "aa"});
-            this.cmbBxSalaryCode.Location = new System.Drawing.Point(801, 100);
-            this.cmbBxSalaryCode.Name = "cmbBxSalaryCode";
-            this.cmbBxSalaryCode.Size = new System.Drawing.Size(288, 21);
-            this.cmbBxSalaryCode.TabIndex = 60;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(668, 103);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 13);
-            this.label14.TabIndex = 59;
-            this.label14.Text = "Salary Code";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(35, 108);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(62, 13);
-            this.label98.TabIndex = 58;
-            this.label98.Text = "Department";
-            // 
-            // cmbBxDepartment
-            // 
-            this.cmbBxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxDepartment.FormattingEnabled = true;
-            this.cmbBxDepartment.Items.AddRange(new object[] {
-            "IM"});
-            this.cmbBxDepartment.Location = new System.Drawing.Point(223, 105);
-            this.cmbBxDepartment.Name = "cmbBxDepartment";
-            this.cmbBxDepartment.Size = new System.Drawing.Size(284, 21);
-            this.cmbBxDepartment.TabIndex = 57;
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(35, 82);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(41, 13);
-            this.label97.TabIndex = 56;
-            this.label97.Text = "Faculty";
-            // 
-            // cmbBxFaculty
-            // 
-            this.cmbBxFaculty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxFaculty.FormattingEnabled = true;
-            this.cmbBxFaculty.Items.AddRange(new object[] {
-            "Science"});
-            this.cmbBxFaculty.Location = new System.Drawing.Point(223, 78);
-            this.cmbBxFaculty.Name = "cmbBxFaculty";
-            this.cmbBxFaculty.Size = new System.Drawing.Size(284, 21);
-            this.cmbBxFaculty.TabIndex = 55;
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(35, 55);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(63, 13);
-            this.label96.TabIndex = 54;
-            this.label96.Text = "Designation";
-            // 
-            // cmbBxDesignation
-            // 
-            this.cmbBxDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxDesignation.FormattingEnabled = true;
-            this.cmbBxDesignation.Items.AddRange(new object[] {
-            "Professor"});
-            this.cmbBxDesignation.Location = new System.Drawing.Point(223, 50);
-            this.cmbBxDesignation.Name = "cmbBxDesignation";
-            this.cmbBxDesignation.Size = new System.Drawing.Size(284, 21);
-            this.cmbBxDesignation.TabIndex = 53;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Teal;
-            this.panel6.Controls.Add(this.label44);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1232, 30);
-            this.panel6.TabIndex = 52;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label44.Location = new System.Drawing.Point(13, 8);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(108, 16);
-            this.label44.TabIndex = 55;
-            this.label44.Text = "Work Information";
-            // 
-            // dateIncrement
-            // 
-            this.dateIncrement.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateIncrement.Location = new System.Drawing.Point(801, 183);
-            this.dateIncrement.Name = "dateIncrement";
-            this.dateIncrement.Size = new System.Drawing.Size(224, 20);
-            this.dateIncrement.TabIndex = 51;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(666, 189);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 13);
-            this.label38.TabIndex = 50;
-            this.label38.Text = "Increment Date";
-            // 
-            // cmbBxSalaryStep
-            // 
-            this.cmbBxSalaryStep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxSalaryStep.FormattingEnabled = true;
-            this.cmbBxSalaryStep.Items.AddRange(new object[] {
-            "dd"});
-            this.cmbBxSalaryStep.Location = new System.Drawing.Point(801, 155);
-            this.cmbBxSalaryStep.Name = "cmbBxSalaryStep";
-            this.cmbBxSalaryStep.Size = new System.Drawing.Size(288, 21);
-            this.cmbBxSalaryStep.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(668, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
-            this.label6.TabIndex = 48;
-            this.label6.Text = "Salary Step";
-            // 
-            // cmbBxScale
-            // 
-            this.cmbBxScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBxScale.FormattingEnabled = true;
-            this.cmbBxScale.Items.AddRange(new object[] {
-            "ss"});
-            this.cmbBxScale.Location = new System.Drawing.Point(801, 128);
-            this.cmbBxScale.Name = "cmbBxScale";
-            this.cmbBxScale.Size = new System.Drawing.Size(288, 21);
-            this.cmbBxScale.TabIndex = 47;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(668, 131);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "Salary Scale";
-            // 
-            // txtUPF
-            // 
-            this.txtUPF.Location = new System.Drawing.Point(223, 132);
-            this.txtUPF.Name = "txtUPF";
-            this.txtUPF.Size = new System.Drawing.Size(284, 20);
-            this.txtUPF.TabIndex = 6;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(35, 135);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(168, 13);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "University Provident Fund Number";
-            // 
-            // lblPrevPdetail2_dark
-            // 
-            this.lblPrevPdetail2_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevPdetail2_dark.Image")));
-            this.lblPrevPdetail2_dark.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevPdetail2_dark.Name = "lblPrevPdetail2_dark";
-            this.lblPrevPdetail2_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevPdetail2_dark.TabIndex = 44;
-            this.lblPrevPdetail2_dark.Click += new System.EventHandler(this.lblPrevPdetail2_dark_Click);
-            this.lblPrevPdetail2_dark.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            // 
-            // lblNextPdetail2_dark
-            // 
-            this.lblNextPdetail2_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblNextPdetail2_dark.Image")));
-            this.lblNextPdetail2_dark.Location = new System.Drawing.Point(1213, 663);
-            this.lblNextPdetail2_dark.Name = "lblNextPdetail2_dark";
-            this.lblNextPdetail2_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblNextPdetail2_dark.TabIndex = 28;
-            this.lblNextPdetail2_dark.MouseEnter += new System.EventHandler(this.label42_MouseEnter);
-            // 
-            // lblPrevPdetail2_light
-            // 
-            this.lblPrevPdetail2_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevPdetail2_light.Image")));
-            this.lblPrevPdetail2_light.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevPdetail2_light.Name = "lblPrevPdetail2_light";
-            this.lblPrevPdetail2_light.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevPdetail2_light.TabIndex = 53;
-            this.toolTip1.SetToolTip(this.lblPrevPdetail2_light, "Previous");
-            this.lblPrevPdetail2_light.Click += new System.EventHandler(this.lblPrevPdetail2_light_Click);
-            this.lblPrevPdetail2_light.MouseLeave += new System.EventHandler(this.label67_MouseLeave);
-            // 
-            // lblNextPdetail2_light
-            // 
-            this.lblNextPdetail2_light.Image = ((System.Drawing.Image)(resources.GetObject("lblNextPdetail2_light.Image")));
-            this.lblNextPdetail2_light.Location = new System.Drawing.Point(1213, 663);
-            this.lblNextPdetail2_light.Name = "lblNextPdetail2_light";
-            this.lblNextPdetail2_light.Size = new System.Drawing.Size(41, 48);
-            this.lblNextPdetail2_light.TabIndex = 52;
-            this.toolTip1.SetToolTip(this.lblNextPdetail2_light, "Next");
-            this.lblNextPdetail2_light.Click += new System.EventHandler(this.lblNextPdetail2_light_Click);
-            this.lblNextPdetail2_light.MouseLeave += new System.EventHandler(this.label66_MouseLeave);
             // 
             // settings
             // 
@@ -3753,6 +3704,16 @@
             // 
             this.openFileDialogMarriageCertificate.FileName = "openFileDialog1";
             // 
+            // chkBxSame
+            // 
+            this.chkBxSame.AutoSize = true;
+            this.chkBxSame.Location = new System.Drawing.Point(275, 60);
+            this.chkBxSame.Name = "chkBxSame";
+            this.chkBxSame.Size = new System.Drawing.Size(161, 17);
+            this.chkBxSame.TabIndex = 54;
+            this.chkBxSame.Text = "Same as the Mailing address";
+            this.chkBxSame.UseVisualStyleBackColor = true;
+            // 
             // home
             // 
             this.AllowDrop = true;
@@ -3804,6 +3765,18 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBxPersonalPic)).EndInit();
             this.panel_container.ResumeLayout(false);
+            this.personal_detail2.ResumeLayout(false);
+            this.personal_detail2.PerformLayout();
+            this.panelMatrimonialInformation.ResumeLayout(false);
+            this.panelMatrimonialInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptBxMarriageCertificate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblChildren)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panelWorkInformation.ResumeLayout(false);
+            this.panelWorkInformation.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.search.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -3822,18 +3795,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).EndInit();
-            this.personal_detail2.ResumeLayout(false);
-            this.personal_detail2.PerformLayout();
-            this.panelMatrimonialInformation.ResumeLayout(false);
-            this.panelMatrimonialInformation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptBxMarriageCertificate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblChildren)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panelWorkInformation.ResumeLayout(false);
-            this.panelWorkInformation.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.settings.ResumeLayout(false);
             this.panelEditorPanelContainer.ResumeLayout(false);
             this.panelEditorPanelContainer.PerformLayout();
@@ -4013,9 +3974,7 @@
         private System.Windows.Forms.Panel panelHomeAddress;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtAddress2Home;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.TextBox txtCityHome;
         private System.Windows.Forms.TextBox txtHomeZipCode;
@@ -4023,15 +3982,12 @@
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Panel panelMailingAddress;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox txtAddress2Mail;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.TextBox txtCityMail;
         private System.Windows.Forms.TextBox txtAddress1Mail;
-        private System.Windows.Forms.CheckBox chkBxSame;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label4;
@@ -4229,6 +4185,7 @@
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.OpenFileDialog openFileDialogPersonalPic;
         private System.Windows.Forms.OpenFileDialog openFileDialogMarriageCertificate;
+        private System.Windows.Forms.CheckBox chkBxSame;
     }
 }
 

@@ -22,24 +22,59 @@ namespace Staff_Registration_System.AddAcademicStaff
             {
 
 
-
-
-
-                byte[] personalImg = null;
-                FileStream personalFs = new FileStream(personalPicLoc, FileMode.Open, FileAccess.Read);
-                BinaryReader personalBr = new BinaryReader(personalFs);
-                personalImg = personalBr.ReadBytes((int)personalFs.Length);
-
+                
                 byte[] marriageImg = null;
-                FileStream marriageFs = new FileStream(marriageCertificateLoc, FileMode.Open, FileAccess.Read);
-                BinaryReader marriageBr = new BinaryReader(marriageFs);
-                marriageImg = marriageBr.ReadBytes((int)marriageFs.Length);
+                byte[] personalImg = null;
+
+                if (personalPicLoc != null)
+                {
+                    
+                    FileStream personalFs = new FileStream(personalPicLoc, FileMode.Open, FileAccess.Read);
+                    BinaryReader personalBr = new BinaryReader(personalFs);
+                    personalImg = personalBr.ReadBytes((int)personalFs.Length);
+                }
+                
+                if (marriageCertificateLoc != null)
+                {
+                    
+                    FileStream marriageFs = new FileStream(marriageCertificateLoc, FileMode.Open, FileAccess.Read);
+                    BinaryReader marriageBr = new BinaryReader(marriageFs);
+                    marriageImg = marriageBr.ReadBytes((int)marriageFs.Length);
+                }
 
                 conn.connOpen();
                 conn.connConnection();
                 SqlCommand cmd = conn.connConnection().CreateCommand();
-                cmd = new SqlCommand("insert into AcademicStaff values (@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19,@20,@21,@22,@23,@24);", conn.connConnection());
+                if (marriageImg == null && personalImg != null)
+                {
+                    cmd = new SqlCommand("insert into AcademicStaff ([Title],[Full Name],[Name with Initials],[DOB] ,[Gender],[Private Contact No] ,[Office Contact No] ,[Private Email],[Office Email],[NIC No],[Passport No],[UPF No],[Appointment Date] ,[Retirement Date] ,[Marriage Certificate No] ,[Person Pic],[Type] ,[ServiceNo] ,[Department Name] ,[Designation],[Salary Step],[Increment Date]) values (@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@18,@19,@20,@21,@22,@23,@24);", conn.connConnection());
+                    cmd.Parameters.AddWithValue("@18", personalImg);
+                        
 
+                }
+                else if (personalImg == null && marriageImg != null)
+                {
+                    cmd = new SqlCommand("insert into AcademicStaff ([Title],[Full Name],[Name with Initials],[DOB] ,[Gender],[Private Contact No] ,[Office Contact No] ,[Private Email],[Office Email],[NIC No],[Passport No],[UPF No],[Appointment Date] ,[Retirement Date] ,[Marriage Certificate No] ,[Marriage Certificate Pic],[Type] ,[ServiceNo] ,[Department Name] ,[Designation],[Salary Step],[Increment Date]) values (@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@19,@20,@21,@22,@23,@24);", conn.connConnection());
+                    cmd.Parameters.AddWithValue("@17", marriageImg);
+
+                    
+                }
+                else if (marriageImg == null && personalImg == null)
+                {
+                    cmd = new SqlCommand("insert into AcademicStaff ([Title],[Full Name],[Name with Initials],[DOB],[Gender],[Private Contact No],[Office Contact No],[Private Email],[Office Email],[NIC No] ,[Passport No] ,[UPF No],[Appointment Date],[Retirement Date] ,[Marriage Certificate No] ,[Type],[ServiceNo] ,[Department Name],[Designation],[Salary Step],[Increment Date]) values (@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@19,@20,@21,@22,@23,@24);", conn.connConnection());
+
+                    
+                    
+                }
+                else
+                {
+                    cmd = new SqlCommand("insert into AcademicStaff values (@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19,@20,@21,@22,@23,@24);", conn.connConnection());
+                    cmd.Parameters.AddWithValue("@17", marriageImg);
+                    cmd.Parameters.AddWithValue("@18", personalImg);
+                   
+
+                    
+                }
 
                 cmd.Parameters.AddWithValue("@2", title);
                 cmd.Parameters.AddWithValue("@3", txtFullName);
@@ -56,8 +91,8 @@ namespace Staff_Registration_System.AddAcademicStaff
                 cmd.Parameters.AddWithValue("@14", dateAppointment);
                 cmd.Parameters.AddWithValue("@15", dateRetirement);
                 cmd.Parameters.AddWithValue("@16", txtMarriageCertificate);
-                cmd.Parameters.AddWithValue("@17", marriageImg);
-                cmd.Parameters.AddWithValue("@18", personalImg);
+
+
                 cmd.Parameters.AddWithValue("@19", "Permanent");
                 cmd.Parameters.AddWithValue("@20", txtServiceNo);
                 cmd.Parameters.AddWithValue("@21", cmbBxDepartment);
@@ -65,13 +100,10 @@ namespace Staff_Registration_System.AddAcademicStaff
                 cmd.Parameters.AddWithValue("@23", cmbBxSalaryStep);
                 cmd.Parameters.AddWithValue("@24", dateIncrement);
 
-
-
-
                 cmd.ExecuteNonQuery();
 
 
-                cmd = new SqlCommand("SELECT PDID FROM AcademicStaff where [NIC No] = @1; ", conn.connConnection());
+                cmd = new SqlCommand("SELECT ASID FROM AcademicStaff where [NIC No] = @1; ", conn.connConnection());
                 cmd.Parameters.AddWithValue("@1", txtNIC);
 
                 SqlDataReader read = cmd.ExecuteReader();
@@ -217,7 +249,26 @@ namespace Staff_Registration_System.AddAcademicStaff
             }
         }
 
-        public void addAddress() { }
+        public void addAddress(String txtAddress1Mail,  String txtCityMail, String txtMailZipCode, String txtAddress1Home, String txtCityHome, String txtHomeZipCode)
+        {
+            conn.connOpen();
+            conn.connConnection();
+            SqlCommand cmd = conn.connConnection().CreateCommand();
+            cmd = new SqlCommand("insert into Address values (@1,@2,@3,@4,@5,@6,@7);", conn.connConnection());
+
+
+            cmd.Parameters.AddWithValue("@1", primaryKey);
+            cmd.Parameters.AddWithValue("@2", txtAddress1Mail );
+            cmd.Parameters.AddWithValue("@3", txtCityMail);
+            cmd.Parameters.AddWithValue("@4", txtMailZipCode);
+            cmd.Parameters.AddWithValue("@5", txtAddress1Home );
+            cmd.Parameters.AddWithValue("@6", txtCityHome);
+            cmd.Parameters.AddWithValue("@7", txtHomeZipCode);
+
+            cmd.ExecuteNonQuery();
+
+            cmd.Dispose();
+        }
 
 
         public void facultyComboBox(ComboBox cmbBxFaculty)
@@ -381,6 +432,140 @@ namespace Staff_Registration_System.AddAcademicStaff
                     cmbBxSalaryStep.Items.Add(reader["Salary Step"]);
                 }
                 reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void selectFaculty(ComboBox cmbBxFaculty, String department)
+        {
+            try
+            {
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+                
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT [Faculty Name] FROM [Department] where [Department Name] = @1", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", department);
+
+                conn.connOpen();
+                conn.connConnection();
+
+                SqlDataReader reader;
+                string a = null;
+                
+
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    a = reader.GetValue(0).ToString();      
+                    cmbBxFaculty.SelectedItem = a;  
+                }
+
+                reader.Close();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void selectDepartment(ComboBox cmbBxDepartment, String faculty)
+        {
+            try
+            {
+                cmbBxDepartment.Items.Clear();
+                
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT [Department Name] FROM [Department] where [Faculty Name] = @1", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", faculty);
+
+                conn.connOpen();
+                conn.connConnection();
+
+                
+                SqlDataReader reader1;
+
+
+                reader1 = cmd.ExecuteReader();
+                while (reader1.Read())
+                {
+                   
+                    cmbBxDepartment.Items.Add(reader1["Department Name"]);
+                }
+                reader1.Close();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void selectSalaryCodeScale(ComboBox cmbBxDepartment) { }
+
+        public void selectSalaryStep(ComboBox cmbBxSalaryStep, String scale)
+        {
+            try
+            {
+                cmbBxSalaryStep.Items.Clear();
+
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT [Salary Step] FROM [SalaryStep] where [Salary Scale] = @1", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", scale);
+
+                conn.connOpen();
+                conn.connConnection();
+
+
+                SqlDataReader reader1;
+
+
+                reader1 = cmd.ExecuteReader();
+                while (reader1.Read())
+                {
+
+                    cmbBxSalaryStep.Items.Add(reader1["Salary Step"]);
+                }
+                reader1.Close();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void selectSalaryScale(ComboBox cmbBxSalaryScale, String code)
+        {
+            try
+            {
+                cmbBxSalaryScale.Items.Clear();
+
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT [Salary Scale] FROM [SalaryScale] where [Salary Code] = @1", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", code);
+
+                conn.connOpen();
+                conn.connConnection();
+
+                
+                SqlDataReader reader1;
+
+
+                reader1 = cmd.ExecuteReader();
+                while (reader1.Read())
+                {
+
+                    cmbBxSalaryScale.Items.Add(reader1["Salary Scale"]);
+                }
+                reader1.Close();
+                cmd.Dispose();
             }
             catch (Exception ex)
             {

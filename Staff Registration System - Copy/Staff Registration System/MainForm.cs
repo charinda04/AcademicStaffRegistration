@@ -33,14 +33,15 @@ namespace Staff_Registration_System
         }
 
         String ConnectionString = @"Data Source=DESKTOPCHARI\SQLEXPRESS;Initial Catalog=AcadamicStaff;Integrated Security=True";
-        String personalPicLoc;
-        String marriageCertificateLoc;
+        String personalPicLoc = null;
+        String marriageCertificateLoc = null;
         Boolean PersonalPic = false;
         Boolean certificatePic = false;
 
 
         AddStaff add = new AddStaff();
         SearchStaff staff = new SearchStaff();
+        UpdateStaff upstaff = new UpdateStaff();
 
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -511,7 +512,7 @@ namespace Staff_Registration_System
                      txtEmailOffice.Text, txtNIC.Text, txtPassport.Text, cmbBxDesignation.Text, cmbBxFaculty.Text, cmbBxDepartment.Text, txtUPF.Text, dateAppointment.Text,
                      dateRetirement.Text, txtMarriageCertificate.Text,
                      txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
-                add.addAddress();
+                add.addAddress(txtAddress1Mail.Text,txtCityMail.Text,txtMailZipCode.Text,txtAddress1Home.Text,txtCityHome.Text,txtHomeZipCode.Text);
                 add.addChildrenDetail(tblChildren);
                 add.addQulifications(tblEducation);
                 add.addServiceRecords(tblService);
@@ -522,9 +523,52 @@ namespace Staff_Registration_System
 
 
                 MessageBox.Show("record saved");
+                tblChildren.Rows.Clear();
+                tblEducation.Rows.Clear();
+                tblService.Rows.Clear();
+                tblOtherPositions.Rows.Clear();
+
+                title = null;
+                rdoBtnMiss.Checked = false;
+                rdoBtnMr.Checked = false;
+                rdoBtnMrs.Checked = false;
+
+                txtFullName.Text = "";
+                txtInitials.Text = "";
+                dateDob.Value = DateTime.Now;
+
+                gender = null;
+                rdoBtnMale.Checked = false;
+                rdoBtnFemale.Checked = false;
+
+                txtTelePrivate.Text = "";
+                txtTeleOffice.Text = "";
+                txtEmailPrivate.Text = "";
+                txtEmailOffice.Text = "";
+                txtNIC.Text = "";
+                txtPassport.Text = "";
+                cmbBxDesignation.Text = "";
+                cmbBxFaculty.Text = "";
+                cmbBxDepartment.Text = "";
+                txtUPF.Text = "";
+                dateAppointment.Value = DateTime.Now;
+
+                dateRetirement.Value = DateTime.Now; 
+                txtMarriageCertificate.Text = "";
+
+                txtServiceNo.Text = "";
+                personalPicLoc = null;
+                ptBxPersonalPic.Image = null;
+                ptBxMarriageCertificate.Image = null;
+                marriageCertificateLoc = null; 
+                cmbBxSalaryStep.Text = "";
+                cmbBxSalaryCode.Text = "";
+                cmbBxScale.Text = "";
+                dateIncrement.Value = DateTime.Now;
 
 
-
+                personal_detail1.Visible = true;
+                personal_detail1.BringToFront();
 
             }
             catch (Exception ex)
@@ -684,16 +728,24 @@ namespace Staff_Registration_System
             if (chkBxSame.Checked)
             {
                 txtAddress1Home.Enabled = false;
-                txtAddress2Home.Enabled = false;
+                
                 txtCityHome.Enabled = false;
                 txtHomeZipCode.Enabled = false;
+                txtAddress1Home.Text = txtAddress1Mail.Text;
+                
+                txtCityHome.Text = txtCityMail.Text;
+                txtHomeZipCode.Text = txtMailZipCode.Text;
             }
             else if (!chkBxSame.Checked)
             {
                 txtAddress1Home.Enabled = true;
-                txtAddress2Home.Enabled = true;
+                
                 txtCityHome.Enabled = true;
                 txtHomeZipCode.Enabled = true;
+                txtAddress1Home.Text = "";
+                
+                txtCityHome.Text = "";
+                txtHomeZipCode.Text = "";
             }
         }
 
@@ -730,9 +782,10 @@ namespace Staff_Registration_System
                 String ID = tblSearch[0, tblSearch.CurrentRow.Index].Value.ToString();
                 personal_detail1.Visible = true;
                 personal_detail1.BringToFront();
-                UpdateStaff upstaff = new UpdateStaff();
+                
                 upstaff.fillForm(ID,ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
-                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement);
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren,tblEducation,tblOtherPositions,tblService);
                 
             }
         }
@@ -756,6 +809,16 @@ namespace Staff_Registration_System
         private void txtPassportNo_TextChanged(object sender, EventArgs e)
         {
             staff.searchByPassport(txtPassportNo.Text, tblSearch);
+        }
+
+        private void cmbBxDepartment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            add.selectFaculty(cmbBxFaculty,cmbBxDepartment.Text);
+        }
+
+        private void cmbBxFaculty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            add.selectDepartment(cmbBxDepartment,cmbBxFaculty.Text);
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)
