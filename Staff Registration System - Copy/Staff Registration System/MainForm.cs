@@ -12,14 +12,16 @@ using System.IO;
 using Staff_Registration_System.AddAcademicStaff;
 using Staff_Registration_System.SearchAcademicStaff;
 using Staff_Registration_System.Reports;
+using Staff_Registration_System.Alerts;
+using Staff_Registration_System.Options;
 
 namespace Staff_Registration_System
 {
     public partial class home : Form
     {
 
-        SqlConnection conn;
-        SqlCommand comm;
+        //SqlConnection conn;
+        //SqlCommand comm;
         //conn.ConnectionString = @"User=DESKTOPCHARI\Charinda;Password=;Server=DESKTOPCHARI\SQLEXPRESS;Database=AcadamicStaff; Integrated Security=True";
 
 
@@ -28,9 +30,9 @@ namespace Staff_Registration_System
             InitializeComponent();
             //Connection c = new Connection();
             //conn = c.connConnection();
-            conn = new SqlConnection(ConnectionString);
-            comm = new SqlCommand();
-            comm.Connection = conn;
+            //conn = new SqlConnection(ConnectionString);
+            //comm = new SqlCommand();
+            //comm.Connection = conn;
         }
 
         String ConnectionString = @"Data Source=DESKTOPCHARI\SQLEXPRESS;Initial Catalog=AcadamicStaff;Integrated Security=True";
@@ -38,12 +40,18 @@ namespace Staff_Registration_System
         String marriageCertificateLoc = null;
         Boolean PersonalPic = false;
         Boolean certificatePic = false;
+        Boolean updateStatus = false;
+        String ASID = null;
+        Boolean facultyFirst = true;
+        Boolean tblOldScalePopulated = false;
 
 
         AddStaff add = new AddStaff();
         SearchStaff staff = new SearchStaff();
         UpdateStaff upstaff = new UpdateStaff();
         CustomReport report = new CustomReport();
+        AlertsForm alert = new AlertsForm();
+        OptionsPanel opt = new OptionsPanel();
 
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -75,6 +83,8 @@ namespace Staff_Registration_System
             add.salaryScaleComboBox(cmbBxScale);
             add.salaryStepComboBox(cmbBxSalaryStep);
             add.designationComboBox(cmbBxDesignation);
+
+            alert.tblAlerts(tblAlerts);
         }
 
        int mouseX = 0, mouseY = 0;
@@ -217,6 +227,7 @@ namespace Staff_Registration_System
             picbarReports.Visible = false;
             picbarAlerts.Visible = true;
             picbarOptions.Visible = false;
+            updateStatus = false;
         }
 
         private void label16_MouseDown(object sender, MouseEventArgs e)
@@ -418,6 +429,7 @@ namespace Staff_Registration_System
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            staff.fillSearchTable(tblSearch);
             search.Visible = true;
             search.BringToFront();
 
@@ -427,6 +439,7 @@ namespace Staff_Registration_System
             picbarReports.Visible = false;
             picbarAlerts.Visible = false;
             picbarOptions.Visible = false;
+            updateStatus = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -440,6 +453,7 @@ namespace Staff_Registration_System
             picbarReports.Visible = false;
             picbarAlerts.Visible = false;
             picbarOptions.Visible = false;
+            updateStatus = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -453,6 +467,7 @@ namespace Staff_Registration_System
             picbarReports.Visible = true;
             picbarAlerts.Visible = false;
             picbarOptions.Visible = false;
+            updateStatus = false;
         }
 
         private void pictureBox8_MouseEnter(object sender, EventArgs e)
@@ -478,6 +493,25 @@ namespace Staff_Registration_System
             picbarReports.Visible = false;
             picbarAlerts.Visible = false;
             picbarOptions.Visible = true;
+
+            updateStatus = false;
+
+            
+            panelChangeDesignation.Visible = false;
+            panelChangeFaculty.Visible = false;
+            panelChangeSalaryCode.Visible = false;
+            cmbBxEditField.SelectedIndex = -1;
+
+            opt.loadSalaryCode(tblOldCode);
+            opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(),ref tblOldScalePopulated);
+            if (tblOldScalePopulated == false)
+                opt.loadSalaryStep(tblOldStep, "");
+            else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+
+            opt.loadFaculty(tblFaculty);
+            opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+            opt.loadDesignation(tblDesignation);
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -487,9 +521,9 @@ namespace Staff_Registration_System
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            conn = new SqlConnection(ConnectionString);
+            //conn = new SqlConnection(ConnectionString);
 
-            comm = new SqlCommand();
+            //comm = new SqlCommand();
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)
@@ -510,25 +544,51 @@ namespace Staff_Registration_System
                 else if (rdoBtnFemale.Checked)
                     gender = "Female";
 
-                add.saveAcademicStaff(title, txtFullName.Text, txtInitials.Text, dateDob.Text, gender, txtTelePrivate.Text, txtTeleOffice.Text, txtEmailPrivate.Text,
-                     txtEmailOffice.Text, txtNIC.Text, txtPassport.Text, cmbBxDesignation.Text, cmbBxFaculty.Text, cmbBxDepartment.Text, txtUPF.Text, dateAppointment.Text,
-                     dateRetirement.Text, txtMarriageCertificate.Text,
-                     txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
-                add.addAddress(txtAddress1Mail.Text,txtCityMail.Text,txtMailZipCode.Text,txtAddress1Home.Text,txtCityHome.Text,txtHomeZipCode.Text);
-                add.addChildrenDetail(tblChildren);
-                add.addQulifications(tblEducation);
-                add.addServiceRecords(tblService);
-                add.addOtherPositions(tblOtherPositions);
+                if (updateStatus == true)
+                {
+                    upstaff.updateAcademicStaff(ASID,title, txtFullName.Text, txtInitials.Text, dateDob.Text, gender, txtTelePrivate.Text, txtTeleOffice.Text, txtEmailPrivate.Text,
+                         txtEmailOffice.Text, txtNIC.Text, txtPassport.Text, cmbBxDesignation.Text, cmbBxFaculty.Text, cmbBxDepartment.Text, txtUPF.Text, dateAppointment.Text,
+                         dateRetirement.Text, txtMarriageCertificate.Text,
+                         txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
+                    //upstaff.updateAddress(txtAddress1Mail.Text, txtCityMail.Text, txtMailZipCode.Text, txtAddress1Home.Text, txtCityHome.Text, txtHomeZipCode.Text);
+                    upstaff.updateChildrenDetail(ASID, tblChildren);
+                    //upstaff.updateQulifications(ASID, tblEducation);
+                    //upstaff.updateServiceRecords(ASID, tblService);
+                    //upstaff.updateOtherPositions(ASID, tblOtherPositions);
+
+                    MessageBox.Show("record updated");
+                    updateStatus = false;
+                    staff.fillSearchTable(tblSearch);
+                    search.Visible = true;
+                    search.BringToFront();
+                }
+                else
+                {
+                    add.saveAcademicStaff(title, txtFullName.Text, txtInitials.Text, dateDob.Text, gender, txtTelePrivate.Text, txtTeleOffice.Text, txtEmailPrivate.Text,
+                         txtEmailOffice.Text, txtNIC.Text, txtPassport.Text, cmbBxDesignation.Text, cmbBxFaculty.Text, cmbBxDepartment.Text, txtUPF.Text, dateAppointment.Text,
+                         dateRetirement.Text, txtMarriageCertificate.Text,
+                         txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
+                    add.addAddress(txtAddress1Mail.Text, txtCityMail.Text, txtMailZipCode.Text, txtAddress1Home.Text, txtCityHome.Text, txtHomeZipCode.Text);
+                    add.addChildrenDetail(tblChildren);
+                    add.addQulifications(tblEducation);
+                    add.addServiceRecords(tblService);
+                    add.addOtherPositions(tblOtherPositions);
+                    MessageBox.Show("record saved");
+                    personal_detail1.Visible = true;
+                    personal_detail1.BringToFront();
+                }
 
 
 
 
-
-                MessageBox.Show("record saved");
-                tblChildren.Rows.Clear();
-                tblEducation.Rows.Clear();
-                tblService.Rows.Clear();
-                tblOtherPositions.Rows.Clear();
+                if (tblChildren.Rows.Count != 0 )
+                    tblChildren.Rows.Clear();
+                if (tblEducation.Rows.Count != 0)
+                    tblEducation.Rows.Clear();
+                if (tblService.Rows.Count != 0)
+                    tblService.Rows.Clear();
+                if (tblOtherPositions.Rows.Count != 0)
+                    tblOtherPositions.Rows.Clear();
 
                 title = null;
                 rdoBtnMiss.Checked = false;
@@ -568,15 +628,15 @@ namespace Staff_Registration_System
                 cmbBxScale.Text = "";
                 dateIncrement.Value = DateTime.Now;
 
-
-                personal_detail1.Visible = true;
-                personal_detail1.BringToFront();
+                facultyFirst = true;
+                
+                
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                conn.Close();
+                //conn.Close();
             }
             finally
             {
@@ -727,28 +787,7 @@ namespace Staff_Registration_System
 
         private void chkBxSame_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkBxSame.Checked)
-            {
-                txtAddress1Home.Enabled = false;
-                
-                txtCityHome.Enabled = false;
-                txtHomeZipCode.Enabled = false;
-                txtAddress1Home.Text = txtAddress1Mail.Text;
-                
-                txtCityHome.Text = txtCityMail.Text;
-                txtHomeZipCode.Text = txtMailZipCode.Text;
-            }
-            else if (!chkBxSame.Checked)
-            {
-                txtAddress1Home.Enabled = true;
-                
-                txtCityHome.Enabled = true;
-                txtHomeZipCode.Enabled = true;
-                txtAddress1Home.Text = "";
-                
-                txtCityHome.Text = "";
-                txtHomeZipCode.Text = "";
-            }
+            
         }
 
         private void lblNextPdetail1_dark_Click(object sender, EventArgs e)
@@ -782,13 +821,14 @@ namespace Staff_Registration_System
             if (tblSearch.SelectedRows.Count == 1)
             {
                 String ID = tblSearch[0, tblSearch.CurrentRow.Index].Value.ToString();
+                ASID = ID;
                 personal_detail1.Visible = true;
                 personal_detail1.BringToFront();
                 
                 upstaff.fillForm(ID,ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
                     ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement,
                     ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren,tblEducation,tblOtherPositions,tblService);
-                
+                updateStatus = true;
             }
         }
 
@@ -815,12 +855,15 @@ namespace Staff_Registration_System
 
         private void cmbBxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
+            facultyFirst = false;
             add.selectFaculty(cmbBxFaculty,cmbBxDepartment.Text);
+            facultyFirst = true;
         }
 
         private void cmbBxFaculty_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            add.selectDepartment(cmbBxDepartment,cmbBxFaculty.Text);
+        {   
+            if(facultyFirst == true)
+                add.selectDepartment(cmbBxDepartment,cmbBxFaculty.Text);
         }
 
         private void chkBxPersonal_CheckedChanged(object sender, EventArgs e)
@@ -957,9 +1000,259 @@ namespace Staff_Registration_System
             report.dataGridPdf(tblReport);
         }
 
+        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBxEditField_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbBxEditField.SelectedIndex == 0)
+            {
+                panelChangeSalaryCode.Visible = false;
+                panelChangeDesignation.Visible = false;
+                panelChangeFaculty.Visible = true;
+                panelChangeFaculty.BringToFront();
+            }
+            else if (cmbBxEditField.SelectedIndex == 1)
+            {
+                panelChangeFaculty.Visible = false;
+                panelChangeSalaryCode.Visible = false;
+                panelChangeDesignation.Visible = true;
+                panelChangeDesignation.BringToFront();
+            }
+            else if (cmbBxEditField.SelectedIndex == 2)
+            {      
+                panelChangeSalaryCode.Visible = true;
+                panelChangeSalaryCode.BringToFront();
+             }
+
+        }
+
+        private void chkBxSame_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (chkBxSame.Checked)
+            {
+                txtAddress1Home.Enabled = false;
+
+                txtCityHome.Enabled = false;
+                txtHomeZipCode.Enabled = false;
+                txtAddress1Home.Text = txtAddress1Mail.Text;
+
+                txtCityHome.Text = txtCityMail.Text;
+                txtHomeZipCode.Text = txtMailZipCode.Text;
+            }
+            else if (!chkBxSame.Checked)
+            {
+                txtAddress1Home.Enabled = true;
+
+                txtCityHome.Enabled = true;
+                txtHomeZipCode.Enabled = true;
+                txtAddress1Home.Text = "";
+
+                txtCityHome.Text = "";
+                txtHomeZipCode.Text = "";
+            }
+        }
+
+        private void cmbBxSalaryStep_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            add.selectSalaryCode(cmbBxSalaryCode,cmbBxScale,cmbBxSalaryStep.Text);
+        }
+
+        private void tblFaculty_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+        }
+
+        private void tblFaculty_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+        }
+
+        private void bttnAddNewFaculty_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewFaculty.Text == "")
+                MessageBox.Show("Faculty name cannot be empty");
+            else
+            {
+                opt.insertFaculty(txtboxNewFaculty.Text);
+                txtboxNewFaculty.Text = "";
+                opt.loadFaculty(tblFaculty);
+            }
+        }
+
+        private void bttnRemoveFaculty_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this faculty?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteFaculty(tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+            }
+            opt.loadFaculty(tblFaculty);
+            opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+        }
+
+        private void bttnAddNewDpt_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewDpt.Text == "")
+                MessageBox.Show("Department name cannot be empty");
+            else
+            {
+                opt.insertDepartment(txtboxNewDpt.Text, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+                txtboxNewDpt.Text = "";
+                opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+            }
+        }
+
+        private void bttnRemoveDpt_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this Department?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteDepartment(tblDepartment[0, tblDepartment.CurrentRow.Index].Value.ToString());
+            }
+            opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
+        }
+
+        private void bttnNewDesignation_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewDesignation.Text == "")
+                MessageBox.Show("Designation name cannot be empty");
+            else
+            {
+                opt.insertDesignation(txtboxNewDesignation.Text);
+                txtboxNewDesignation.Text = "";
+                opt.loadDesignation(tblDesignation);
+            }
+        }
+
+        private void bttnRemoveDesignation_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this Designation?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteDesignation(tblDesignation[0, tblDesignation.CurrentRow.Index].Value.ToString());
+            }
+            opt.loadDesignation(tblDesignation);
+        }
+
+        private void tblOldCode_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(), ref tblOldScalePopulated);
+            if (tblOldScalePopulated == false)
+                opt.loadSalaryStep(tblOldStep, "");
+            else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
+        private void tblOldScale_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //if (tblOldScalePopulated == false)
+            //    tblOldStep = null;
+            //else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
+        private void tblOldScale_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAddSalaryCode_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewSalaryCode.Text == "")
+                MessageBox.Show("SalaryCode cannot be empty");
+            else
+            {
+                opt.insertSalaryCode(txtboxNewSalaryCode.Text);
+                txtboxNewSalaryCode.Text = "";
+                opt.loadSalaryCode(tblOldCode);
+            }
+        }
+
+        private void btnRemoveSalaaryCode_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this SalaaryCode?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteSalaryCode(tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString());
+            }
+            opt.loadSalaryCode(tblOldCode);
+            opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(), ref tblOldScalePopulated);
+            if (tblOldScalePopulated == false)
+                opt.loadSalaryStep(tblOldStep, "");
+            else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
+        private void btnAddSalarySalaryScale_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewSalaryScale.Text == "")
+                MessageBox.Show("SalaryScale cannot be empty");
+            else
+            {
+                opt.insertSalaryScale(txtboxNewSalaryScale.Text, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString());
+                txtboxNewSalaryScale.Text = "";
+                opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(),ref tblOldScalePopulated);
+            }
+        }
+
+        private void btnRemoveSalaryScale_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this SalaryScale?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteSalaryScale(tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+            }
+            opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(), ref tblOldScalePopulated);
+            if (tblOldScalePopulated == false)
+                opt.loadSalaryStep(tblOldStep, "");
+            else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
+        private void bttnAddSalaryStep_Click(object sender, EventArgs e)
+        {
+            if (txtboxNewSalaryStep.Text == "" )
+                MessageBox.Show("SalaryStep cannot be empty");
+            else if(tblOldScalePopulated==false)
+                MessageBox.Show("Select a SalaryCode first");
+            else
+            {
+                opt.insertSalaryStep(txtboxNewSalaryStep.Text, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+                txtboxNewSalaryStep.Text = "";
+                if (tblOldScalePopulated == false)
+                    opt.loadSalaryStep(tblOldStep, "");
+                else
+                    opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+            }
+        }
+
+        private void bttnRemoveSalaryStep_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want delete this SalaryStep?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                opt.deleteSalaryStep(tblOldStep[0, tblOldStep.CurrentRow.Index].Value.ToString());
+            }
+            //if (tblOldScalePopulated == false)
+                //opt.loadSalaryStep(tblOldStep, "");
+            //else
+                opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
         private void title_bar_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
         }
+
+
     } 
 }

@@ -505,7 +505,42 @@ namespace Staff_Registration_System.AddAcademicStaff
             }
         }
 
-        public void selectSalaryCodeScale(ComboBox cmbBxDepartment) { }
+        public void selectSalaryCode(ComboBox cmbBxSalaryCode, ComboBox cmbBxSalaryScale, String salaryStep)
+        {
+            try
+            {
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT  [SalaryScale].[Salary Scale],[Salary Code] FROM [SalaryScale],[SalaryStep] WHERE [Salary Step] =  @1 AND  [SalaryStep].[Salary Scale] =  [SalaryScale].[Salary Scale];", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", salaryStep);
+
+                conn.connOpen();
+                conn.connConnection();
+
+                SqlDataReader reader;
+                string a = null;
+                string b = null;
+                
+
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    
+                    a = reader.GetValue(0).ToString();
+                    b = reader.GetValue(1).ToString();
+                    cmbBxSalaryScale.SelectedItem = a;
+                    cmbBxSalaryCode.SelectedItem = b;
+                }
+
+                reader.Close();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         public void selectSalaryStep(ComboBox cmbBxSalaryStep, String scale)
         {

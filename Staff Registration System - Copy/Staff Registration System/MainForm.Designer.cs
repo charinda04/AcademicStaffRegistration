@@ -57,6 +57,7 @@
             this.txtCityMail = new System.Windows.Forms.TextBox();
             this.txtAddress1Mail = new System.Windows.Forms.TextBox();
             this.panelHomeAddress = new System.Windows.Forms.Panel();
+            this.chkBxSame = new System.Windows.Forms.CheckBox();
             this.label89 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -159,6 +160,42 @@
             this.lblNextPdetail2_dark = new System.Windows.Forms.Label();
             this.lblPrevPdetail2_light = new System.Windows.Forms.Label();
             this.lblNextPdetail2_light = new System.Windows.Forms.Label();
+            this.reports = new System.Windows.Forms.Panel();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.chkBxOtherPositions = new System.Windows.Forms.CheckBox();
+            this.chkBxService = new System.Windows.Forms.CheckBox();
+            this.chkBxEducational = new System.Windows.Forms.CheckBox();
+            this.chkBxFamily = new System.Windows.Forms.CheckBox();
+            this.chkBxPersonal = new System.Windows.Forms.CheckBox();
+            this.chkLBxOtherPositions = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxService = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxEducational = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxFamily = new System.Windows.Forms.CheckedListBox();
+            this.chkLBxPersonal = new System.Windows.Forms.CheckedListBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.label71 = new System.Windows.Forms.Label();
+            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.label72 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.search = new System.Windows.Forms.Panel();
             this.bttnUpdate = new System.Windows.Forms.Button();
             this.bttnDelete = new System.Windows.Forms.Button();
@@ -167,8 +204,6 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.tblSearch = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
-            this.label56 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
@@ -177,12 +212,81 @@
             this.txtSearchNIC = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.txtSearchUPF = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.txtSearchName = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
+            this.other_positions = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.lblPrevOtherPostns_dark = new System.Windows.Forms.Label();
+            this.lblPrevOtherPostns_light = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.dateOtherPosistionTo = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tblOtherPositions = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRemoveOtherPosition = new System.Windows.Forms.Button();
+            this.btnAddOtherPosition = new System.Windows.Forms.Button();
+            this.dateOtherPositionFrom = new System.Windows.Forms.DateTimePicker();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtOtherPosition = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.settings = new System.Windows.Forms.Panel();
+            this.panelEditorPanelContainer = new System.Windows.Forms.Panel();
+            this.panelChangeFaculty = new System.Windows.Forms.Panel();
+            this.bttnRemoveFaculty = new System.Windows.Forms.Button();
+            this.bttnAddNewFaculty = new System.Windows.Forms.Button();
+            this.tblFaculty = new System.Windows.Forms.DataGridView();
+            this.txtboxNewFaculty = new System.Windows.Forms.TextBox();
+            this.lblNewFaculty = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.panelChangeDesignation = new System.Windows.Forms.Panel();
+            this.bttnRemoveDesignation = new System.Windows.Forms.Button();
+            this.bttnNewDesignation = new System.Windows.Forms.Button();
+            this.tblDesignation = new System.Windows.Forms.DataGridView();
+            this.txtboxNewDesignation = new System.Windows.Forms.TextBox();
+            this.lblNewDesignation = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panelChangeSalaryCode = new System.Windows.Forms.Panel();
+            this.tblOldStep = new System.Windows.Forms.DataGridView();
+            this.txtboxNewSalaryStep = new System.Windows.Forms.TextBox();
+            this.bttnRemoveSalaryStep = new System.Windows.Forms.Button();
+            this.bttnAddSalaryStep = new System.Windows.Forms.Button();
+            this.tblOldScale = new System.Windows.Forms.DataGridView();
+            this.txtboxNewSalaryScale = new System.Windows.Forms.TextBox();
+            this.tblOldCode = new System.Windows.Forms.DataGridView();
+            this.txtboxNewSalaryCode = new System.Windows.Forms.TextBox();
+            this.lblNewSalaryCode = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.cmbBxEditField = new System.Windows.Forms.ComboBox();
+            this.lblEditField = new System.Windows.Forms.Label();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.alerts = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.btnAlertRead = new System.Windows.Forms.Button();
+            this.btnAlertDelete = new System.Windows.Forms.Button();
+            this.btnAlertView = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tblAlerts = new System.Windows.Forms.DataGridView();
+            this.report_view = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnPrintPdf = new System.Windows.Forms.Button();
+            this.tblReport = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             this.educational_qualifications = new System.Windows.Forms.Panel();
             this.panelServiceRecords = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -223,142 +327,23 @@
             this.lblNextEduQualif_dark = new System.Windows.Forms.Label();
             this.lblPrevEduQualif_light = new System.Windows.Forms.Label();
             this.lblNextEduQualif_light = new System.Windows.Forms.Label();
-            this.settings = new System.Windows.Forms.Panel();
-            this.panelEditorPanelContainer = new System.Windows.Forms.Panel();
-            this.panelChangeDesignation = new System.Windows.Forms.Panel();
-            this.bttnRemoveDesignation = new System.Windows.Forms.Button();
-            this.bttnNewDesignation = new System.Windows.Forms.Button();
-            this.dataGridDesignations = new System.Windows.Forms.DataGridView();
-            this.txtboxNewDesignation = new System.Windows.Forms.TextBox();
-            this.lblNewDesignation = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panelChangeFaculty = new System.Windows.Forms.Panel();
-            this.bttnRemoveFaculty = new System.Windows.Forms.Button();
-            this.bttnAddNewFaculty = new System.Windows.Forms.Button();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.txtboxNewFaculty = new System.Windows.Forms.TextBox();
-            this.lblNewFaculty = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label59 = new System.Windows.Forms.Label();
-            this.panelChangeSalaryCode = new System.Windows.Forms.Panel();
-            this.bttnRemoveSalaryCode = new System.Windows.Forms.Button();
-            this.bbtnNewSalaryCode = new System.Windows.Forms.Button();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.txtboxNewSalaryCode = new System.Windows.Forms.TextBox();
-            this.lblNewSalaryCode = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
-            this.panelChangeSalaryScale = new System.Windows.Forms.Panel();
-            this.bttnRemoveSalaryScale = new System.Windows.Forms.Button();
-            this.bttnAddSalaryScale = new System.Windows.Forms.Button();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.txtboxNewSalaryScale = new System.Windows.Forms.TextBox();
-            this.lblNewSalaryScale = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.label65 = new System.Windows.Forms.Label();
-            this.panelChnageSalaryStep = new System.Windows.Forms.Panel();
-            this.bttnRemoveSalaryStep = new System.Windows.Forms.Button();
-            this.bttnAddNewSalaryStep = new System.Windows.Forms.Button();
-            this.dataGridView11 = new System.Windows.Forms.DataGridView();
-            this.txtboxNewSalaryStep = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
-            this.panelChangeDepartment = new System.Windows.Forms.Panel();
-            this.bttnRemoveDpt = new System.Windows.Forms.Button();
-            this.bttnAddNewDpt = new System.Windows.Forms.Button();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.txtboxNewDpt = new System.Windows.Forms.TextBox();
-            this.lblNewDpt = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.lblEditField = new System.Windows.Forms.Label();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.other_positions = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.lblPrevOtherPostns_dark = new System.Windows.Forms.Label();
-            this.lblPrevOtherPostns_light = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.dateOtherPosistionTo = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tblOtherPositions = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRemoveOtherPosition = new System.Windows.Forms.Button();
-            this.btnAddOtherPosition = new System.Windows.Forms.Button();
-            this.dateOtherPositionFrom = new System.Windows.Forms.DateTimePicker();
-            this.label31 = new System.Windows.Forms.Label();
-            this.txtOtherPosition = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.alerts = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.btnAlertRead = new System.Windows.Forms.Button();
-            this.btnAlertDelete = new System.Windows.Forms.Button();
-            this.btnAlertView = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.colAlertName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reports = new System.Windows.Forms.Panel();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.btnClearAll = new System.Windows.Forms.Button();
-            this.chkBxOtherPositions = new System.Windows.Forms.CheckBox();
-            this.chkBxService = new System.Windows.Forms.CheckBox();
-            this.chkBxEducational = new System.Windows.Forms.CheckBox();
-            this.chkBxFamily = new System.Windows.Forms.CheckBox();
-            this.chkBxPersonal = new System.Windows.Forms.CheckBox();
-            this.chkLBxOtherPositions = new System.Windows.Forms.CheckedListBox();
-            this.chkLBxService = new System.Windows.Forms.CheckedListBox();
-            this.chkLBxEducational = new System.Windows.Forms.CheckedListBox();
-            this.chkLBxFamily = new System.Windows.Forms.CheckedListBox();
-            this.chkLBxPersonal = new System.Windows.Forms.CheckedListBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label57 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
-            this.label71 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
-            this.label72 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogPersonalPic = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialogMarriageCertificate = new System.Windows.Forms.OpenFileDialog();
-            this.chkBxSame = new System.Windows.Forms.CheckBox();
-            this.report_view = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tblReport = new System.Windows.Forms.DataGridView();
-            this.btnPrintPdf = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bttnRemoveDpt = new System.Windows.Forms.Button();
+            this.bttnAddNewDpt = new System.Windows.Forms.Button();
+            this.tblDepartment = new System.Windows.Forms.DataGridView();
+            this.txtboxNewDpt = new System.Windows.Forms.TextBox();
+            this.lblNewDpt = new System.Windows.Forms.Label();
+            this.btnRemoveSalaaryCode = new System.Windows.Forms.Button();
+            this.btnAddSalaryCode = new System.Windows.Forms.Button();
+            this.btnRemoveSalaryScale = new System.Windows.Forms.Button();
+            this.btnAddSalarySalaryScale = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.option_bar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbarAddMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbarSearchMember)).BeginInit();
@@ -391,47 +376,6 @@
             this.panel8.SuspendLayout();
             this.panelWorkInformation.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.search.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSearch)).BeginInit();
-            this.educational_qualifications.SuspendLayout();
-            this.panelServiceRecords.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblService)).BeginInit();
-            this.panelEduQualifications.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).BeginInit();
-            this.settings.SuspendLayout();
-            this.panelEditorPanelContainer.SuspendLayout();
-            this.panelChangeDesignation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridDesignations)).BeginInit();
-            this.panel22.SuspendLayout();
-            this.panelChangeFaculty.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-            this.panel20.SuspendLayout();
-            this.panelChangeSalaryCode.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            this.panel23.SuspendLayout();
-            this.panelChangeSalaryScale.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            this.panel24.SuspendLayout();
-            this.panelChnageSalaryStep.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
-            this.panel25.SuspendLayout();
-            this.panelChangeDepartment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            this.panel21.SuspendLayout();
-            this.panelTitle.SuspendLayout();
-            this.other_positions.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblOtherPositions)).BeginInit();
-            this.alerts.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.reports.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -439,8 +383,43 @@
             this.panel13.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.search.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSearch)).BeginInit();
+            this.other_positions.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOtherPositions)).BeginInit();
+            this.settings.SuspendLayout();
+            this.panelEditorPanelContainer.SuspendLayout();
+            this.panelChangeFaculty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblFaculty)).BeginInit();
+            this.panel20.SuspendLayout();
+            this.panelChangeDesignation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDesignation)).BeginInit();
+            this.panel22.SuspendLayout();
+            this.panelChangeSalaryCode.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldStep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldScale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldCode)).BeginInit();
+            this.panel23.SuspendLayout();
+            this.panelTitle.SuspendLayout();
+            this.alerts.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAlerts)).BeginInit();
             this.report_view.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblReport)).BeginInit();
+            this.educational_qualifications.SuspendLayout();
+            this.panelServiceRecords.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblService)).BeginInit();
+            this.panelEduQualifications.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDepartment)).BeginInit();
             this.SuspendLayout();
             // 
             // option_bar
@@ -669,7 +648,7 @@
             // 
             // txtMailZipCode
             // 
-            this.txtMailZipCode.Location = new System.Drawing.Point(150, 148);
+            this.txtMailZipCode.Location = new System.Drawing.Point(150, 171);
             this.txtMailZipCode.Name = "txtMailZipCode";
             this.txtMailZipCode.Size = new System.Drawing.Size(167, 20);
             this.txtMailZipCode.TabIndex = 54;
@@ -677,7 +656,7 @@
             // label90
             // 
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(41, 148);
+            this.label90.Location = new System.Drawing.Point(41, 171);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(50, 13);
             this.label90.TabIndex = 53;
@@ -686,7 +665,7 @@
             // label92
             // 
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(41, 122);
+            this.label92.Location = new System.Drawing.Point(41, 145);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(24, 13);
             this.label92.TabIndex = 46;
@@ -716,7 +695,7 @@
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(41, 92);
+            this.label94.Location = new System.Drawing.Point(41, 115);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(54, 13);
             this.label94.TabIndex = 49;
@@ -724,14 +703,14 @@
             // 
             // txtCityMail
             // 
-            this.txtCityMail.Location = new System.Drawing.Point(150, 119);
+            this.txtCityMail.Location = new System.Drawing.Point(150, 142);
             this.txtCityMail.Name = "txtCityMail";
             this.txtCityMail.Size = new System.Drawing.Size(324, 20);
             this.txtCityMail.TabIndex = 47;
             // 
             // txtAddress1Mail
             // 
-            this.txtAddress1Mail.Location = new System.Drawing.Point(150, 89);
+            this.txtAddress1Mail.Location = new System.Drawing.Point(150, 112);
             this.txtAddress1Mail.Name = "txtAddress1Mail";
             this.txtAddress1Mail.Size = new System.Drawing.Size(323, 20);
             this.txtAddress1Mail.TabIndex = 50;
@@ -751,6 +730,17 @@
             this.panelHomeAddress.Name = "panelHomeAddress";
             this.panelHomeAddress.Size = new System.Drawing.Size(604, 264);
             this.panelHomeAddress.TabIndex = 45;
+            // 
+            // chkBxSame
+            // 
+            this.chkBxSame.AutoSize = true;
+            this.chkBxSame.Location = new System.Drawing.Point(275, 60);
+            this.chkBxSame.Name = "chkBxSame";
+            this.chkBxSame.Size = new System.Drawing.Size(161, 17);
+            this.chkBxSame.TabIndex = 54;
+            this.chkBxSame.Text = "Same as the Mailing address";
+            this.chkBxSame.UseVisualStyleBackColor = true;
+            this.chkBxSame.CheckedChanged += new System.EventHandler(this.chkBxSame_CheckedChanged_1);
             // 
             // label89
             // 
@@ -1220,15 +1210,15 @@
             // 
             // panel_container
             // 
-            this.panel_container.Controls.Add(this.report_view);
-            this.panel_container.Controls.Add(this.reports);
-            this.panel_container.Controls.Add(this.personal_detail1);
-            this.panel_container.Controls.Add(this.personal_detail2);
-            this.panel_container.Controls.Add(this.search);
-            this.panel_container.Controls.Add(this.educational_qualifications);
             this.panel_container.Controls.Add(this.settings);
+            this.panel_container.Controls.Add(this.search);
+            this.panel_container.Controls.Add(this.personal_detail2);
+            this.panel_container.Controls.Add(this.reports);
             this.panel_container.Controls.Add(this.other_positions);
+            this.panel_container.Controls.Add(this.personal_detail1);
             this.panel_container.Controls.Add(this.alerts);
+            this.panel_container.Controls.Add(this.report_view);
+            this.panel_container.Controls.Add(this.educational_qualifications);
             this.panel_container.Location = new System.Drawing.Point(0, 0);
             this.panel_container.Name = "panel_container";
             this.panel_container.Size = new System.Drawing.Size(1366, 768);
@@ -1287,6 +1277,7 @@
             // tblChildren
             // 
             this.tblChildren.AllowUserToAddRows = false;
+            this.tblChildren.AllowUserToDeleteRows = false;
             this.tblChildren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblChildren.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn10,
@@ -1684,6 +1675,7 @@
             this.cmbBxSalaryStep.Name = "cmbBxSalaryStep";
             this.cmbBxSalaryStep.Size = new System.Drawing.Size(288, 21);
             this.cmbBxSalaryStep.TabIndex = 49;
+            this.cmbBxSalaryStep.SelectedIndexChanged += new System.EventHandler(this.cmbBxSalaryStep_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -1771,6 +1763,434 @@
             this.lblNextPdetail2_light.Click += new System.EventHandler(this.lblNextPdetail2_light_Click);
             this.lblNextPdetail2_light.MouseLeave += new System.EventHandler(this.label66_MouseLeave);
             // 
+            // reports
+            // 
+            this.reports.Controls.Add(this.btnReport);
+            this.reports.Controls.Add(this.panel14);
+            this.reports.Controls.Add(this.panel12);
+            this.reports.Controls.Add(this.groupBox2);
+            this.reports.Location = new System.Drawing.Point(90, 33);
+            this.reports.Name = "reports";
+            this.reports.Size = new System.Drawing.Size(1276, 735);
+            this.reports.TabIndex = 35;
+            this.reports.Visible = false;
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.Teal;
+            this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.Location = new System.Drawing.Point(1189, 661);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(66, 50);
+            this.btnReport.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.btnReport, "Generate");
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.btnClearAll);
+            this.panel14.Controls.Add(this.chkBxOtherPositions);
+            this.panel14.Controls.Add(this.chkBxService);
+            this.panel14.Controls.Add(this.chkBxEducational);
+            this.panel14.Controls.Add(this.chkBxFamily);
+            this.panel14.Controls.Add(this.chkBxPersonal);
+            this.panel14.Controls.Add(this.chkLBxOtherPositions);
+            this.panel14.Controls.Add(this.chkLBxService);
+            this.panel14.Controls.Add(this.chkLBxEducational);
+            this.panel14.Controls.Add(this.chkLBxFamily);
+            this.panel14.Controls.Add(this.chkLBxPersonal);
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Location = new System.Drawing.Point(433, 23);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(822, 617);
+            this.panel14.TabIndex = 64;
+            // 
+            // btnClearAll
+            // 
+            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearAll.Location = new System.Drawing.Point(707, 51);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(74, 21);
+            this.btnClearAll.TabIndex = 78;
+            this.btnClearAll.Text = "Clear All";
+            this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
+            // 
+            // chkBxOtherPositions
+            // 
+            this.chkBxOtherPositions.AutoSize = true;
+            this.chkBxOtherPositions.Location = new System.Drawing.Point(665, 89);
+            this.chkBxOtherPositions.Name = "chkBxOtherPositions";
+            this.chkBxOtherPositions.Size = new System.Drawing.Size(97, 17);
+            this.chkBxOtherPositions.TabIndex = 77;
+            this.chkBxOtherPositions.Text = "Other Positions";
+            this.chkBxOtherPositions.UseVisualStyleBackColor = true;
+            this.chkBxOtherPositions.CheckedChanged += new System.EventHandler(this.chkBxOtherPositions_CheckedChanged);
+            // 
+            // chkBxService
+            // 
+            this.chkBxService.AutoSize = true;
+            this.chkBxService.Location = new System.Drawing.Point(545, 89);
+            this.chkBxService.Name = "chkBxService";
+            this.chkBxService.Size = new System.Drawing.Size(100, 17);
+            this.chkBxService.TabIndex = 76;
+            this.chkBxService.Text = "Service Record";
+            this.chkBxService.UseVisualStyleBackColor = true;
+            this.chkBxService.CheckedChanged += new System.EventHandler(this.chkBxService_CheckedChanged);
+            // 
+            // chkBxEducational
+            // 
+            this.chkBxEducational.AutoSize = true;
+            this.chkBxEducational.Location = new System.Drawing.Point(400, 87);
+            this.chkBxEducational.Name = "chkBxEducational";
+            this.chkBxEducational.Size = new System.Drawing.Size(82, 17);
+            this.chkBxEducational.TabIndex = 75;
+            this.chkBxEducational.Text = "Educational";
+            this.chkBxEducational.UseVisualStyleBackColor = true;
+            this.chkBxEducational.CheckedChanged += new System.EventHandler(this.chkBxEducational_CheckedChanged);
+            // 
+            // chkBxFamily
+            // 
+            this.chkBxFamily.AutoSize = true;
+            this.chkBxFamily.Location = new System.Drawing.Point(262, 86);
+            this.chkBxFamily.Name = "chkBxFamily";
+            this.chkBxFamily.Size = new System.Drawing.Size(55, 17);
+            this.chkBxFamily.TabIndex = 74;
+            this.chkBxFamily.Text = "Family";
+            this.chkBxFamily.UseVisualStyleBackColor = true;
+            this.chkBxFamily.CheckedChanged += new System.EventHandler(this.chkBxFamily_CheckedChanged);
+            // 
+            // chkBxPersonal
+            // 
+            this.chkBxPersonal.AutoSize = true;
+            this.chkBxPersonal.Location = new System.Drawing.Point(45, 87);
+            this.chkBxPersonal.Name = "chkBxPersonal";
+            this.chkBxPersonal.Size = new System.Drawing.Size(67, 17);
+            this.chkBxPersonal.TabIndex = 73;
+            this.chkBxPersonal.Text = "Personal";
+            this.chkBxPersonal.UseVisualStyleBackColor = true;
+            this.chkBxPersonal.CheckedChanged += new System.EventHandler(this.chkBxPersonal_CheckedChanged);
+            // 
+            // chkLBxOtherPositions
+            // 
+            this.chkLBxOtherPositions.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxOtherPositions.CheckOnClick = true;
+            this.chkLBxOtherPositions.FormattingEnabled = true;
+            this.chkLBxOtherPositions.Items.AddRange(new object[] {
+            "Position",
+            "From",
+            "To"});
+            this.chkLBxOtherPositions.Location = new System.Drawing.Point(665, 114);
+            this.chkLBxOtherPositions.Name = "chkLBxOtherPositions";
+            this.chkLBxOtherPositions.Size = new System.Drawing.Size(116, 244);
+            this.chkLBxOtherPositions.TabIndex = 72;
+            // 
+            // chkLBxService
+            // 
+            this.chkLBxService.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxService.CheckOnClick = true;
+            this.chkLBxService.FormattingEnabled = true;
+            this.chkLBxService.Items.AddRange(new object[] {
+            "Position",
+            "From",
+            "To"});
+            this.chkLBxService.Location = new System.Drawing.Point(543, 114);
+            this.chkLBxService.Name = "chkLBxService";
+            this.chkLBxService.Size = new System.Drawing.Size(116, 244);
+            this.chkLBxService.TabIndex = 71;
+            // 
+            // chkLBxEducational
+            // 
+            this.chkLBxEducational.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxEducational.CheckOnClick = true;
+            this.chkLBxEducational.FormattingEnabled = true;
+            this.chkLBxEducational.Items.AddRange(new object[] {
+            "Qulification Obtained",
+            "University",
+            "Effective Date",
+            "Grade"});
+            this.chkLBxEducational.Location = new System.Drawing.Point(398, 116);
+            this.chkLBxEducational.Name = "chkLBxEducational";
+            this.chkLBxEducational.Size = new System.Drawing.Size(139, 244);
+            this.chkLBxEducational.TabIndex = 70;
+            // 
+            // chkLBxFamily
+            // 
+            this.chkLBxFamily.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxFamily.CheckOnClick = true;
+            this.chkLBxFamily.FormattingEnabled = true;
+            this.chkLBxFamily.Items.AddRange(new object[] {
+            "Name",
+            "DOB",
+            "Birth Certificate No"});
+            this.chkLBxFamily.Location = new System.Drawing.Point(260, 116);
+            this.chkLBxFamily.Name = "chkLBxFamily";
+            this.chkLBxFamily.Size = new System.Drawing.Size(132, 244);
+            this.chkLBxFamily.TabIndex = 69;
+            // 
+            // chkLBxPersonal
+            // 
+            this.chkLBxPersonal.BackColor = System.Drawing.Color.Gainsboro;
+            this.chkLBxPersonal.CheckOnClick = true;
+            this.chkLBxPersonal.FormattingEnabled = true;
+            this.chkLBxPersonal.Items.AddRange(new object[] {
+            "Title",
+            "Full Name",
+            "Name with Initials",
+            "DOB",
+            "Gender",
+            "Private Contact No",
+            "Office Contact No",
+            "Private Email",
+            "Office Email",
+            "NIC No",
+            "Passport No",
+            "UPF No",
+            "Appointment Date",
+            "Retirement Date",
+            "Marriage Certificate No",
+            "Type",
+            "ServiceNo",
+            "Department Name",
+            "Designation",
+            "Salary Step",
+            "Increment Date",
+            "Salary Step",
+            "Increment date"});
+            this.chkLBxPersonal.Location = new System.Drawing.Point(42, 116);
+            this.chkLBxPersonal.Name = "chkLBxPersonal";
+            this.chkLBxPersonal.Size = new System.Drawing.Size(212, 379);
+            this.chkLBxPersonal.TabIndex = 68;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Teal;
+            this.panel15.Controls.Add(this.label57);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(820, 30);
+            this.panel15.TabIndex = 0;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label57.Location = new System.Drawing.Point(16, 8);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(45, 16);
+            this.label57.TabIndex = 2;
+            this.label57.Text = "Fields";
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.dateTimePicker9);
+            this.panel12.Controls.Add(this.label71);
+            this.panel12.Controls.Add(this.dateTimePicker10);
+            this.panel12.Controls.Add(this.label72);
+            this.panel12.Controls.Add(this.groupBox1);
+            this.panel12.Controls.Add(this.comboBox6);
+            this.panel12.Controls.Add(this.label74);
+            this.panel12.Controls.Add(this.checkBox1);
+            this.panel12.Controls.Add(this.comboBox7);
+            this.panel12.Controls.Add(this.comboBox8);
+            this.panel12.Controls.Add(this.label75);
+            this.panel12.Controls.Add(this.label76);
+            this.panel12.Location = new System.Drawing.Point(21, 22);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(389, 617);
+            this.panel12.TabIndex = 63;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Teal;
+            this.panel13.Controls.Add(this.label52);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(387, 30);
+            this.panel13.TabIndex = 0;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label52.Location = new System.Drawing.Point(16, 8);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(55, 16);
+            this.label52.TabIndex = 2;
+            this.label52.Text = "Filter by";
+            // 
+            // dateTimePicker9
+            // 
+            this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker9.Location = new System.Drawing.Point(144, 213);
+            this.dateTimePicker9.Name = "dateTimePicker9";
+            this.dateTimePicker9.Size = new System.Drawing.Size(191, 20);
+            this.dateTimePicker9.TabIndex = 62;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(33, 219);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(92, 13);
+            this.label71.TabIndex = 61;
+            this.label71.Text = "Appointment Date";
+            // 
+            // dateTimePicker10
+            // 
+            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker10.Location = new System.Drawing.Point(144, 184);
+            this.dateTimePicker10.Name = "dateTimePicker10";
+            this.dateTimePicker10.Size = new System.Drawing.Size(191, 20);
+            this.dateTimePicker10.TabIndex = 60;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(33, 190);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(80, 13);
+            this.label72.TabIndex = 59;
+            this.label72.Text = "Increment Date";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(28, 260);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(335, 52);
+            this.groupBox1.TabIndex = 56;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Order";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(224, 1);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(82, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Descending";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(115, 1);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(75, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Ascending";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(144, 155);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(191, 21);
+            this.comboBox6.TabIndex = 55;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(33, 160);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(63, 13);
+            this.label74.TabIndex = 54;
+            this.label74.Text = "Designation";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(34, 50);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(112, 17);
+            this.checkBox1.TabIndex = 53;
+            this.checkBox1.Text = "All Academic Staff";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(144, 128);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(191, 21);
+            this.comboBox7.TabIndex = 52;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(144, 101);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(191, 21);
+            this.comboBox8.TabIndex = 51;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(33, 132);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(62, 13);
+            this.label75.TabIndex = 50;
+            this.label75.Text = "Department";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(33, 104);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(41, 13);
+            this.label76.TabIndex = 49;
+            this.label76.Text = "Faculty";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton4);
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Location = new System.Drawing.Point(38, 312);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(218, 88);
+            this.groupBox2.TabIndex = 57;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gender";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(118, 25);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(59, 17);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Female";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(18, 25);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(48, 17);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Male";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // search
             // 
             this.search.Controls.Add(this.bttnUpdate);
@@ -1831,8 +2251,6 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.tblSearch);
-            this.panel9.Controls.Add(this.dateTimePicker7);
-            this.panel9.Controls.Add(this.label56);
             this.panel9.Controls.Add(this.comboBox3);
             this.panel9.Controls.Add(this.comboBox1);
             this.panel9.Controls.Add(this.label55);
@@ -1841,7 +2259,6 @@
             this.panel9.Controls.Add(this.txtSearchNIC);
             this.panel9.Controls.Add(this.label54);
             this.panel9.Controls.Add(this.label51);
-            this.panel9.Controls.Add(this.label50);
             this.panel9.Controls.Add(this.label49);
             this.panel9.Controls.Add(this.txtSearchUPF);
             this.panel9.Controls.Add(this.label48);
@@ -1883,23 +2300,6 @@
             this.tblSearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblSearch.Size = new System.Drawing.Size(1166, 323);
             this.tblSearch.TabIndex = 31;
-            // 
-            // dateTimePicker7
-            // 
-            this.dateTimePicker7.Location = new System.Drawing.Point(837, 130);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(242, 20);
-            this.dateTimePicker7.TabIndex = 18;
-            this.dateTimePicker7.ValueChanged += new System.EventHandler(this.dateTimePicker7_ValueChanged);
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(710, 134);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(104, 13);
-            this.label56.TabIndex = 17;
-            this.label56.Text = "Date of Appointment";
             // 
             // comboBox3
             // 
@@ -1971,16 +2371,6 @@
             this.label51.TabIndex = 7;
             this.label51.Text = "Faculty";
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(710, 50);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(58, 15);
-            this.label50.TabIndex = 6;
-            this.label50.Text = "Filter by";
-            // 
             // label49
             // 
             this.label49.AutoSize = true;
@@ -2024,6 +2414,773 @@
             this.label47.Size = new System.Drawing.Size(35, 13);
             this.label47.TabIndex = 1;
             this.label47.Text = "Name";
+            // 
+            // other_positions
+            // 
+            this.other_positions.Controls.Add(this.btnSave);
+            this.other_positions.Controls.Add(this.label15);
+            this.other_positions.Controls.Add(this.label10);
+            this.other_positions.Controls.Add(this.progressBar4);
+            this.other_positions.Controls.Add(this.lblPrevOtherPostns_dark);
+            this.other_positions.Controls.Add(this.lblPrevOtherPostns_light);
+            this.other_positions.Controls.Add(this.panel2);
+            this.other_positions.Location = new System.Drawing.Point(90, 33);
+            this.other_positions.Name = "other_positions";
+            this.other_positions.Size = new System.Drawing.Size(1276, 735);
+            this.other_positions.TabIndex = 32;
+            this.other_positions.Visible = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Teal;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.Location = new System.Drawing.Point(1189, 597);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(66, 50);
+            this.btnSave.TabIndex = 65;
+            this.toolTip1.SetToolTip(this.btnSave, "Save");
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
+            // 
+            // label15
+            // 
+            this.label15.Image = ((System.Drawing.Image)(resources.GetObject("label15.Image")));
+            this.label15.Location = new System.Drawing.Point(1213, 663);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 48);
+            this.label15.TabIndex = 64;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(94, 660);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 16);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "Step";
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(97, 679);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(1076, 20);
+            this.progressBar4.TabIndex = 62;
+            this.progressBar4.Value = 100;
+            // 
+            // lblPrevOtherPostns_dark
+            // 
+            this.lblPrevOtherPostns_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_dark.Image")));
+            this.lblPrevOtherPostns_dark.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevOtherPostns_dark.Name = "lblPrevOtherPostns_dark";
+            this.lblPrevOtherPostns_dark.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevOtherPostns_dark.TabIndex = 61;
+            this.lblPrevOtherPostns_dark.MouseEnter += new System.EventHandler(this.lblPrevOtherPostns_dark_MouseEnter);
+            // 
+            // lblPrevOtherPostns_light
+            // 
+            this.lblPrevOtherPostns_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_light.Image")));
+            this.lblPrevOtherPostns_light.Location = new System.Drawing.Point(17, 663);
+            this.lblPrevOtherPostns_light.Name = "lblPrevOtherPostns_light";
+            this.lblPrevOtherPostns_light.Size = new System.Drawing.Size(41, 48);
+            this.lblPrevOtherPostns_light.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.lblPrevOtherPostns_light, "Previous");
+            this.lblPrevOtherPostns_light.Click += new System.EventHandler(this.lblPrevOtherPostns_light_Click);
+            this.lblPrevOtherPostns_light.MouseLeave += new System.EventHandler(this.lblPrevOtherPostns_light_MouseLeave);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.dateOtherPosistionTo);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.tblOtherPositions);
+            this.panel2.Controls.Add(this.btnRemoveOtherPosition);
+            this.panel2.Controls.Add(this.btnAddOtherPosition);
+            this.panel2.Controls.Add(this.dateOtherPositionFrom);
+            this.panel2.Controls.Add(this.label31);
+            this.panel2.Controls.Add(this.txtOtherPosition);
+            this.panel2.Controls.Add(this.label32);
+            this.panel2.Location = new System.Drawing.Point(21, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1234, 548);
+            this.panel2.TabIndex = 48;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Teal;
+            this.panel7.Controls.Add(this.label45);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1232, 30);
+            this.panel7.TabIndex = 48;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label45.Location = new System.Drawing.Point(8, 8);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(223, 16);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Other Positions held in the University";
+            // 
+            // dateOtherPosistionTo
+            // 
+            this.dateOtherPosistionTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateOtherPosistionTo.Location = new System.Drawing.Point(117, 108);
+            this.dateOtherPosistionTo.Name = "dateOtherPosistionTo";
+            this.dateOtherPosistionTo.Size = new System.Drawing.Size(289, 20);
+            this.dateOtherPosistionTo.TabIndex = 47;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(20, 110);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(20, 13);
+            this.label12.TabIndex = 46;
+            this.label12.Text = "To";
+            // 
+            // tblOtherPositions
+            // 
+            this.tblOtherPositions.AllowUserToAddRows = false;
+            this.tblOtherPositions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblOtherPositions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.tblOtherPositions.Location = new System.Drawing.Point(487, 47);
+            this.tblOtherPositions.Name = "tblOtherPositions";
+            this.tblOtherPositions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblOtherPositions.Size = new System.Drawing.Size(734, 262);
+            this.tblOtherPositions.TabIndex = 45;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Position";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "From";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "To";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 170;
+            // 
+            // btnRemoveOtherPosition
+            // 
+            this.btnRemoveOtherPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveOtherPosition.Location = new System.Drawing.Point(250, 133);
+            this.btnRemoveOtherPosition.Name = "btnRemoveOtherPosition";
+            this.btnRemoveOtherPosition.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveOtherPosition.TabIndex = 42;
+            this.btnRemoveOtherPosition.Text = "Remove";
+            this.btnRemoveOtherPosition.UseVisualStyleBackColor = true;
+            this.btnRemoveOtherPosition.Click += new System.EventHandler(this.btnRemoveOtherPosition_Click);
+            // 
+            // btnAddOtherPosition
+            // 
+            this.btnAddOtherPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddOtherPosition.Location = new System.Drawing.Point(331, 133);
+            this.btnAddOtherPosition.Name = "btnAddOtherPosition";
+            this.btnAddOtherPosition.Size = new System.Drawing.Size(75, 23);
+            this.btnAddOtherPosition.TabIndex = 41;
+            this.btnAddOtherPosition.Text = "Add";
+            this.btnAddOtherPosition.UseVisualStyleBackColor = true;
+            this.btnAddOtherPosition.Click += new System.EventHandler(this.btnAddOtherPosition_Click);
+            // 
+            // dateOtherPositionFrom
+            // 
+            this.dateOtherPositionFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateOtherPositionFrom.Location = new System.Drawing.Point(117, 80);
+            this.dateOtherPositionFrom.Name = "dateOtherPositionFrom";
+            this.dateOtherPositionFrom.Size = new System.Drawing.Size(289, 20);
+            this.dateOtherPositionFrom.TabIndex = 38;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(20, 82);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(30, 13);
+            this.label31.TabIndex = 37;
+            this.label31.Text = "From";
+            // 
+            // txtOtherPosition
+            // 
+            this.txtOtherPosition.Location = new System.Drawing.Point(117, 53);
+            this.txtOtherPosition.Name = "txtOtherPosition";
+            this.txtOtherPosition.Size = new System.Drawing.Size(289, 20);
+            this.txtOtherPosition.TabIndex = 36;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(20, 55);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(44, 13);
+            this.label32.TabIndex = 35;
+            this.label32.Text = "Position";
+            // 
+            // settings
+            // 
+            this.settings.Controls.Add(this.panelEditorPanelContainer);
+            this.settings.Location = new System.Drawing.Point(90, 33);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(1276, 735);
+            this.settings.TabIndex = 37;
+            this.settings.Visible = false;
+            // 
+            // panelEditorPanelContainer
+            // 
+            this.panelEditorPanelContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEditorPanelContainer.Controls.Add(this.panelChangeFaculty);
+            this.panelEditorPanelContainer.Controls.Add(this.panelChangeSalaryCode);
+            this.panelEditorPanelContainer.Controls.Add(this.panelChangeDesignation);
+            this.panelEditorPanelContainer.Controls.Add(this.cmbBxEditField);
+            this.panelEditorPanelContainer.Controls.Add(this.lblEditField);
+            this.panelEditorPanelContainer.Controls.Add(this.panelTitle);
+            this.panelEditorPanelContainer.Location = new System.Drawing.Point(21, 29);
+            this.panelEditorPanelContainer.Name = "panelEditorPanelContainer";
+            this.panelEditorPanelContainer.Size = new System.Drawing.Size(1234, 677);
+            this.panelEditorPanelContainer.TabIndex = 34;
+            // 
+            // panelChangeFaculty
+            // 
+            this.panelChangeFaculty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChangeFaculty.Controls.Add(this.bttnRemoveDpt);
+            this.panelChangeFaculty.Controls.Add(this.bttnAddNewDpt);
+            this.panelChangeFaculty.Controls.Add(this.tblDepartment);
+            this.panelChangeFaculty.Controls.Add(this.txtboxNewDpt);
+            this.panelChangeFaculty.Controls.Add(this.lblNewDpt);
+            this.panelChangeFaculty.Controls.Add(this.bttnRemoveFaculty);
+            this.panelChangeFaculty.Controls.Add(this.bttnAddNewFaculty);
+            this.panelChangeFaculty.Controls.Add(this.tblFaculty);
+            this.panelChangeFaculty.Controls.Add(this.txtboxNewFaculty);
+            this.panelChangeFaculty.Controls.Add(this.lblNewFaculty);
+            this.panelChangeFaculty.Controls.Add(this.panel20);
+            this.panelChangeFaculty.Location = new System.Drawing.Point(58, 119);
+            this.panelChangeFaculty.Name = "panelChangeFaculty";
+            this.panelChangeFaculty.Size = new System.Drawing.Size(1103, 297);
+            this.panelChangeFaculty.TabIndex = 36;
+            // 
+            // bttnRemoveFaculty
+            // 
+            this.bttnRemoveFaculty.Location = new System.Drawing.Point(335, 68);
+            this.bttnRemoveFaculty.Name = "bttnRemoveFaculty";
+            this.bttnRemoveFaculty.Size = new System.Drawing.Size(75, 23);
+            this.bttnRemoveFaculty.TabIndex = 38;
+            this.bttnRemoveFaculty.Text = "Remove";
+            this.bttnRemoveFaculty.UseVisualStyleBackColor = true;
+            this.bttnRemoveFaculty.Click += new System.EventHandler(this.bttnRemoveFaculty_Click);
+            // 
+            // bttnAddNewFaculty
+            // 
+            this.bttnAddNewFaculty.Location = new System.Drawing.Point(335, 42);
+            this.bttnAddNewFaculty.Name = "bttnAddNewFaculty";
+            this.bttnAddNewFaculty.Size = new System.Drawing.Size(75, 23);
+            this.bttnAddNewFaculty.TabIndex = 37;
+            this.bttnAddNewFaculty.Text = "Add";
+            this.bttnAddNewFaculty.UseVisualStyleBackColor = true;
+            this.bttnAddNewFaculty.Click += new System.EventHandler(this.bttnAddNewFaculty_Click);
+            // 
+            // tblFaculty
+            // 
+            this.tblFaculty.AllowUserToAddRows = false;
+            this.tblFaculty.AllowUserToDeleteRows = false;
+            this.tblFaculty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblFaculty.Location = new System.Drawing.Point(27, 79);
+            this.tblFaculty.Name = "tblFaculty";
+            this.tblFaculty.ReadOnly = true;
+            this.tblFaculty.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblFaculty.Size = new System.Drawing.Size(286, 190);
+            this.tblFaculty.TabIndex = 36;
+            this.tblFaculty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblFaculty_CellClick);
+            this.tblFaculty.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblFaculty_CellContentClick);
+            // 
+            // txtboxNewFaculty
+            // 
+            this.txtboxNewFaculty.Location = new System.Drawing.Point(137, 39);
+            this.txtboxNewFaculty.Name = "txtboxNewFaculty";
+            this.txtboxNewFaculty.Size = new System.Drawing.Size(177, 20);
+            this.txtboxNewFaculty.TabIndex = 35;
+            // 
+            // lblNewFaculty
+            // 
+            this.lblNewFaculty.AutoSize = true;
+            this.lblNewFaculty.Location = new System.Drawing.Point(24, 42);
+            this.lblNewFaculty.Name = "lblNewFaculty";
+            this.lblNewFaculty.Size = new System.Drawing.Size(66, 13);
+            this.lblNewFaculty.TabIndex = 1;
+            this.lblNewFaculty.Text = "New Faculty";
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.Teal;
+            this.panel20.Controls.Add(this.label59);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel20.Location = new System.Drawing.Point(0, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(1101, 25);
+            this.panel20.TabIndex = 0;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label59.Location = new System.Drawing.Point(14, 3);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(127, 16);
+            this.label59.TabIndex = 2;
+            this.label59.Text = "Faculty & Department";
+            // 
+            // panelChangeDesignation
+            // 
+            this.panelChangeDesignation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChangeDesignation.Controls.Add(this.bttnRemoveDesignation);
+            this.panelChangeDesignation.Controls.Add(this.bttnNewDesignation);
+            this.panelChangeDesignation.Controls.Add(this.tblDesignation);
+            this.panelChangeDesignation.Controls.Add(this.txtboxNewDesignation);
+            this.panelChangeDesignation.Controls.Add(this.lblNewDesignation);
+            this.panelChangeDesignation.Controls.Add(this.panel22);
+            this.panelChangeDesignation.Location = new System.Drawing.Point(58, 119);
+            this.panelChangeDesignation.Name = "panelChangeDesignation";
+            this.panelChangeDesignation.Size = new System.Drawing.Size(627, 297);
+            this.panelChangeDesignation.TabIndex = 34;
+            // 
+            // bttnRemoveDesignation
+            // 
+            this.bttnRemoveDesignation.Location = new System.Drawing.Point(541, 63);
+            this.bttnRemoveDesignation.Name = "bttnRemoveDesignation";
+            this.bttnRemoveDesignation.Size = new System.Drawing.Size(75, 23);
+            this.bttnRemoveDesignation.TabIndex = 38;
+            this.bttnRemoveDesignation.Text = "Remove";
+            this.bttnRemoveDesignation.UseVisualStyleBackColor = true;
+            this.bttnRemoveDesignation.Click += new System.EventHandler(this.bttnRemoveDesignation_Click);
+            // 
+            // bttnNewDesignation
+            // 
+            this.bttnNewDesignation.Location = new System.Drawing.Point(541, 37);
+            this.bttnNewDesignation.Name = "bttnNewDesignation";
+            this.bttnNewDesignation.Size = new System.Drawing.Size(75, 23);
+            this.bttnNewDesignation.TabIndex = 37;
+            this.bttnNewDesignation.Text = "Add";
+            this.bttnNewDesignation.UseVisualStyleBackColor = true;
+            this.bttnNewDesignation.Click += new System.EventHandler(this.bttnNewDesignation_Click);
+            // 
+            // tblDesignation
+            // 
+            this.tblDesignation.AllowUserToAddRows = false;
+            this.tblDesignation.AllowUserToDeleteRows = false;
+            this.tblDesignation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblDesignation.Location = new System.Drawing.Point(27, 79);
+            this.tblDesignation.Name = "tblDesignation";
+            this.tblDesignation.ReadOnly = true;
+            this.tblDesignation.Size = new System.Drawing.Size(286, 190);
+            this.tblDesignation.TabIndex = 36;
+            // 
+            // txtboxNewDesignation
+            // 
+            this.txtboxNewDesignation.Location = new System.Drawing.Point(137, 39);
+            this.txtboxNewDesignation.Name = "txtboxNewDesignation";
+            this.txtboxNewDesignation.Size = new System.Drawing.Size(177, 20);
+            this.txtboxNewDesignation.TabIndex = 35;
+            // 
+            // lblNewDesignation
+            // 
+            this.lblNewDesignation.AutoSize = true;
+            this.lblNewDesignation.Location = new System.Drawing.Point(24, 42);
+            this.lblNewDesignation.Name = "lblNewDesignation";
+            this.lblNewDesignation.Size = new System.Drawing.Size(88, 13);
+            this.lblNewDesignation.TabIndex = 1;
+            this.lblNewDesignation.Text = "New Designation";
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Teal;
+            this.panel22.Controls.Add(this.label35);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel22.Location = new System.Drawing.Point(0, 0);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(625, 25);
+            this.panel22.TabIndex = 0;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label35.Location = new System.Drawing.Point(14, 3);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(87, 16);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "Designations";
+            // 
+            // panelChangeSalaryCode
+            // 
+            this.panelChangeSalaryCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChangeSalaryCode.Controls.Add(this.label50);
+            this.panelChangeSalaryCode.Controls.Add(this.label42);
+            this.panelChangeSalaryCode.Controls.Add(this.btnRemoveSalaryScale);
+            this.panelChangeSalaryCode.Controls.Add(this.btnAddSalarySalaryScale);
+            this.panelChangeSalaryCode.Controls.Add(this.btnRemoveSalaaryCode);
+            this.panelChangeSalaryCode.Controls.Add(this.btnAddSalaryCode);
+            this.panelChangeSalaryCode.Controls.Add(this.tblOldStep);
+            this.panelChangeSalaryCode.Controls.Add(this.txtboxNewSalaryStep);
+            this.panelChangeSalaryCode.Controls.Add(this.bttnRemoveSalaryStep);
+            this.panelChangeSalaryCode.Controls.Add(this.bttnAddSalaryStep);
+            this.panelChangeSalaryCode.Controls.Add(this.tblOldScale);
+            this.panelChangeSalaryCode.Controls.Add(this.txtboxNewSalaryScale);
+            this.panelChangeSalaryCode.Controls.Add(this.tblOldCode);
+            this.panelChangeSalaryCode.Controls.Add(this.txtboxNewSalaryCode);
+            this.panelChangeSalaryCode.Controls.Add(this.lblNewSalaryCode);
+            this.panelChangeSalaryCode.Controls.Add(this.panel23);
+            this.panelChangeSalaryCode.Location = new System.Drawing.Point(58, 119);
+            this.panelChangeSalaryCode.Name = "panelChangeSalaryCode";
+            this.panelChangeSalaryCode.Size = new System.Drawing.Size(1103, 297);
+            this.panelChangeSalaryCode.TabIndex = 37;
+            // 
+            // tblOldStep
+            // 
+            this.tblOldStep.AllowUserToAddRows = false;
+            this.tblOldStep.AllowUserToDeleteRows = false;
+            this.tblOldStep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblOldStep.Location = new System.Drawing.Point(738, 79);
+            this.tblOldStep.Name = "tblOldStep";
+            this.tblOldStep.ReadOnly = true;
+            this.tblOldStep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblOldStep.Size = new System.Drawing.Size(238, 190);
+            this.tblOldStep.TabIndex = 44;
+            // 
+            // txtboxNewSalaryStep
+            // 
+            this.txtboxNewSalaryStep.Location = new System.Drawing.Point(826, 39);
+            this.txtboxNewSalaryStep.Name = "txtboxNewSalaryStep";
+            this.txtboxNewSalaryStep.Size = new System.Drawing.Size(150, 20);
+            this.txtboxNewSalaryStep.TabIndex = 43;
+            // 
+            // bttnRemoveSalaryStep
+            // 
+            this.bttnRemoveSalaryStep.Location = new System.Drawing.Point(995, 105);
+            this.bttnRemoveSalaryStep.Name = "bttnRemoveSalaryStep";
+            this.bttnRemoveSalaryStep.Size = new System.Drawing.Size(75, 23);
+            this.bttnRemoveSalaryStep.TabIndex = 42;
+            this.bttnRemoveSalaryStep.Text = "Remove";
+            this.bttnRemoveSalaryStep.UseVisualStyleBackColor = true;
+            this.bttnRemoveSalaryStep.Click += new System.EventHandler(this.bttnRemoveSalaryStep_Click);
+            // 
+            // bttnAddSalaryStep
+            // 
+            this.bttnAddSalaryStep.Location = new System.Drawing.Point(995, 79);
+            this.bttnAddSalaryStep.Name = "bttnAddSalaryStep";
+            this.bttnAddSalaryStep.Size = new System.Drawing.Size(75, 23);
+            this.bttnAddSalaryStep.TabIndex = 41;
+            this.bttnAddSalaryStep.Text = "Add";
+            this.bttnAddSalaryStep.UseVisualStyleBackColor = true;
+            this.bttnAddSalaryStep.Click += new System.EventHandler(this.bttnAddSalaryStep_Click);
+            // 
+            // tblOldScale
+            // 
+            this.tblOldScale.AllowUserToAddRows = false;
+            this.tblOldScale.AllowUserToDeleteRows = false;
+            this.tblOldScale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblOldScale.Location = new System.Drawing.Point(384, 79);
+            this.tblOldScale.Name = "tblOldScale";
+            this.tblOldScale.ReadOnly = true;
+            this.tblOldScale.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblOldScale.Size = new System.Drawing.Size(238, 190);
+            this.tblOldScale.TabIndex = 40;
+            this.tblOldScale.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblOldScale_CellClick);
+            this.tblOldScale.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblOldScale_CellContentClick);
+            // 
+            // txtboxNewSalaryScale
+            // 
+            this.txtboxNewSalaryScale.Location = new System.Drawing.Point(478, 38);
+            this.txtboxNewSalaryScale.Name = "txtboxNewSalaryScale";
+            this.txtboxNewSalaryScale.Size = new System.Drawing.Size(144, 20);
+            this.txtboxNewSalaryScale.TabIndex = 39;
+            // 
+            // tblOldCode
+            // 
+            this.tblOldCode.AllowUserToAddRows = false;
+            this.tblOldCode.AllowUserToDeleteRows = false;
+            this.tblOldCode.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblOldCode.Location = new System.Drawing.Point(27, 79);
+            this.tblOldCode.Name = "tblOldCode";
+            this.tblOldCode.ReadOnly = true;
+            this.tblOldCode.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblOldCode.Size = new System.Drawing.Size(238, 190);
+            this.tblOldCode.TabIndex = 36;
+            this.tblOldCode.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblOldCode_CellClick);
+            // 
+            // txtboxNewSalaryCode
+            // 
+            this.txtboxNewSalaryCode.Location = new System.Drawing.Point(119, 39);
+            this.txtboxNewSalaryCode.Name = "txtboxNewSalaryCode";
+            this.txtboxNewSalaryCode.Size = new System.Drawing.Size(147, 20);
+            this.txtboxNewSalaryCode.TabIndex = 35;
+            // 
+            // lblNewSalaryCode
+            // 
+            this.lblNewSalaryCode.AutoSize = true;
+            this.lblNewSalaryCode.Location = new System.Drawing.Point(24, 42);
+            this.lblNewSalaryCode.Name = "lblNewSalaryCode";
+            this.lblNewSalaryCode.Size = new System.Drawing.Size(89, 13);
+            this.lblNewSalaryCode.TabIndex = 1;
+            this.lblNewSalaryCode.Text = "New Salary Code";
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Teal;
+            this.panel23.Controls.Add(this.label60);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel23.Location = new System.Drawing.Point(0, 0);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(1101, 25);
+            this.panel23.TabIndex = 0;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label60.Location = new System.Drawing.Point(14, 3);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(47, 16);
+            this.label60.TabIndex = 2;
+            this.label60.Text = "Salary";
+            // 
+            // cmbBxEditField
+            // 
+            this.cmbBxEditField.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBxEditField.FormattingEnabled = true;
+            this.cmbBxEditField.Items.AddRange(new object[] {
+            "Faculty & Department",
+            "Designation",
+            "Salary"});
+            this.cmbBxEditField.Location = new System.Drawing.Point(97, 73);
+            this.cmbBxEditField.Name = "cmbBxEditField";
+            this.cmbBxEditField.Size = new System.Drawing.Size(266, 21);
+            this.cmbBxEditField.TabIndex = 33;
+            this.cmbBxEditField.SelectedIndexChanged += new System.EventHandler(this.cmbBxEditField_SelectedIndexChanged);
+            // 
+            // lblEditField
+            // 
+            this.lblEditField.AutoSize = true;
+            this.lblEditField.Location = new System.Drawing.Point(32, 76);
+            this.lblEditField.Name = "lblEditField";
+            this.lblEditField.Size = new System.Drawing.Size(50, 13);
+            this.lblEditField.TabIndex = 2;
+            this.lblEditField.Text = "Edit Field";
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.Teal;
+            this.panelTitle.Controls.Add(this.label11);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(1232, 30);
+            this.panelTitle.TabIndex = 32;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(16, 7);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 16);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Settings";
+            // 
+            // alerts
+            // 
+            this.alerts.Controls.Add(this.panel17);
+            this.alerts.Location = new System.Drawing.Point(90, 33);
+            this.alerts.Name = "alerts";
+            this.alerts.Size = new System.Drawing.Size(1276, 735);
+            this.alerts.TabIndex = 36;
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.panel16);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Controls.Add(this.tblAlerts);
+            this.panel17.Location = new System.Drawing.Point(21, 22);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(1234, 677);
+            this.panel17.TabIndex = 33;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.btnAlertRead);
+            this.panel16.Controls.Add(this.btnAlertDelete);
+            this.panel16.Controls.Add(this.btnAlertView);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(0, 30);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1232, 33);
+            this.panel16.TabIndex = 30;
+            // 
+            // btnAlertRead
+            // 
+            this.btnAlertRead.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertRead.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertRead.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertRead.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertRead.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertRead.Image")));
+            this.btnAlertRead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertRead.Location = new System.Drawing.Point(155, 0);
+            this.btnAlertRead.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAlertRead.Name = "btnAlertRead";
+            this.btnAlertRead.Size = new System.Drawing.Size(120, 31);
+            this.btnAlertRead.TabIndex = 2;
+            this.btnAlertRead.Text = "Mark as Read";
+            this.btnAlertRead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertRead.UseVisualStyleBackColor = false;
+            // 
+            // btnAlertDelete
+            // 
+            this.btnAlertDelete.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertDelete.Image")));
+            this.btnAlertDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertDelete.Location = new System.Drawing.Point(71, 0);
+            this.btnAlertDelete.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAlertDelete.Name = "btnAlertDelete";
+            this.btnAlertDelete.Size = new System.Drawing.Size(83, 31);
+            this.btnAlertDelete.TabIndex = 1;
+            this.btnAlertDelete.Text = "Delete";
+            this.btnAlertDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertDelete.UseVisualStyleBackColor = false;
+            this.btnAlertDelete.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // btnAlertView
+            // 
+            this.btnAlertView.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAlertView.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnAlertView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnAlertView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnAlertView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlertView.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertView.Image")));
+            this.btnAlertView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlertView.Location = new System.Drawing.Point(-2, 0);
+            this.btnAlertView.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAlertView.Name = "btnAlertView";
+            this.btnAlertView.Size = new System.Drawing.Size(72, 31);
+            this.btnAlertView.TabIndex = 0;
+            this.btnAlertView.Text = "View";
+            this.btnAlertView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlertView.UseVisualStyleBackColor = false;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Teal;
+            this.panel18.Controls.Add(this.label3);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(1232, 30);
+            this.panel18.TabIndex = 32;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(16, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Alerts";
+            // 
+            // tblAlerts
+            // 
+            this.tblAlerts.AllowUserToAddRows = false;
+            this.tblAlerts.AllowUserToDeleteRows = false;
+            this.tblAlerts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblAlerts.Location = new System.Drawing.Point(30, 96);
+            this.tblAlerts.Name = "tblAlerts";
+            this.tblAlerts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblAlerts.Size = new System.Drawing.Size(1166, 541);
+            this.tblAlerts.TabIndex = 31;
+            // 
+            // report_view
+            // 
+            this.report_view.Controls.Add(this.button4);
+            this.report_view.Controls.Add(this.btnPrintPdf);
+            this.report_view.Controls.Add(this.tblReport);
+            this.report_view.Controls.Add(this.button2);
+            this.report_view.Location = new System.Drawing.Point(90, 33);
+            this.report_view.Name = "report_view";
+            this.report_view.Size = new System.Drawing.Size(1276, 735);
+            this.report_view.TabIndex = 38;
+            this.report_view.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(42, 457);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(105, 21);
+            this.button4.TabIndex = 80;
+            this.button4.Text = "Show in excel";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btnPrintPdf
+            // 
+            this.btnPrintPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintPdf.Location = new System.Drawing.Point(42, 397);
+            this.btnPrintPdf.Name = "btnPrintPdf";
+            this.btnPrintPdf.Size = new System.Drawing.Size(105, 21);
+            this.btnPrintPdf.TabIndex = 79;
+            this.btnPrintPdf.Text = "PrintPdf";
+            this.btnPrintPdf.UseVisualStyleBackColor = true;
+            this.btnPrintPdf.Click += new System.EventHandler(this.btnPrintPdf_Click);
+            // 
+            // tblReport
+            // 
+            this.tblReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblReport.Location = new System.Drawing.Point(20, 22);
+            this.tblReport.Name = "tblReport";
+            this.tblReport.Size = new System.Drawing.Size(1234, 314);
+            this.tblReport.TabIndex = 68;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(1189, 661);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 50);
+            this.button2.TabIndex = 67;
+            this.toolTip1.SetToolTip(this.button2, "Generate");
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // educational_qualifications
             // 
@@ -2412,1313 +3569,6 @@
             this.lblNextEduQualif_light.Click += new System.EventHandler(this.lblNextEduQualif_light_Click);
             this.lblNextEduQualif_light.MouseLeave += new System.EventHandler(this.lblNextEduQualif_light_MouseLeave);
             // 
-            // settings
-            // 
-            this.settings.Controls.Add(this.panelEditorPanelContainer);
-            this.settings.Location = new System.Drawing.Point(90, 33);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(1276, 735);
-            this.settings.TabIndex = 37;
-            this.settings.Visible = false;
-            // 
-            // panelEditorPanelContainer
-            // 
-            this.panelEditorPanelContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEditorPanelContainer.Controls.Add(this.panelChangeDesignation);
-            this.panelEditorPanelContainer.Controls.Add(this.panelChangeFaculty);
-            this.panelEditorPanelContainer.Controls.Add(this.panelChangeSalaryCode);
-            this.panelEditorPanelContainer.Controls.Add(this.panelChangeSalaryScale);
-            this.panelEditorPanelContainer.Controls.Add(this.panelChnageSalaryStep);
-            this.panelEditorPanelContainer.Controls.Add(this.panelChangeDepartment);
-            this.panelEditorPanelContainer.Controls.Add(this.comboBox12);
-            this.panelEditorPanelContainer.Controls.Add(this.lblEditField);
-            this.panelEditorPanelContainer.Controls.Add(this.panelTitle);
-            this.panelEditorPanelContainer.Location = new System.Drawing.Point(21, 29);
-            this.panelEditorPanelContainer.Name = "panelEditorPanelContainer";
-            this.panelEditorPanelContainer.Size = new System.Drawing.Size(1234, 677);
-            this.panelEditorPanelContainer.TabIndex = 34;
-            // 
-            // panelChangeDesignation
-            // 
-            this.panelChangeDesignation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChangeDesignation.Controls.Add(this.bttnRemoveDesignation);
-            this.panelChangeDesignation.Controls.Add(this.bttnNewDesignation);
-            this.panelChangeDesignation.Controls.Add(this.dataGridDesignations);
-            this.panelChangeDesignation.Controls.Add(this.txtboxNewDesignation);
-            this.panelChangeDesignation.Controls.Add(this.lblNewDesignation);
-            this.panelChangeDesignation.Controls.Add(this.panel22);
-            this.panelChangeDesignation.Location = new System.Drawing.Point(534, 73);
-            this.panelChangeDesignation.Name = "panelChangeDesignation";
-            this.panelChangeDesignation.Size = new System.Drawing.Size(627, 297);
-            this.panelChangeDesignation.TabIndex = 34;
-            // 
-            // bttnRemoveDesignation
-            // 
-            this.bttnRemoveDesignation.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveDesignation.Name = "bttnRemoveDesignation";
-            this.bttnRemoveDesignation.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveDesignation.TabIndex = 38;
-            this.bttnRemoveDesignation.Text = "Remove";
-            this.bttnRemoveDesignation.UseVisualStyleBackColor = true;
-            // 
-            // bttnNewDesignation
-            // 
-            this.bttnNewDesignation.Location = new System.Drawing.Point(541, 37);
-            this.bttnNewDesignation.Name = "bttnNewDesignation";
-            this.bttnNewDesignation.Size = new System.Drawing.Size(75, 23);
-            this.bttnNewDesignation.TabIndex = 37;
-            this.bttnNewDesignation.Text = "Add";
-            this.bttnNewDesignation.UseVisualStyleBackColor = true;
-            // 
-            // dataGridDesignations
-            // 
-            this.dataGridDesignations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridDesignations.Location = new System.Drawing.Point(27, 79);
-            this.dataGridDesignations.Name = "dataGridDesignations";
-            this.dataGridDesignations.Size = new System.Drawing.Size(286, 190);
-            this.dataGridDesignations.TabIndex = 36;
-            // 
-            // txtboxNewDesignation
-            // 
-            this.txtboxNewDesignation.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewDesignation.Name = "txtboxNewDesignation";
-            this.txtboxNewDesignation.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewDesignation.TabIndex = 35;
-            // 
-            // lblNewDesignation
-            // 
-            this.lblNewDesignation.AutoSize = true;
-            this.lblNewDesignation.Location = new System.Drawing.Point(24, 42);
-            this.lblNewDesignation.Name = "lblNewDesignation";
-            this.lblNewDesignation.Size = new System.Drawing.Size(88, 13);
-            this.lblNewDesignation.TabIndex = 1;
-            this.lblNewDesignation.Text = "New Designation";
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.Teal;
-            this.panel22.Controls.Add(this.label35);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 0);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(625, 25);
-            this.panel22.TabIndex = 0;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label35.Location = new System.Drawing.Point(14, 3);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(87, 16);
-            this.label35.TabIndex = 2;
-            this.label35.Text = "Designations";
-            // 
-            // panelChangeFaculty
-            // 
-            this.panelChangeFaculty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChangeFaculty.Controls.Add(this.bttnRemoveFaculty);
-            this.panelChangeFaculty.Controls.Add(this.bttnAddNewFaculty);
-            this.panelChangeFaculty.Controls.Add(this.dataGridView8);
-            this.panelChangeFaculty.Controls.Add(this.txtboxNewFaculty);
-            this.panelChangeFaculty.Controls.Add(this.lblNewFaculty);
-            this.panelChangeFaculty.Controls.Add(this.panel20);
-            this.panelChangeFaculty.Location = new System.Drawing.Point(534, 73);
-            this.panelChangeFaculty.Name = "panelChangeFaculty";
-            this.panelChangeFaculty.Size = new System.Drawing.Size(627, 297);
-            this.panelChangeFaculty.TabIndex = 36;
-            // 
-            // bttnRemoveFaculty
-            // 
-            this.bttnRemoveFaculty.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveFaculty.Name = "bttnRemoveFaculty";
-            this.bttnRemoveFaculty.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveFaculty.TabIndex = 38;
-            this.bttnRemoveFaculty.Text = "Remove";
-            this.bttnRemoveFaculty.UseVisualStyleBackColor = true;
-            // 
-            // bttnAddNewFaculty
-            // 
-            this.bttnAddNewFaculty.Location = new System.Drawing.Point(541, 37);
-            this.bttnAddNewFaculty.Name = "bttnAddNewFaculty";
-            this.bttnAddNewFaculty.Size = new System.Drawing.Size(75, 23);
-            this.bttnAddNewFaculty.TabIndex = 37;
-            this.bttnAddNewFaculty.Text = "Add";
-            this.bttnAddNewFaculty.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(27, 79);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(286, 190);
-            this.dataGridView8.TabIndex = 36;
-            // 
-            // txtboxNewFaculty
-            // 
-            this.txtboxNewFaculty.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewFaculty.Name = "txtboxNewFaculty";
-            this.txtboxNewFaculty.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewFaculty.TabIndex = 35;
-            // 
-            // lblNewFaculty
-            // 
-            this.lblNewFaculty.AutoSize = true;
-            this.lblNewFaculty.Location = new System.Drawing.Point(24, 42);
-            this.lblNewFaculty.Name = "lblNewFaculty";
-            this.lblNewFaculty.Size = new System.Drawing.Size(66, 13);
-            this.lblNewFaculty.TabIndex = 1;
-            this.lblNewFaculty.Text = "New Faculty";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.Teal;
-            this.panel20.Controls.Add(this.label59);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(625, 25);
-            this.panel20.TabIndex = 0;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label59.Location = new System.Drawing.Point(14, 3);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(51, 16);
-            this.label59.TabIndex = 2;
-            this.label59.Text = "Faculty";
-            // 
-            // panelChangeSalaryCode
-            // 
-            this.panelChangeSalaryCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChangeSalaryCode.Controls.Add(this.bttnRemoveSalaryCode);
-            this.panelChangeSalaryCode.Controls.Add(this.bbtnNewSalaryCode);
-            this.panelChangeSalaryCode.Controls.Add(this.dataGridView9);
-            this.panelChangeSalaryCode.Controls.Add(this.txtboxNewSalaryCode);
-            this.panelChangeSalaryCode.Controls.Add(this.lblNewSalaryCode);
-            this.panelChangeSalaryCode.Controls.Add(this.panel23);
-            this.panelChangeSalaryCode.Location = new System.Drawing.Point(534, 73);
-            this.panelChangeSalaryCode.Name = "panelChangeSalaryCode";
-            this.panelChangeSalaryCode.Size = new System.Drawing.Size(627, 297);
-            this.panelChangeSalaryCode.TabIndex = 37;
-            // 
-            // bttnRemoveSalaryCode
-            // 
-            this.bttnRemoveSalaryCode.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveSalaryCode.Name = "bttnRemoveSalaryCode";
-            this.bttnRemoveSalaryCode.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveSalaryCode.TabIndex = 38;
-            this.bttnRemoveSalaryCode.Text = "Remove";
-            this.bttnRemoveSalaryCode.UseVisualStyleBackColor = true;
-            // 
-            // bbtnNewSalaryCode
-            // 
-            this.bbtnNewSalaryCode.Location = new System.Drawing.Point(541, 37);
-            this.bbtnNewSalaryCode.Name = "bbtnNewSalaryCode";
-            this.bbtnNewSalaryCode.Size = new System.Drawing.Size(75, 23);
-            this.bbtnNewSalaryCode.TabIndex = 37;
-            this.bbtnNewSalaryCode.Text = "Add";
-            this.bbtnNewSalaryCode.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView9
-            // 
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(27, 79);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(286, 190);
-            this.dataGridView9.TabIndex = 36;
-            // 
-            // txtboxNewSalaryCode
-            // 
-            this.txtboxNewSalaryCode.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewSalaryCode.Name = "txtboxNewSalaryCode";
-            this.txtboxNewSalaryCode.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewSalaryCode.TabIndex = 35;
-            // 
-            // lblNewSalaryCode
-            // 
-            this.lblNewSalaryCode.AutoSize = true;
-            this.lblNewSalaryCode.Location = new System.Drawing.Point(24, 42);
-            this.lblNewSalaryCode.Name = "lblNewSalaryCode";
-            this.lblNewSalaryCode.Size = new System.Drawing.Size(89, 13);
-            this.lblNewSalaryCode.TabIndex = 1;
-            this.lblNewSalaryCode.Text = "New Salary Code";
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.Teal;
-            this.panel23.Controls.Add(this.label60);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(0, 0);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(625, 25);
-            this.panel23.TabIndex = 0;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label60.Location = new System.Drawing.Point(14, 3);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(83, 16);
-            this.label60.TabIndex = 2;
-            this.label60.Text = "Salary Code";
-            // 
-            // panelChangeSalaryScale
-            // 
-            this.panelChangeSalaryScale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChangeSalaryScale.Controls.Add(this.bttnRemoveSalaryScale);
-            this.panelChangeSalaryScale.Controls.Add(this.bttnAddSalaryScale);
-            this.panelChangeSalaryScale.Controls.Add(this.dataGridView10);
-            this.panelChangeSalaryScale.Controls.Add(this.txtboxNewSalaryScale);
-            this.panelChangeSalaryScale.Controls.Add(this.lblNewSalaryScale);
-            this.panelChangeSalaryScale.Controls.Add(this.panel24);
-            this.panelChangeSalaryScale.Location = new System.Drawing.Point(534, 73);
-            this.panelChangeSalaryScale.Name = "panelChangeSalaryScale";
-            this.panelChangeSalaryScale.Size = new System.Drawing.Size(627, 297);
-            this.panelChangeSalaryScale.TabIndex = 38;
-            // 
-            // bttnRemoveSalaryScale
-            // 
-            this.bttnRemoveSalaryScale.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveSalaryScale.Name = "bttnRemoveSalaryScale";
-            this.bttnRemoveSalaryScale.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveSalaryScale.TabIndex = 38;
-            this.bttnRemoveSalaryScale.Text = "Remove";
-            this.bttnRemoveSalaryScale.UseVisualStyleBackColor = true;
-            // 
-            // bttnAddSalaryScale
-            // 
-            this.bttnAddSalaryScale.Location = new System.Drawing.Point(541, 37);
-            this.bttnAddSalaryScale.Name = "bttnAddSalaryScale";
-            this.bttnAddSalaryScale.Size = new System.Drawing.Size(75, 23);
-            this.bttnAddSalaryScale.TabIndex = 37;
-            this.bttnAddSalaryScale.Text = "Add";
-            this.bttnAddSalaryScale.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView10
-            // 
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Location = new System.Drawing.Point(27, 79);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.Size = new System.Drawing.Size(286, 190);
-            this.dataGridView10.TabIndex = 36;
-            // 
-            // txtboxNewSalaryScale
-            // 
-            this.txtboxNewSalaryScale.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewSalaryScale.Name = "txtboxNewSalaryScale";
-            this.txtboxNewSalaryScale.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewSalaryScale.TabIndex = 35;
-            // 
-            // lblNewSalaryScale
-            // 
-            this.lblNewSalaryScale.AutoSize = true;
-            this.lblNewSalaryScale.Location = new System.Drawing.Point(24, 42);
-            this.lblNewSalaryScale.Name = "lblNewSalaryScale";
-            this.lblNewSalaryScale.Size = new System.Drawing.Size(91, 13);
-            this.lblNewSalaryScale.TabIndex = 1;
-            this.lblNewSalaryScale.Text = "New Salary Scale";
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.Teal;
-            this.panel24.Controls.Add(this.label65);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 0);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(625, 25);
-            this.panel24.TabIndex = 0;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label65.Location = new System.Drawing.Point(14, 3);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(85, 16);
-            this.label65.TabIndex = 2;
-            this.label65.Text = "Salary Scale";
-            // 
-            // panelChnageSalaryStep
-            // 
-            this.panelChnageSalaryStep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChnageSalaryStep.Controls.Add(this.bttnRemoveSalaryStep);
-            this.panelChnageSalaryStep.Controls.Add(this.bttnAddNewSalaryStep);
-            this.panelChnageSalaryStep.Controls.Add(this.dataGridView11);
-            this.panelChnageSalaryStep.Controls.Add(this.txtboxNewSalaryStep);
-            this.panelChnageSalaryStep.Controls.Add(this.label42);
-            this.panelChnageSalaryStep.Controls.Add(this.panel25);
-            this.panelChnageSalaryStep.Location = new System.Drawing.Point(534, 73);
-            this.panelChnageSalaryStep.Name = "panelChnageSalaryStep";
-            this.panelChnageSalaryStep.Size = new System.Drawing.Size(627, 297);
-            this.panelChnageSalaryStep.TabIndex = 39;
-            // 
-            // bttnRemoveSalaryStep
-            // 
-            this.bttnRemoveSalaryStep.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveSalaryStep.Name = "bttnRemoveSalaryStep";
-            this.bttnRemoveSalaryStep.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveSalaryStep.TabIndex = 38;
-            this.bttnRemoveSalaryStep.Text = "Remove";
-            this.bttnRemoveSalaryStep.UseVisualStyleBackColor = true;
-            // 
-            // bttnAddNewSalaryStep
-            // 
-            this.bttnAddNewSalaryStep.Location = new System.Drawing.Point(541, 37);
-            this.bttnAddNewSalaryStep.Name = "bttnAddNewSalaryStep";
-            this.bttnAddNewSalaryStep.Size = new System.Drawing.Size(75, 23);
-            this.bttnAddNewSalaryStep.TabIndex = 37;
-            this.bttnAddNewSalaryStep.Text = "Add";
-            this.bttnAddNewSalaryStep.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView11
-            // 
-            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.Location = new System.Drawing.Point(27, 79);
-            this.dataGridView11.Name = "dataGridView11";
-            this.dataGridView11.Size = new System.Drawing.Size(286, 190);
-            this.dataGridView11.TabIndex = 36;
-            // 
-            // txtboxNewSalaryStep
-            // 
-            this.txtboxNewSalaryStep.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewSalaryStep.Name = "txtboxNewSalaryStep";
-            this.txtboxNewSalaryStep.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewSalaryStep.TabIndex = 35;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(24, 42);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(86, 13);
-            this.label42.TabIndex = 1;
-            this.label42.Text = "New Salary Step";
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.Teal;
-            this.panel25.Controls.Add(this.label66);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(0, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(625, 25);
-            this.panel25.TabIndex = 0;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label66.Location = new System.Drawing.Point(14, 3);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(78, 16);
-            this.label66.TabIndex = 2;
-            this.label66.Text = "Salary Step";
-            // 
-            // panelChangeDepartment
-            // 
-            this.panelChangeDepartment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChangeDepartment.Controls.Add(this.bttnRemoveDpt);
-            this.panelChangeDepartment.Controls.Add(this.bttnAddNewDpt);
-            this.panelChangeDepartment.Controls.Add(this.dataGridView7);
-            this.panelChangeDepartment.Controls.Add(this.txtboxNewDpt);
-            this.panelChangeDepartment.Controls.Add(this.lblNewDpt);
-            this.panelChangeDepartment.Controls.Add(this.panel21);
-            this.panelChangeDepartment.Location = new System.Drawing.Point(534, 73);
-            this.panelChangeDepartment.Name = "panelChangeDepartment";
-            this.panelChangeDepartment.Size = new System.Drawing.Size(627, 297);
-            this.panelChangeDepartment.TabIndex = 35;
-            // 
-            // bttnRemoveDpt
-            // 
-            this.bttnRemoveDpt.Location = new System.Drawing.Point(541, 63);
-            this.bttnRemoveDpt.Name = "bttnRemoveDpt";
-            this.bttnRemoveDpt.Size = new System.Drawing.Size(75, 23);
-            this.bttnRemoveDpt.TabIndex = 38;
-            this.bttnRemoveDpt.Text = "Remove";
-            this.bttnRemoveDpt.UseVisualStyleBackColor = true;
-            // 
-            // bttnAddNewDpt
-            // 
-            this.bttnAddNewDpt.Location = new System.Drawing.Point(541, 37);
-            this.bttnAddNewDpt.Name = "bttnAddNewDpt";
-            this.bttnAddNewDpt.Size = new System.Drawing.Size(75, 23);
-            this.bttnAddNewDpt.TabIndex = 37;
-            this.bttnAddNewDpt.Text = "Add";
-            this.bttnAddNewDpt.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(27, 79);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(286, 190);
-            this.dataGridView7.TabIndex = 36;
-            // 
-            // txtboxNewDpt
-            // 
-            this.txtboxNewDpt.Location = new System.Drawing.Point(137, 39);
-            this.txtboxNewDpt.Name = "txtboxNewDpt";
-            this.txtboxNewDpt.Size = new System.Drawing.Size(177, 20);
-            this.txtboxNewDpt.TabIndex = 35;
-            // 
-            // lblNewDpt
-            // 
-            this.lblNewDpt.AutoSize = true;
-            this.lblNewDpt.Location = new System.Drawing.Point(24, 42);
-            this.lblNewDpt.Name = "lblNewDpt";
-            this.lblNewDpt.Size = new System.Drawing.Size(87, 13);
-            this.lblNewDpt.TabIndex = 1;
-            this.lblNewDpt.Text = "New Department";
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.Teal;
-            this.panel21.Controls.Add(this.label58);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 0);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(625, 25);
-            this.panel21.TabIndex = 0;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label58.Location = new System.Drawing.Point(14, 3);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(78, 16);
-            this.label58.TabIndex = 2;
-            this.label58.Text = "Department";
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(97, 73);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(266, 21);
-            this.comboBox12.TabIndex = 33;
-            // 
-            // lblEditField
-            // 
-            this.lblEditField.AutoSize = true;
-            this.lblEditField.Location = new System.Drawing.Point(32, 76);
-            this.lblEditField.Name = "lblEditField";
-            this.lblEditField.Size = new System.Drawing.Size(50, 13);
-            this.lblEditField.TabIndex = 2;
-            this.lblEditField.Text = "Edit Field";
-            // 
-            // panelTitle
-            // 
-            this.panelTitle.BackColor = System.Drawing.Color.Teal;
-            this.panelTitle.Controls.Add(this.label11);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1232, 30);
-            this.panelTitle.TabIndex = 32;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(16, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Settings";
-            // 
-            // other_positions
-            // 
-            this.other_positions.Controls.Add(this.btnSave);
-            this.other_positions.Controls.Add(this.label15);
-            this.other_positions.Controls.Add(this.label10);
-            this.other_positions.Controls.Add(this.progressBar4);
-            this.other_positions.Controls.Add(this.lblPrevOtherPostns_dark);
-            this.other_positions.Controls.Add(this.lblPrevOtherPostns_light);
-            this.other_positions.Controls.Add(this.panel2);
-            this.other_positions.Location = new System.Drawing.Point(90, 33);
-            this.other_positions.Name = "other_positions";
-            this.other_positions.Size = new System.Drawing.Size(1276, 735);
-            this.other_positions.TabIndex = 32;
-            this.other_positions.Visible = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Teal;
-            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(1189, 597);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(66, 50);
-            this.btnSave.TabIndex = 65;
-            this.toolTip1.SetToolTip(this.btnSave, "Save");
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
-            // 
-            // label15
-            // 
-            this.label15.Image = ((System.Drawing.Image)(resources.GetObject("label15.Image")));
-            this.label15.Location = new System.Drawing.Point(1213, 663);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 48);
-            this.label15.TabIndex = 64;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(94, 660);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 16);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "Step";
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(97, 679);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(1076, 20);
-            this.progressBar4.TabIndex = 62;
-            this.progressBar4.Value = 100;
-            // 
-            // lblPrevOtherPostns_dark
-            // 
-            this.lblPrevOtherPostns_dark.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_dark.Image")));
-            this.lblPrevOtherPostns_dark.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevOtherPostns_dark.Name = "lblPrevOtherPostns_dark";
-            this.lblPrevOtherPostns_dark.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevOtherPostns_dark.TabIndex = 61;
-            this.lblPrevOtherPostns_dark.MouseEnter += new System.EventHandler(this.lblPrevOtherPostns_dark_MouseEnter);
-            // 
-            // lblPrevOtherPostns_light
-            // 
-            this.lblPrevOtherPostns_light.Image = ((System.Drawing.Image)(resources.GetObject("lblPrevOtherPostns_light.Image")));
-            this.lblPrevOtherPostns_light.Location = new System.Drawing.Point(17, 663);
-            this.lblPrevOtherPostns_light.Name = "lblPrevOtherPostns_light";
-            this.lblPrevOtherPostns_light.Size = new System.Drawing.Size(41, 48);
-            this.lblPrevOtherPostns_light.TabIndex = 72;
-            this.toolTip1.SetToolTip(this.lblPrevOtherPostns_light, "Previous");
-            this.lblPrevOtherPostns_light.Click += new System.EventHandler(this.lblPrevOtherPostns_light_Click);
-            this.lblPrevOtherPostns_light.MouseLeave += new System.EventHandler(this.lblPrevOtherPostns_light_MouseLeave);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.dateOtherPosistionTo);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.tblOtherPositions);
-            this.panel2.Controls.Add(this.btnRemoveOtherPosition);
-            this.panel2.Controls.Add(this.btnAddOtherPosition);
-            this.panel2.Controls.Add(this.dateOtherPositionFrom);
-            this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.txtOtherPosition);
-            this.panel2.Controls.Add(this.label32);
-            this.panel2.Location = new System.Drawing.Point(21, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1234, 548);
-            this.panel2.TabIndex = 48;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Teal;
-            this.panel7.Controls.Add(this.label45);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1232, 30);
-            this.panel7.TabIndex = 48;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label45.Location = new System.Drawing.Point(8, 8);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(223, 16);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Other Positions held in the University";
-            // 
-            // dateOtherPosistionTo
-            // 
-            this.dateOtherPosistionTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateOtherPosistionTo.Location = new System.Drawing.Point(117, 108);
-            this.dateOtherPosistionTo.Name = "dateOtherPosistionTo";
-            this.dateOtherPosistionTo.Size = new System.Drawing.Size(289, 20);
-            this.dateOtherPosistionTo.TabIndex = 47;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 110);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(20, 13);
-            this.label12.TabIndex = 46;
-            this.label12.Text = "To";
-            // 
-            // tblOtherPositions
-            // 
-            this.tblOtherPositions.AllowUserToAddRows = false;
-            this.tblOtherPositions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblOtherPositions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.tblOtherPositions.Location = new System.Drawing.Point(487, 47);
-            this.tblOtherPositions.Name = "tblOtherPositions";
-            this.tblOtherPositions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblOtherPositions.Size = new System.Drawing.Size(734, 262);
-            this.tblOtherPositions.TabIndex = 45;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Position";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 300;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "From";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "To";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 170;
-            // 
-            // btnRemoveOtherPosition
-            // 
-            this.btnRemoveOtherPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemoveOtherPosition.Location = new System.Drawing.Point(250, 133);
-            this.btnRemoveOtherPosition.Name = "btnRemoveOtherPosition";
-            this.btnRemoveOtherPosition.Size = new System.Drawing.Size(75, 23);
-            this.btnRemoveOtherPosition.TabIndex = 42;
-            this.btnRemoveOtherPosition.Text = "Remove";
-            this.btnRemoveOtherPosition.UseVisualStyleBackColor = true;
-            this.btnRemoveOtherPosition.Click += new System.EventHandler(this.btnRemoveOtherPosition_Click);
-            // 
-            // btnAddOtherPosition
-            // 
-            this.btnAddOtherPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddOtherPosition.Location = new System.Drawing.Point(331, 133);
-            this.btnAddOtherPosition.Name = "btnAddOtherPosition";
-            this.btnAddOtherPosition.Size = new System.Drawing.Size(75, 23);
-            this.btnAddOtherPosition.TabIndex = 41;
-            this.btnAddOtherPosition.Text = "Add";
-            this.btnAddOtherPosition.UseVisualStyleBackColor = true;
-            this.btnAddOtherPosition.Click += new System.EventHandler(this.btnAddOtherPosition_Click);
-            // 
-            // dateOtherPositionFrom
-            // 
-            this.dateOtherPositionFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateOtherPositionFrom.Location = new System.Drawing.Point(117, 80);
-            this.dateOtherPositionFrom.Name = "dateOtherPositionFrom";
-            this.dateOtherPositionFrom.Size = new System.Drawing.Size(289, 20);
-            this.dateOtherPositionFrom.TabIndex = 38;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(20, 82);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(30, 13);
-            this.label31.TabIndex = 37;
-            this.label31.Text = "From";
-            // 
-            // txtOtherPosition
-            // 
-            this.txtOtherPosition.Location = new System.Drawing.Point(117, 53);
-            this.txtOtherPosition.Name = "txtOtherPosition";
-            this.txtOtherPosition.Size = new System.Drawing.Size(289, 20);
-            this.txtOtherPosition.TabIndex = 36;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(20, 55);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(44, 13);
-            this.label32.TabIndex = 35;
-            this.label32.Text = "Position";
-            // 
-            // alerts
-            // 
-            this.alerts.Controls.Add(this.panel17);
-            this.alerts.Location = new System.Drawing.Point(90, 33);
-            this.alerts.Name = "alerts";
-            this.alerts.Size = new System.Drawing.Size(1276, 735);
-            this.alerts.TabIndex = 36;
-            // 
-            // panel17
-            // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.panel16);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Controls.Add(this.dataGridView6);
-            this.panel17.Location = new System.Drawing.Point(21, 22);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1234, 677);
-            this.panel17.TabIndex = 33;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.btnAlertRead);
-            this.panel16.Controls.Add(this.btnAlertDelete);
-            this.panel16.Controls.Add(this.btnAlertView);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 30);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1232, 33);
-            this.panel16.TabIndex = 30;
-            // 
-            // btnAlertRead
-            // 
-            this.btnAlertRead.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertRead.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertRead.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertRead.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertRead.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertRead.Image")));
-            this.btnAlertRead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertRead.Location = new System.Drawing.Point(155, 0);
-            this.btnAlertRead.Margin = new System.Windows.Forms.Padding(1);
-            this.btnAlertRead.Name = "btnAlertRead";
-            this.btnAlertRead.Size = new System.Drawing.Size(120, 31);
-            this.btnAlertRead.TabIndex = 2;
-            this.btnAlertRead.Text = "Mark as Read";
-            this.btnAlertRead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertRead.UseVisualStyleBackColor = false;
-            // 
-            // btnAlertDelete
-            // 
-            this.btnAlertDelete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertDelete.Image")));
-            this.btnAlertDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertDelete.Location = new System.Drawing.Point(71, 0);
-            this.btnAlertDelete.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAlertDelete.Name = "btnAlertDelete";
-            this.btnAlertDelete.Size = new System.Drawing.Size(83, 31);
-            this.btnAlertDelete.TabIndex = 1;
-            this.btnAlertDelete.Text = "Delete";
-            this.btnAlertDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertDelete.UseVisualStyleBackColor = false;
-            this.btnAlertDelete.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // btnAlertView
-            // 
-            this.btnAlertView.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAlertView.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnAlertView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnAlertView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnAlertView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertView.Image = ((System.Drawing.Image)(resources.GetObject("btnAlertView.Image")));
-            this.btnAlertView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlertView.Location = new System.Drawing.Point(-2, 0);
-            this.btnAlertView.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAlertView.Name = "btnAlertView";
-            this.btnAlertView.Size = new System.Drawing.Size(72, 31);
-            this.btnAlertView.TabIndex = 0;
-            this.btnAlertView.Text = "View";
-            this.btnAlertView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAlertView.UseVisualStyleBackColor = false;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.Teal;
-            this.panel18.Controls.Add(this.label3);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(1232, 30);
-            this.panel18.TabIndex = 32;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(16, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Alerts";
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colAlertName,
-            this.colDate,
-            this.colStatus});
-            this.dataGridView6.Location = new System.Drawing.Point(30, 96);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(1166, 541);
-            this.dataGridView6.TabIndex = 31;
-            // 
-            // colAlertName
-            // 
-            this.colAlertName.HeaderText = "Alert Name";
-            this.colAlertName.Name = "colAlertName";
-            this.colAlertName.Width = 350;
-            // 
-            // colDate
-            // 
-            this.colDate.HeaderText = "Triggered on";
-            this.colDate.Name = "colDate";
-            this.colDate.Width = 200;
-            // 
-            // colStatus
-            // 
-            this.colStatus.HeaderText = "Status";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.Width = 150;
-            // 
-            // reports
-            // 
-            this.reports.Controls.Add(this.btnReport);
-            this.reports.Controls.Add(this.panel14);
-            this.reports.Controls.Add(this.panel12);
-            this.reports.Controls.Add(this.groupBox2);
-            this.reports.Location = new System.Drawing.Point(90, 33);
-            this.reports.Name = "reports";
-            this.reports.Size = new System.Drawing.Size(1276, 735);
-            this.reports.TabIndex = 35;
-            this.reports.Visible = false;
-            // 
-            // btnReport
-            // 
-            this.btnReport.BackColor = System.Drawing.Color.Teal;
-            this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btnReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
-            this.btnReport.Location = new System.Drawing.Point(1189, 661);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(66, 50);
-            this.btnReport.TabIndex = 67;
-            this.toolTip1.SetToolTip(this.btnReport, "Generate");
-            this.btnReport.UseVisualStyleBackColor = false;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // panel14
-            // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.btnClearAll);
-            this.panel14.Controls.Add(this.chkBxOtherPositions);
-            this.panel14.Controls.Add(this.chkBxService);
-            this.panel14.Controls.Add(this.chkBxEducational);
-            this.panel14.Controls.Add(this.chkBxFamily);
-            this.panel14.Controls.Add(this.chkBxPersonal);
-            this.panel14.Controls.Add(this.chkLBxOtherPositions);
-            this.panel14.Controls.Add(this.chkLBxService);
-            this.panel14.Controls.Add(this.chkLBxEducational);
-            this.panel14.Controls.Add(this.chkLBxFamily);
-            this.panel14.Controls.Add(this.chkLBxPersonal);
-            this.panel14.Controls.Add(this.panel15);
-            this.panel14.Location = new System.Drawing.Point(433, 23);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(822, 617);
-            this.panel14.TabIndex = 64;
-            // 
-            // btnClearAll
-            // 
-            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearAll.Location = new System.Drawing.Point(707, 51);
-            this.btnClearAll.Name = "btnClearAll";
-            this.btnClearAll.Size = new System.Drawing.Size(74, 21);
-            this.btnClearAll.TabIndex = 78;
-            this.btnClearAll.Text = "Clear All";
-            this.btnClearAll.UseVisualStyleBackColor = true;
-            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
-            // 
-            // chkBxOtherPositions
-            // 
-            this.chkBxOtherPositions.AutoSize = true;
-            this.chkBxOtherPositions.Location = new System.Drawing.Point(665, 89);
-            this.chkBxOtherPositions.Name = "chkBxOtherPositions";
-            this.chkBxOtherPositions.Size = new System.Drawing.Size(97, 17);
-            this.chkBxOtherPositions.TabIndex = 77;
-            this.chkBxOtherPositions.Text = "Other Positions";
-            this.chkBxOtherPositions.UseVisualStyleBackColor = true;
-            this.chkBxOtherPositions.CheckedChanged += new System.EventHandler(this.chkBxOtherPositions_CheckedChanged);
-            // 
-            // chkBxService
-            // 
-            this.chkBxService.AutoSize = true;
-            this.chkBxService.Location = new System.Drawing.Point(545, 89);
-            this.chkBxService.Name = "chkBxService";
-            this.chkBxService.Size = new System.Drawing.Size(100, 17);
-            this.chkBxService.TabIndex = 76;
-            this.chkBxService.Text = "Service Record";
-            this.chkBxService.UseVisualStyleBackColor = true;
-            this.chkBxService.CheckedChanged += new System.EventHandler(this.chkBxService_CheckedChanged);
-            // 
-            // chkBxEducational
-            // 
-            this.chkBxEducational.AutoSize = true;
-            this.chkBxEducational.Location = new System.Drawing.Point(400, 87);
-            this.chkBxEducational.Name = "chkBxEducational";
-            this.chkBxEducational.Size = new System.Drawing.Size(82, 17);
-            this.chkBxEducational.TabIndex = 75;
-            this.chkBxEducational.Text = "Educational";
-            this.chkBxEducational.UseVisualStyleBackColor = true;
-            this.chkBxEducational.CheckedChanged += new System.EventHandler(this.chkBxEducational_CheckedChanged);
-            // 
-            // chkBxFamily
-            // 
-            this.chkBxFamily.AutoSize = true;
-            this.chkBxFamily.Location = new System.Drawing.Point(262, 86);
-            this.chkBxFamily.Name = "chkBxFamily";
-            this.chkBxFamily.Size = new System.Drawing.Size(55, 17);
-            this.chkBxFamily.TabIndex = 74;
-            this.chkBxFamily.Text = "Family";
-            this.chkBxFamily.UseVisualStyleBackColor = true;
-            this.chkBxFamily.CheckedChanged += new System.EventHandler(this.chkBxFamily_CheckedChanged);
-            // 
-            // chkBxPersonal
-            // 
-            this.chkBxPersonal.AutoSize = true;
-            this.chkBxPersonal.Location = new System.Drawing.Point(45, 87);
-            this.chkBxPersonal.Name = "chkBxPersonal";
-            this.chkBxPersonal.Size = new System.Drawing.Size(67, 17);
-            this.chkBxPersonal.TabIndex = 73;
-            this.chkBxPersonal.Text = "Personal";
-            this.chkBxPersonal.UseVisualStyleBackColor = true;
-            this.chkBxPersonal.CheckedChanged += new System.EventHandler(this.chkBxPersonal_CheckedChanged);
-            // 
-            // chkLBxOtherPositions
-            // 
-            this.chkLBxOtherPositions.BackColor = System.Drawing.Color.Gainsboro;
-            this.chkLBxOtherPositions.FormattingEnabled = true;
-            this.chkLBxOtherPositions.Items.AddRange(new object[] {
-            "Position",
-            "From",
-            "To"});
-            this.chkLBxOtherPositions.Location = new System.Drawing.Point(665, 114);
-            this.chkLBxOtherPositions.Name = "chkLBxOtherPositions";
-            this.chkLBxOtherPositions.Size = new System.Drawing.Size(116, 244);
-            this.chkLBxOtherPositions.TabIndex = 72;
-            // 
-            // chkLBxService
-            // 
-            this.chkLBxService.BackColor = System.Drawing.Color.Gainsboro;
-            this.chkLBxService.FormattingEnabled = true;
-            this.chkLBxService.Items.AddRange(new object[] {
-            "Position",
-            "From",
-            "To"});
-            this.chkLBxService.Location = new System.Drawing.Point(543, 114);
-            this.chkLBxService.Name = "chkLBxService";
-            this.chkLBxService.Size = new System.Drawing.Size(116, 244);
-            this.chkLBxService.TabIndex = 71;
-            // 
-            // chkLBxEducational
-            // 
-            this.chkLBxEducational.BackColor = System.Drawing.Color.Gainsboro;
-            this.chkLBxEducational.FormattingEnabled = true;
-            this.chkLBxEducational.Items.AddRange(new object[] {
-            "Qulification Obtained",
-            "University",
-            "Effective Date",
-            "Grade"});
-            this.chkLBxEducational.Location = new System.Drawing.Point(398, 116);
-            this.chkLBxEducational.Name = "chkLBxEducational";
-            this.chkLBxEducational.Size = new System.Drawing.Size(139, 244);
-            this.chkLBxEducational.TabIndex = 70;
-            // 
-            // chkLBxFamily
-            // 
-            this.chkLBxFamily.BackColor = System.Drawing.Color.Gainsboro;
-            this.chkLBxFamily.FormattingEnabled = true;
-            this.chkLBxFamily.Items.AddRange(new object[] {
-            "Name",
-            "DOB",
-            "Birth Certificate No"});
-            this.chkLBxFamily.Location = new System.Drawing.Point(260, 116);
-            this.chkLBxFamily.Name = "chkLBxFamily";
-            this.chkLBxFamily.Size = new System.Drawing.Size(132, 244);
-            this.chkLBxFamily.TabIndex = 69;
-            // 
-            // chkLBxPersonal
-            // 
-            this.chkLBxPersonal.BackColor = System.Drawing.Color.Gainsboro;
-            this.chkLBxPersonal.FormattingEnabled = true;
-            this.chkLBxPersonal.Items.AddRange(new object[] {
-            "Title",
-            "Full Name",
-            "Name with Initials",
-            "DOB",
-            "Gender",
-            "Private Contact No",
-            "Office Contact No",
-            "Private Email",
-            "Office Email",
-            "NIC No",
-            "Passport No",
-            "UPF No",
-            "Appointment Date",
-            "Retirement Date",
-            "Marriage Certificate No",
-            "Type",
-            "ServiceNo",
-            "Department Name",
-            "Designation",
-            "Salary Step",
-            "Increment Date",
-            "Salary Step",
-            "Increment date"});
-            this.chkLBxPersonal.Location = new System.Drawing.Point(42, 116);
-            this.chkLBxPersonal.Name = "chkLBxPersonal";
-            this.chkLBxPersonal.Size = new System.Drawing.Size(212, 379);
-            this.chkLBxPersonal.TabIndex = 68;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Teal;
-            this.panel15.Controls.Add(this.label57);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(820, 30);
-            this.panel15.TabIndex = 0;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label57.Location = new System.Drawing.Point(16, 8);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(45, 16);
-            this.label57.TabIndex = 2;
-            this.label57.Text = "Fields";
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Controls.Add(this.dateTimePicker9);
-            this.panel12.Controls.Add(this.label71);
-            this.panel12.Controls.Add(this.dateTimePicker10);
-            this.panel12.Controls.Add(this.label72);
-            this.panel12.Controls.Add(this.groupBox1);
-            this.panel12.Controls.Add(this.comboBox6);
-            this.panel12.Controls.Add(this.label74);
-            this.panel12.Controls.Add(this.checkBox1);
-            this.panel12.Controls.Add(this.comboBox7);
-            this.panel12.Controls.Add(this.comboBox8);
-            this.panel12.Controls.Add(this.label75);
-            this.panel12.Controls.Add(this.label76);
-            this.panel12.Location = new System.Drawing.Point(21, 22);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(389, 617);
-            this.panel12.TabIndex = 63;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Teal;
-            this.panel13.Controls.Add(this.label52);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(387, 30);
-            this.panel13.TabIndex = 0;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label52.Location = new System.Drawing.Point(16, 8);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(55, 16);
-            this.label52.TabIndex = 2;
-            this.label52.Text = "Filter by";
-            // 
-            // dateTimePicker9
-            // 
-            this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker9.Location = new System.Drawing.Point(144, 213);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker9.TabIndex = 62;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(33, 219);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(92, 13);
-            this.label71.TabIndex = 61;
-            this.label71.Text = "Appointment Date";
-            // 
-            // dateTimePicker10
-            // 
-            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker10.Location = new System.Drawing.Point(144, 184);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(191, 20);
-            this.dateTimePicker10.TabIndex = 60;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(33, 190);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(80, 13);
-            this.label72.TabIndex = 59;
-            this.label72.Text = "Increment Date";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(28, 260);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 52);
-            this.groupBox1.TabIndex = 56;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Order";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(224, 1);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(82, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Descending";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(115, 1);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(75, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ascending";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(144, 155);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(191, 21);
-            this.comboBox6.TabIndex = 55;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(33, 160);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(63, 13);
-            this.label74.TabIndex = 54;
-            this.label74.Text = "Designation";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(34, 50);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(112, 17);
-            this.checkBox1.TabIndex = 53;
-            this.checkBox1.Text = "All Academic Staff";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(144, 128);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(191, 21);
-            this.comboBox7.TabIndex = 52;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(144, 101);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(191, 21);
-            this.comboBox8.TabIndex = 51;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(33, 132);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(62, 13);
-            this.label75.TabIndex = 50;
-            this.label75.Text = "Department";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(33, 104);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(41, 13);
-            this.label76.TabIndex = 49;
-            this.label76.Text = "Faculty";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Location = new System.Drawing.Point(38, 312);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(218, 88);
-            this.groupBox2.TabIndex = 57;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Gender";
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(118, 25);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(59, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Female";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 25);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(48, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Male";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // openFileDialogPersonalPic
             // 
             this.openFileDialogPersonalPic.FileName = "openFileDialog";
@@ -3727,70 +3577,111 @@
             // 
             this.openFileDialogMarriageCertificate.FileName = "openFileDialog1";
             // 
-            // chkBxSame
+            // bttnRemoveDpt
             // 
-            this.chkBxSame.AutoSize = true;
-            this.chkBxSame.Location = new System.Drawing.Point(275, 60);
-            this.chkBxSame.Name = "chkBxSame";
-            this.chkBxSame.Size = new System.Drawing.Size(161, 17);
-            this.chkBxSame.TabIndex = 54;
-            this.chkBxSame.Text = "Same as the Mailing address";
-            this.chkBxSame.UseVisualStyleBackColor = true;
+            this.bttnRemoveDpt.Location = new System.Drawing.Point(760, 64);
+            this.bttnRemoveDpt.Name = "bttnRemoveDpt";
+            this.bttnRemoveDpt.Size = new System.Drawing.Size(75, 23);
+            this.bttnRemoveDpt.TabIndex = 43;
+            this.bttnRemoveDpt.Text = "Remove";
+            this.bttnRemoveDpt.UseVisualStyleBackColor = true;
+            this.bttnRemoveDpt.Click += new System.EventHandler(this.bttnRemoveDpt_Click);
             // 
-            // report_view
+            // bttnAddNewDpt
             // 
-            this.report_view.Controls.Add(this.button4);
-            this.report_view.Controls.Add(this.btnPrintPdf);
-            this.report_view.Controls.Add(this.tblReport);
-            this.report_view.Controls.Add(this.button2);
-            this.report_view.Location = new System.Drawing.Point(90, 33);
-            this.report_view.Name = "report_view";
-            this.report_view.Size = new System.Drawing.Size(1276, 735);
-            this.report_view.TabIndex = 38;
-            this.report_view.Visible = false;
+            this.bttnAddNewDpt.Location = new System.Drawing.Point(760, 38);
+            this.bttnAddNewDpt.Name = "bttnAddNewDpt";
+            this.bttnAddNewDpt.Size = new System.Drawing.Size(75, 23);
+            this.bttnAddNewDpt.TabIndex = 42;
+            this.bttnAddNewDpt.Text = "Add";
+            this.bttnAddNewDpt.UseVisualStyleBackColor = true;
+            this.bttnAddNewDpt.Click += new System.EventHandler(this.bttnAddNewDpt_Click);
             // 
-            // button2
+            // tblDepartment
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1189, 661);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 50);
-            this.button2.TabIndex = 67;
-            this.toolTip1.SetToolTip(this.button2, "Generate");
-            this.button2.UseVisualStyleBackColor = false;
+            this.tblDepartment.AllowUserToAddRows = false;
+            this.tblDepartment.AllowUserToDeleteRows = false;
+            this.tblDepartment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblDepartment.Location = new System.Drawing.Point(434, 80);
+            this.tblDepartment.Name = "tblDepartment";
+            this.tblDepartment.ReadOnly = true;
+            this.tblDepartment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblDepartment.Size = new System.Drawing.Size(286, 190);
+            this.tblDepartment.TabIndex = 41;
             // 
-            // tblReport
+            // txtboxNewDpt
             // 
-            this.tblReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblReport.Location = new System.Drawing.Point(20, 22);
-            this.tblReport.Name = "tblReport";
-            this.tblReport.Size = new System.Drawing.Size(1234, 314);
-            this.tblReport.TabIndex = 68;
+            this.txtboxNewDpt.Location = new System.Drawing.Point(544, 40);
+            this.txtboxNewDpt.Name = "txtboxNewDpt";
+            this.txtboxNewDpt.Size = new System.Drawing.Size(177, 20);
+            this.txtboxNewDpt.TabIndex = 40;
             // 
-            // btnPrintPdf
+            // lblNewDpt
             // 
-            this.btnPrintPdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrintPdf.Location = new System.Drawing.Point(42, 397);
-            this.btnPrintPdf.Name = "btnPrintPdf";
-            this.btnPrintPdf.Size = new System.Drawing.Size(105, 21);
-            this.btnPrintPdf.TabIndex = 79;
-            this.btnPrintPdf.Text = "PrintPdf";
-            this.btnPrintPdf.UseVisualStyleBackColor = true;
-            this.btnPrintPdf.Click += new System.EventHandler(this.btnPrintPdf_Click);
+            this.lblNewDpt.AutoSize = true;
+            this.lblNewDpt.Location = new System.Drawing.Point(431, 43);
+            this.lblNewDpt.Name = "lblNewDpt";
+            this.lblNewDpt.Size = new System.Drawing.Size(87, 13);
+            this.lblNewDpt.TabIndex = 39;
+            this.lblNewDpt.Text = "New Department";
             // 
-            // button4
+            // btnRemoveSalaaryCode
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(42, 457);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 21);
-            this.button4.TabIndex = 80;
-            this.button4.Text = "Show in excel";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRemoveSalaaryCode.Location = new System.Drawing.Point(282, 105);
+            this.btnRemoveSalaaryCode.Name = "btnRemoveSalaaryCode";
+            this.btnRemoveSalaaryCode.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveSalaaryCode.TabIndex = 46;
+            this.btnRemoveSalaaryCode.Text = "Remove";
+            this.btnRemoveSalaaryCode.UseVisualStyleBackColor = true;
+            this.btnRemoveSalaaryCode.Click += new System.EventHandler(this.btnRemoveSalaaryCode_Click);
+            // 
+            // btnAddSalaryCode
+            // 
+            this.btnAddSalaryCode.Location = new System.Drawing.Point(282, 79);
+            this.btnAddSalaryCode.Name = "btnAddSalaryCode";
+            this.btnAddSalaryCode.Size = new System.Drawing.Size(75, 23);
+            this.btnAddSalaryCode.TabIndex = 45;
+            this.btnAddSalaryCode.Text = "Add";
+            this.btnAddSalaryCode.UseVisualStyleBackColor = true;
+            this.btnAddSalaryCode.Click += new System.EventHandler(this.btnAddSalaryCode_Click);
+            // 
+            // btnRemoveSalaryScale
+            // 
+            this.btnRemoveSalaryScale.Location = new System.Drawing.Point(645, 106);
+            this.btnRemoveSalaryScale.Name = "btnRemoveSalaryScale";
+            this.btnRemoveSalaryScale.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveSalaryScale.TabIndex = 48;
+            this.btnRemoveSalaryScale.Text = "Remove";
+            this.btnRemoveSalaryScale.UseVisualStyleBackColor = true;
+            this.btnRemoveSalaryScale.Click += new System.EventHandler(this.btnRemoveSalaryScale_Click);
+            // 
+            // btnAddSalarySalaryScale
+            // 
+            this.btnAddSalarySalaryScale.Location = new System.Drawing.Point(645, 80);
+            this.btnAddSalarySalaryScale.Name = "btnAddSalarySalaryScale";
+            this.btnAddSalarySalaryScale.Size = new System.Drawing.Size(75, 23);
+            this.btnAddSalarySalaryScale.TabIndex = 47;
+            this.btnAddSalarySalaryScale.Text = "Add";
+            this.btnAddSalarySalaryScale.UseVisualStyleBackColor = true;
+            this.btnAddSalarySalaryScale.Click += new System.EventHandler(this.btnAddSalarySalaryScale_Click);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(381, 43);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(91, 13);
+            this.label42.TabIndex = 49;
+            this.label42.Text = "New Salary Scale";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(734, 43);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(86, 13);
+            this.label50.TabIndex = 50;
+            this.label50.Text = "New Salary Step";
             // 
             // home
             // 
@@ -3855,72 +3746,6 @@
             this.panelWorkInformation.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.search.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSearch)).EndInit();
-            this.educational_qualifications.ResumeLayout(false);
-            this.educational_qualifications.PerformLayout();
-            this.panelServiceRecords.ResumeLayout(false);
-            this.panelServiceRecords.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblService)).EndInit();
-            this.panelEduQualifications.ResumeLayout(false);
-            this.panelEduQualifications.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).EndInit();
-            this.settings.ResumeLayout(false);
-            this.panelEditorPanelContainer.ResumeLayout(false);
-            this.panelEditorPanelContainer.PerformLayout();
-            this.panelChangeDesignation.ResumeLayout(false);
-            this.panelChangeDesignation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridDesignations)).EndInit();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panelChangeFaculty.ResumeLayout(false);
-            this.panelChangeFaculty.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panelChangeSalaryCode.ResumeLayout(false);
-            this.panelChangeSalaryCode.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panelChangeSalaryScale.ResumeLayout(false);
-            this.panelChangeSalaryScale.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panelChnageSalaryStep.ResumeLayout(false);
-            this.panelChnageSalaryStep.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
-            this.panelChangeDepartment.ResumeLayout(false);
-            this.panelChangeDepartment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panelTitle.ResumeLayout(false);
-            this.panelTitle.PerformLayout();
-            this.other_positions.ResumeLayout(false);
-            this.other_positions.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblOtherPositions)).EndInit();
-            this.alerts.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.reports.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
@@ -3934,8 +3759,62 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.search.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSearch)).EndInit();
+            this.other_positions.ResumeLayout(false);
+            this.other_positions.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOtherPositions)).EndInit();
+            this.settings.ResumeLayout(false);
+            this.panelEditorPanelContainer.ResumeLayout(false);
+            this.panelEditorPanelContainer.PerformLayout();
+            this.panelChangeFaculty.ResumeLayout(false);
+            this.panelChangeFaculty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblFaculty)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panelChangeDesignation.ResumeLayout(false);
+            this.panelChangeDesignation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDesignation)).EndInit();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panelChangeSalaryCode.ResumeLayout(false);
+            this.panelChangeSalaryCode.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldStep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldScale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOldCode)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
+            this.alerts.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAlerts)).EndInit();
             this.report_view.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblReport)).EndInit();
+            this.educational_qualifications.ResumeLayout(false);
+            this.educational_qualifications.PerformLayout();
+            this.panelServiceRecords.ResumeLayout(false);
+            this.panelServiceRecords.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblService)).EndInit();
+            this.panelEduQualifications.ResumeLayout(false);
+            this.panelEduQualifications.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEducation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDepartment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3987,8 +3866,6 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel search;
-        private System.Windows.Forms.DateTimePicker dateTimePicker7;
-        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label55;
@@ -4146,7 +4023,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Button bttnUpdate;
         private System.Windows.Forms.Button bttnDelete;
         private System.Windows.Forms.Button bttnSearch;
@@ -4184,11 +4060,8 @@
         private System.Windows.Forms.Button btnAlertView;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView tblAlerts;
         private System.Windows.Forms.Button btnAlertRead;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colAlertName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
         private System.Windows.Forms.Panel settings;
         private System.Windows.Forms.ComboBox cmbBxSalaryCode;
         private System.Windows.Forms.Label label14;
@@ -4206,26 +4079,8 @@
         private System.Windows.Forms.TextBox txtServiceNo;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Panel panelEditorPanelContainer;
-        private System.Windows.Forms.Panel panelChnageSalaryStep;
-        private System.Windows.Forms.Button bttnRemoveSalaryStep;
-        private System.Windows.Forms.Button bttnAddNewSalaryStep;
-        private System.Windows.Forms.DataGridView dataGridView11;
-        private System.Windows.Forms.TextBox txtboxNewSalaryStep;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Panel panelChangeSalaryScale;
-        private System.Windows.Forms.Button bttnRemoveSalaryScale;
-        private System.Windows.Forms.Button bttnAddSalaryScale;
-        private System.Windows.Forms.DataGridView dataGridView10;
-        private System.Windows.Forms.TextBox txtboxNewSalaryScale;
-        private System.Windows.Forms.Label lblNewSalaryScale;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Panel panelChangeSalaryCode;
-        private System.Windows.Forms.Button bttnRemoveSalaryCode;
-        private System.Windows.Forms.Button bbtnNewSalaryCode;
-        private System.Windows.Forms.DataGridView dataGridView9;
+        private System.Windows.Forms.DataGridView tblOldCode;
         private System.Windows.Forms.TextBox txtboxNewSalaryCode;
         private System.Windows.Forms.Label lblNewSalaryCode;
         private System.Windows.Forms.Panel panel23;
@@ -4233,28 +4088,20 @@
         private System.Windows.Forms.Panel panelChangeFaculty;
         private System.Windows.Forms.Button bttnRemoveFaculty;
         private System.Windows.Forms.Button bttnAddNewFaculty;
-        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridView tblFaculty;
         private System.Windows.Forms.TextBox txtboxNewFaculty;
         private System.Windows.Forms.Label lblNewFaculty;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Panel panelChangeDepartment;
-        private System.Windows.Forms.Button bttnRemoveDpt;
-        private System.Windows.Forms.Button bttnAddNewDpt;
-        private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.TextBox txtboxNewDpt;
-        private System.Windows.Forms.Label lblNewDpt;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Panel panelChangeDesignation;
         private System.Windows.Forms.Button bttnRemoveDesignation;
         private System.Windows.Forms.Button bttnNewDesignation;
-        private System.Windows.Forms.DataGridView dataGridDesignations;
+        private System.Windows.Forms.DataGridView tblDesignation;
         private System.Windows.Forms.TextBox txtboxNewDesignation;
         private System.Windows.Forms.Label lblNewDesignation;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox cmbBxEditField;
         private System.Windows.Forms.Label lblEditField;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label label11;
@@ -4271,6 +4118,23 @@
         private System.Windows.Forms.Button btnPrintPdf;
         private System.Windows.Forms.DataGridView tblReport;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView tblOldStep;
+        private System.Windows.Forms.TextBox txtboxNewSalaryStep;
+        private System.Windows.Forms.Button bttnRemoveSalaryStep;
+        private System.Windows.Forms.Button bttnAddSalaryStep;
+        private System.Windows.Forms.DataGridView tblOldScale;
+        private System.Windows.Forms.TextBox txtboxNewSalaryScale;
+        private System.Windows.Forms.Button bttnRemoveDpt;
+        private System.Windows.Forms.Button bttnAddNewDpt;
+        private System.Windows.Forms.DataGridView tblDepartment;
+        private System.Windows.Forms.TextBox txtboxNewDpt;
+        private System.Windows.Forms.Label lblNewDpt;
+        private System.Windows.Forms.Button btnRemoveSalaaryCode;
+        private System.Windows.Forms.Button btnAddSalaryCode;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Button btnRemoveSalaryScale;
+        private System.Windows.Forms.Button btnAddSalarySalaryScale;
     }
 }
 

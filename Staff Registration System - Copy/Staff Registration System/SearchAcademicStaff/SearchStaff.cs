@@ -13,6 +13,41 @@ namespace Staff_Registration_System.SearchAcademicStaff
     {
         Connection conn = new Connection();
 
+
+        public void fillSearchTable(DataGridView tblSearch)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("SELECT * FROM AcademicStaff ; ", conn.connConnection());
+               // cmd.Parameters.AddWithValue("@1", txtSearchName);
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+
+                DataTable table = new DataTable();
+                dataAdapter.Fill(table);
+
+                tblSearch.DataSource = table;
+                tblSearch.Columns[0].Visible = false;
+                tblSearch.Columns[15].Visible = false;
+                tblSearch.Columns[16].Visible = false;
+                tblSearch.Columns[17].Visible = false;
+                tblSearch.Columns[18].Visible = false;
+                conn.closeConnection();
+
+                cmd.Dispose();
+                dataAdapter.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public void searchByName(String txtSearchName, DataGridView tblSearch)
         {
 
@@ -31,6 +66,11 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 dataAdapter.Fill(table);
 
                 tblSearch.DataSource = table;
+                tblSearch.Columns[0].Visible = false;
+                tblSearch.Columns[15].Visible = false;
+                tblSearch.Columns[16].Visible = false;
+                tblSearch.Columns[17].Visible = false;
+                tblSearch.Columns[18].Visible = false;
                 conn.closeConnection();
 
                 cmd.Dispose();
@@ -61,6 +101,11 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 dataAdapter.Fill(table);
 
                 tblSearch.DataSource = table;
+                tblSearch.Columns[0].Visible = false;
+                tblSearch.Columns[15].Visible = false;
+                tblSearch.Columns[16].Visible = false;
+                tblSearch.Columns[17].Visible = false;
+                tblSearch.Columns[18].Visible = false;
                 conn.closeConnection();
 
                 cmd.Dispose();
@@ -90,6 +135,11 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 dataAdapter.Fill(table);
 
                 tblSearch.DataSource = table;
+                tblSearch.Columns[0].Visible = false;
+                tblSearch.Columns[15].Visible = false;
+                tblSearch.Columns[16].Visible = false;
+                tblSearch.Columns[17].Visible = false;
+                tblSearch.Columns[18].Visible = false;
                 conn.closeConnection();
 
                 cmd.Dispose();
@@ -119,6 +169,11 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 dataAdapter.Fill(table);
 
                 tblSearch.DataSource = table;
+                tblSearch.Columns[0].Visible = false;
+                tblSearch.Columns[15].Visible = false;
+                tblSearch.Columns[16].Visible = false;
+                tblSearch.Columns[17].Visible = false;
+                tblSearch.Columns[18].Visible = false;
                 conn.closeConnection();
 
                 cmd.Dispose();
