@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -54,10 +55,14 @@ namespace Staff_Registration_System.Reports
 
                 query = query.Substring(0, query.Length - 1);
                 query += " FROM AcademicStaff,ChildrenDetail,EducationalQulifications,ServiceRecords,OtherPositions ";
-                query += "WHERE [AcademicStaff].[ASID] = [ChildrenDetail].[ASID] ";
-                query += "AND [ChildrenDetail].[ASID] = [OtherPositions].[ASID] ";
-                query += "AND [OtherPositions].[ASID] = [EducationalQulifications].[ASID] ";
-                query += "AND [EducationalQulifications].[ASID] = [ServiceRecords].[ASID];";
+                if (chkLBxFamily.CheckedItems.Count>0)
+                    query += "WHERE [AcademicStaff].[ASID] = [ChildrenDetail].[ASID] ";
+                if (chkLBxOtherPositions.CheckedItems.Count > 0)
+                    query += "AND [AcademicStaff].[ASID] = [OtherPositions].[ASID] ";
+                if (chkLBxEducational.CheckedItems.Count > 0)
+                    query += "AND [AcademicStaff].[ASID] = [EducationalQulifications].[ASID] ";
+                if (chkLBxService.CheckedItems.Count > 0)
+                    query += "AND [AcademicStaff].[ASID] = [ServiceRecords].[ASID];";
                 
 
 
@@ -89,9 +94,114 @@ namespace Staff_Registration_System.Reports
             }
         }
 
+
+
+       /* private void PopulateRows()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                DataGridViewRow row =
+                    (DataGridViewRow)dgvCityDetails.RowTemplate.Clone();
+
+                row.CreateCells(dgvCityDetails, string.Format("City{0}", i),
+                    string.Format("State{0}", i), string.Format("Country{0}", i));
+
+                dgvCityDetails.Rows.Add(row);
+
+            }
+        }
+        */
+
+
+        /// <summary> 
+        /// Exports the datagridview values to Excel. 
+        /// </summary> 
+        public void ExportToExcel(DataGridView tblReport)
+        {
+
+            String path = null;
+            // Creating a Excel object. 
+            Microsoft.Office.Interop.Excel._Application excel = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = excel.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+
+            try
+            {
+                int rowCount = 0;
+                worksheet = workbook.ActiveSheet;
+
+                worksheet.Name = "ExportedFromDatGrid";
+
+                int cellRowIndex = 1;
+                int cellColumnIndex = 1;
+
+                //Loop through each row and read value from each column. 
+                for (int i = 0; i < tblReport.Rows.Count ; )
+                {
+                    MessageBox.Show(tblReport.Rows.Count.ToString());
+                    for (int j = 0; j < tblReport.Columns.Count; j++)
+                    {
+                        // Excel index starts from 1,1. As first Row would have the Column headers, adding a condition check. 
+                        if (cellRowIndex == 1)
+                        {
+                            worksheet.Cells[cellRowIndex, cellColumnIndex] = tblReport.Columns[j].HeaderText;
+                        }
+                        else
+                        {
+                            worksheet.Cells[cellRowIndex, cellColumnIndex] = tblReport.Rows[i].Cells[j].Value.ToString();
+                            MessageBox.Show("test");
+                        }
+                        cellColumnIndex++;
+                    }
+                    rowCount++;
+                    if (rowCount != 1)
+                        i++;
+                    cellColumnIndex = 1;
+                    cellRowIndex++;
+                }
+
+                //Getting the location and file name of the excel to save from user. 
+                SaveFileDialog saveDialog = new SaveFileDialog();
+                saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                saveDialog.FilterIndex = 2;
+
+                if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    workbook.SaveAs(saveDialog.FileName);
+                    MessageBox.Show("Export Successful");
+                    path =  saveDialog.FileName ;
+                    path += ".xlsx";
+                    MessageBox.Show(path);
+                    System.Diagnostics.Process.Start(@path);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                excel.Quit();
+                workbook = null;
+                excel = null;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         public void dataGridPdf(DataGridView tblReport)
         {
-            try
+           // try
             {
                 Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
                 PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Test.pdf", FileMode.Create));
@@ -125,12 +235,14 @@ namespace Staff_Registration_System.Reports
                 doc.Add(table);
                 doc.Close();
 
-                System.Diagnostics.Process.Start("‪C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\\bin\\Debug\\Test.pdf");
+                //System.Diagnostics.Process.Start(@"‪C:\Users\Charinda\AcademicStaffRegistration\Staff Registration System - Copy\Staff Registration System\bin\Debug\Test.pdf");
+                Process.Start("Test.pdf", "‪C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\bin\\Debug\\Test.pdf");
+                //System.Diagnostics.Process.Start("‪C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\bin\\Debug\\Test.pdf");
             }
-            catch (Exception ex)
+           // catch (Exception ex)
             {
 
-                MessageBox.Show(ex.ToString());
+               // MessageBox.Show(ex.ToString());
             }
         }
         /*

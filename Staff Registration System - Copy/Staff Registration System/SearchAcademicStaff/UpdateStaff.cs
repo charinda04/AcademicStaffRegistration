@@ -18,8 +18,7 @@ namespace Staff_Registration_System.SearchAcademicStaff
 
         public void fillForm(String ASID,ref RadioButton Mr, ref RadioButton Mrs, ref RadioButton Miss,ref TextBox txtFullName,ref TextBox txtInitials,ref DateTimePicker dateDob,ref RadioButton male,ref RadioButton female,ref TextBox txtTelePrivate,ref TextBox txtTeleOffice, ref TextBox txtEmailPrivate,ref TextBox txtEmailOffice,
             ref MaskedTextBox txtNIC,ref TextBox txtPassport,ref  ComboBox cmbBxDesignation,ref ComboBox cmbBxFaculty, ref ComboBox cmbBxDepartment, ref TextBox txtUPF,ref  DateTimePicker dateAppointment,ref  DateTimePicker dateRetirement,ref TextBox txtMarriageCertificate, ref TextBox txtServiceNo,
-            ref PictureBox personalPicLoc, ref PictureBox marriageCertificateLoc, ref ComboBox cmbBxSalaryStep, ref DateTimePicker dateIncrement, ref TextBox txtAddress1Mail, ref TextBox txtCityMail, ref TextBox txtMailZipCode, ref TextBox txtAddress1Home,  ref TextBox txtCityHome, ref TextBox txtHomeZipCode,
-            DataGridView tblChildren, DataGridView tblEducation, DataGridView tblOtherPositions, DataGridView tblService)
+            ref PictureBox personalPicLoc, ref PictureBox marriageCertificateLoc, ref ComboBox cmbBxSalaryStep, ref DateTimePicker dateIncrement, ref TextBox txtAddress1Mail, ref TextBox txtCityMail, ref TextBox txtMailZipCode, ref TextBox txtAddress1Home,  ref TextBox txtCityHome, ref TextBox txtHomeZipCode)
         {
             //try
             {
@@ -63,7 +62,7 @@ namespace Staff_Registration_System.SearchAcademicStaff
                     dateAppointment.Text = reader["Appointment Date"].ToString();
                     dateRetirement.Text = reader["Retirement Date"].ToString();
                     txtMarriageCertificate.Text = reader["Marriage Certificate No"].ToString();
-                    // mpic 
+                    
 
 
                     if (DBNull.Value.Equals(reader.GetValue(17)))
@@ -80,7 +79,22 @@ namespace Staff_Registration_System.SearchAcademicStaff
                         personalPicLoc.Image = Image.FromStream(ms);
 
                     }
-                    // ppic
+
+                    if (DBNull.Value.Equals(reader.GetValue(16)))
+                    {
+                        marriageCertificateLoc.Image = null;
+
+                    }
+
+                    else
+                    {
+
+                        byte[] img = (byte[])reader.GetValue(16);
+                        MemoryStream ms = new MemoryStream(img);
+                        marriageCertificateLoc.Image = Image.FromStream(ms);
+
+                    }
+                    
                     // type
                     txtServiceNo.Text = reader["ServiceNo"].ToString();
                     cmbBxDepartment.Text = reader["Department Name"].ToString();
@@ -90,132 +104,18 @@ namespace Staff_Registration_System.SearchAcademicStaff
                     dateIncrement.Text = reader["Increment Date"].ToString();
 
 
-
-
-
-
-                    MessageBox.Show("good");
+                    //MessageBox.Show("good");
 
 
                 }
                 reader.Close();
 
 
-                conn.connOpen();
-                conn.connConnection();
-
-                cmd = conn.connConnection().CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM ServiceRecords where [ASID] = @1; ", conn.connConnection());
-                cmd.Parameters.AddWithValue("@1", ASID);
 
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
 
                 DataTable table = new DataTable();
-                dataAdapter.Fill(table);
 
-                tblService.DataSource = table;
-                conn.closeConnection();
-
-                cmd.Dispose();
-                dataAdapter.Dispose();
-
-                conn.connOpen();
-                conn.connConnection();
-
-                cmd = conn.connConnection().CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM OtherPositions where [ASID] = @1; ", conn.connConnection());
-                cmd.Parameters.AddWithValue("@1", ASID);
-
-                dataAdapter = new SqlDataAdapter(cmd);
-
-                table = new DataTable();
-                dataAdapter.Fill(table);
-
-                tblOtherPositions.DataSource = table;
-                conn.closeConnection();
-
-                cmd.Dispose();
-                dataAdapter.Dispose();
-
-                conn.connOpen();
-                conn.connConnection();
-
-                cmd = conn.connConnection().CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM EducationalQulifications where [ASID] = @1; ", conn.connConnection());
-                cmd.Parameters.AddWithValue("@1", ASID);
-
-                dataAdapter = new SqlDataAdapter(cmd);
-
-                table = new DataTable();
-                dataAdapter.Fill(table);
-
-                tblEducation.DataSource = table;
-                conn.closeConnection();
-
-                cmd.Dispose();
-                dataAdapter.Dispose();
-
-                conn.connOpen();
-                conn.connConnection();
-
-                cmd = conn.connConnection().CreateCommand();
-                cmd = new SqlCommand("SELECT * FROM ChildrenDetail where [ASID] = @1; ", conn.connConnection());
-                cmd.Parameters.AddWithValue("@1", ASID);
-
-                //dataAdapter = new SqlDataAdapter(cmd);
-
-                //table = new DataTable();
-                //dataAdapter.Fill(table);
-
-                SqlDataReader reader1;
-                reader1 = cmd.ExecuteReader();
-
-
-                for (int i = 1; reader1.Read(); i++)
-                {
-                   // DataRow row = tblChildren.;
-                    //row["column2"] = "column2";
-                    //row["column6"] = "column6";
-                   // tblChildren.Rows.Add(row);
-
-
-                    //DataGridViewRow row1 = (DataGridViewRow)tblChildren.Rows[0].Clone();
-                    //row1.Cells[0].Value = "XYZ";
-                    //row1.Cells[1].Value = 50.2;
-                    //tblChildren.Rows.Add(row1);
-
-
-                    //MessageBox.Show(reader1["Name"].ToString());
-                    //MessageBox.Show(reader1["DOB"].ToString());
-                    //MessageBox.Show(reader1["Birth Certificate No"].ToString());
-                   // tblChildren.Rows[1].Cells[0].Value = reader1["Name"].ToString();
-                   // tblChildren.Rows[1].Cells[1].Value = reader1["DOB"].ToString();
-                   // tblChildren.Rows[1].Cells[2].Value = reader1["Birth Certificate No"].ToString();
-
-                }
-                // var commandBuilder = new SqlCommandBuilder(dataAdapter);
-                // var ds = new DataSet();
-                // dataAdapter.Fill(ds);
-                //tblChildren.ReadOnly = true;
-                //tblChildren.DataSource = ds.Tables[0];
-
-
-                // tblChildren.Columns.Clear();
-                //tblChildren.ColumnCount = 3;
-                //tblChildren.AutoGenerateColumns = false;
-                //tblChildren.DataSource = table;
-               // for (int i = 0; i < table.Rows.Count; i++)
-                {
-                   // MessageBox.Show(table.Rows.Count.ToString());
-                   // tblChildren.Rows[i].Cells[0].Value = table.Rows[0][1].ToString();
-                   // tblChildren.Rows[i].Cells[1].Value = table.Rows[0][2].ToString();
-                    //tblChildren.Rows[i].Cells[2].Value = table.Rows[0][3].ToString();
-                    
-                }
-                //tblChildren.Columns[0].Visible = false;
-                //tblChildren.Columns[1].Visible = false;
-                //tblChildren.Columns[2].Visible = false;
-                //tblChildren.Columns[0].hee = table.Columns[1];
 
                 conn.closeConnection();
                
@@ -250,6 +150,312 @@ namespace Staff_Registration_System.SearchAcademicStaff
            //     MessageBox.Show(ex.Message);
             }
         }
+
+        public void fillChildrentable(String ASID, DataGridView tblChildren)
+        {
+            conn.connOpen();
+            conn.connConnection();
+            SqlCommand cmd = conn.connConnection().CreateCommand();
+            cmd = conn.connConnection().CreateCommand();
+            cmd = new SqlCommand("SELECT * FROM ChildrenDetail where [ASID] = @1; ", conn.connConnection());
+            cmd.Parameters.AddWithValue("@1", ASID);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+
+            DataTable table = new DataTable();
+            dataAdapter = new SqlDataAdapter(cmd);
+
+            table = new DataTable();
+            dataAdapter.Fill(table);
+            
+            tblChildren.DataSource = table;
+
+            tblChildren.Columns[0].Visible = false;
+            tblChildren.Columns[1].Visible = false;
+            tblChildren.Columns[2].Visible = false;
+            tblChildren.Columns[3].Visible = false;
+
+            conn.closeConnection();
+
+            cmd.Dispose();
+            dataAdapter.Dispose();
+        }
+
+        public void fillEducationTable(String ASID, DataGridView tblEducation)
+        {
+            conn.connOpen();
+            conn.connConnection();
+            SqlCommand cmd = conn.connConnection().CreateCommand();
+            cmd = conn.connConnection().CreateCommand();
+            cmd = new SqlCommand("SELECT * FROM EducationalQulifications where [ASID] = @1; ", conn.connConnection());
+            cmd.Parameters.AddWithValue("@1", ASID);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+
+            DataTable table = new DataTable();
+            dataAdapter = new SqlDataAdapter(cmd);
+
+            table = new DataTable();
+            dataAdapter.Fill(table);
+
+            tblEducation.DataSource = table;
+            tblEducation.Columns[0].Visible = false;
+            tblEducation.Columns[1].Visible = false;
+            tblEducation.Columns[2].Visible = false;
+            tblEducation.Columns[3].Visible = false;
+            tblEducation.Columns[4].Visible = false;
+            conn.closeConnection();
+
+            cmd.Dispose();
+            dataAdapter.Dispose();
+        }
+
+        public void fillOtherPositionsTable(String ASID, DataGridView tblOtherPositions)
+        {
+            conn.connOpen();
+            conn.connConnection();
+            SqlCommand cmd = conn.connConnection().CreateCommand();
+            cmd = conn.connConnection().CreateCommand();
+            cmd = new SqlCommand("SELECT * FROM OtherPositions where [ASID] = @1; ", conn.connConnection());
+            cmd.Parameters.AddWithValue("@1", ASID);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+
+            DataTable table = new DataTable();
+            dataAdapter = new SqlDataAdapter(cmd);
+
+            table = new DataTable();
+            dataAdapter.Fill(table);
+
+            tblOtherPositions.DataSource = table;
+
+            tblOtherPositions.Columns[0].Visible = false;
+            tblOtherPositions.Columns[1].Visible = false;
+            tblOtherPositions.Columns[2].Visible = false;
+            tblOtherPositions.Columns[3].Visible = false;
+            conn.closeConnection();
+
+            cmd.Dispose();
+            dataAdapter.Dispose();
+        }
+
+        public void fillServiceRecords(String ASID, DataGridView tblService)
+        {
+            conn.connOpen();
+            conn.connConnection();
+            SqlCommand cmd = conn.connConnection().CreateCommand();
+            cmd = conn.connConnection().CreateCommand();
+            cmd = new SqlCommand("SELECT * FROM ServiceRecords where [ASID] = @1; ", conn.connConnection());
+            cmd.Parameters.AddWithValue("@1", ASID);
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+
+            DataTable table = new DataTable();
+            dataAdapter.Fill(table);
+
+            tblService.DataSource = table;
+            tblService.Columns[0].Visible = false;
+            tblService.Columns[1].Visible = false;
+            tblService.Columns[2].Visible = false;
+            tblService.Columns[3].Visible = false;
+            conn.closeConnection();
+
+            cmd.Dispose();
+            dataAdapter.Dispose();
+        }
+
+        public void updateChildrenTable(String ASID, String name,String dob , String certicicateNo)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+        
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("insert into ChildrenDetail values(@1, @2, @3,@4)", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", name);
+                cmd.Parameters.AddWithValue("@3", dob);
+                cmd.Parameters.AddWithValue("@4", certicicateNo);
+                        
+                cmd.ExecuteNonQuery();
+                   
+                conn.closeConnection();
+                cmd.Dispose();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void updateEducationTable(String ASID,String qulification, String university, String date, String grade)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("insert into [EducationalQulifications] values(@1, @2, @3,@4,@5)", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", qulification);
+                cmd.Parameters.AddWithValue("@3", university);
+                cmd.Parameters.AddWithValue("@4", date);
+                cmd.Parameters.AddWithValue("@5", grade);
+
+                cmd.ExecuteNonQuery();
+
+                conn.closeConnection();
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void updateOtherpositionsTable(String ASID, String position, String fromDate, String toDate)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("insert into [OtherPositions] values(@1, @2, @3,@4)", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", position);
+                cmd.Parameters.AddWithValue("@3", fromDate);
+                cmd.Parameters.AddWithValue("@4", toDate);
+
+                cmd.ExecuteNonQuery();
+
+                conn.closeConnection();
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void updateServiceRecords(String ASID, String position, String fromDate, String toDate)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+                cmd = new SqlCommand("insert into [ServiceRecords] values(@1, @2, @3,@4)", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", position);
+                cmd.Parameters.AddWithValue("@3", fromDate);
+                cmd.Parameters.AddWithValue("@4", toDate);
+
+                cmd.ExecuteNonQuery();
+
+                conn.closeConnection();
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void deleteFromChildrenTable(String ASID,String certificateNo)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+
+                cmd = new SqlCommand("DELETE FROM [ChildrenDetail] WHERE [ASID] = @1 AND [Birth Certificate No] = @2;", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", certificateNo);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+                
+
+        }
+
+        public void deleteFromEducationTable(String ASID, String qulification)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+
+                cmd = new SqlCommand("DELETE FROM [EducationalQulifications] WHERE [ASID] = @1 AND [Qulification Obtained] = @2;", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", qulification);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void deleteFromOtherpositionsTable(String ASID, String position)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+
+                cmd = new SqlCommand("DELETE FROM [OtherPositions] WHERE [ASID] = @1 AND [Position] = @2;", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", position);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void deleteFromServiceRecords(String ASID, String position)
+        {
+            try
+            {
+                conn.connOpen();
+                conn.connConnection();
+                SqlCommand cmd = conn.connConnection().CreateCommand();
+
+                cmd = conn.connConnection().CreateCommand();
+
+                cmd = new SqlCommand("DELETE FROM [ServiceRecords] WHERE [ASID] = @1 AND [Position] = @2;", conn.connConnection());
+                cmd.Parameters.AddWithValue("@1", ASID);
+                cmd.Parameters.AddWithValue("@2", position);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
 
 
@@ -370,7 +576,7 @@ namespace Staff_Registration_System.SearchAcademicStaff
 
         public void updateChildrenDetail( String ASID,DataGridView tblChildren)
         {
-            try
+           // try
             {
                 int childrenCount = tblChildren.Rows.Count;
 
@@ -397,9 +603,9 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 conn.closeConnection();
                 cmd.Dispose();
             }
-            catch (Exception ex)
+           // catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
             }
         }
 

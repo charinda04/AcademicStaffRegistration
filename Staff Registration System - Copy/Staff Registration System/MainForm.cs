@@ -52,6 +52,7 @@ namespace Staff_Registration_System
         CustomReport report = new CustomReport();
         AlertsForm alert = new AlertsForm();
         OptionsPanel opt = new OptionsPanel();
+        DeleteStaff dstaff = new DeleteStaff();
 
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -551,10 +552,12 @@ namespace Staff_Registration_System
                          dateRetirement.Text, txtMarriageCertificate.Text,
                          txtServiceNo.Text, personalPicLoc, marriageCertificateLoc, cmbBxSalaryStep.Text, dateIncrement.Text);
                     //upstaff.updateAddress(txtAddress1Mail.Text, txtCityMail.Text, txtMailZipCode.Text, txtAddress1Home.Text, txtCityHome.Text, txtHomeZipCode.Text);
-                    upstaff.updateChildrenDetail(ASID, tblChildren);
+                    //upstaff.updateChildrenDetail(ASID, tblChildren);
                     //upstaff.updateQulifications(ASID, tblEducation);
                     //upstaff.updateServiceRecords(ASID, tblService);
                     //upstaff.updateOtherPositions(ASID, tblOtherPositions);
+
+                    
 
                     MessageBox.Show("record updated");
                     updateStatus = false;
@@ -656,6 +659,11 @@ namespace Staff_Registration_System
             {
                 MessageBox.Show("Fill all the fields first");
             }
+            else if (updateStatus == true)
+            {
+                upstaff.updateEducationTable(ASID, txtQulification.Text, txtUniversity.Text, dateEffective.Text,txtGrade.Text);
+                upstaff.fillEducationTable(ASID, tblEducation);
+            }
             else
             {
                 tblEducation.Rows.Add(txtQulification.Text, txtUniversity.Text, dateEffective.Text, txtGrade.Text);
@@ -672,6 +680,11 @@ namespace Staff_Registration_System
             {
                 MessageBox.Show("Fill all the fields first");
             }
+            else if (updateStatus == true)
+            {
+                upstaff.updateServiceRecords(ASID, txtServicePosition.Text, dateServiceFrom.Text, dateServiceTo.Text);
+                upstaff.fillServiceRecords(ASID, tblService);
+            }
             else
             {
                 tblService.Rows.Add(txtServicePosition.Text, dateServiceFrom.Text, dateServiceTo.Text);
@@ -687,6 +700,14 @@ namespace Staff_Registration_System
             if (tblEducation.Rows.Count == 0)
             {
                 MessageBox.Show("The table is empty. No record has been selected");
+            }
+            else if (updateStatus == true)
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    upstaff.deleteFromEducationTable(ASID, tblEducation[5, tblEducation.CurrentRow.Index].Value.ToString());
+                upstaff.fillEducationTable(ASID, tblEducation);
             }
             else
             {
@@ -705,6 +726,14 @@ namespace Staff_Registration_System
             {
                 MessageBox.Show("The table is empty. No record has been selected");
             }
+            else if (updateStatus == true)
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    upstaff.deleteFromServiceRecords(ASID, tblService[4, tblService.CurrentRow.Index].Value.ToString());
+                upstaff.fillServiceRecords(ASID, tblService);
+            }
             else
             {
                 DialogResult answer;
@@ -719,6 +748,11 @@ namespace Staff_Registration_System
             if (txtOtherPosition.Text.Length == 0)
             {
                 MessageBox.Show("Fill all the fields first");
+            }
+            else if (updateStatus == true)
+            {
+                upstaff.updateOtherpositionsTable(ASID, txtOtherPosition.Text, dateOtherPositionFrom.Text, dateOtherPosistionTo.Text);
+                upstaff.fillChildrentable(ASID, tblOtherPositions);
             }
             else
             {
@@ -735,6 +769,14 @@ namespace Staff_Registration_System
             {
                 MessageBox.Show("The table is empty. No record has been selected");
             }
+            else if (updateStatus == true)
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    upstaff.deleteFromOtherpositionsTable(ASID, tblOtherPositions[4, tblOtherPositions.CurrentRow.Index].Value.ToString());
+                upstaff.fillOtherPositionsTable(ASID, tblOtherPositions);
+            }
             else
             {
                 DialogResult answer;
@@ -746,9 +788,14 @@ namespace Staff_Registration_System
 
         private void btnAddChildren_Click(object sender, EventArgs e)
         {
-            if (txtChildName.Text.Length == 0 || txtChildBirthCertificate.Text.Length == 0 )
+            if (txtChildName.Text.Length == 0 || txtChildBirthCertificate.Text.Length == 0)
             {
                 MessageBox.Show("Fill all the fields first");
+            }
+            else if (updateStatus == true)
+            {
+                upstaff.updateChildrenTable(ASID, txtChildName.Text,dateChildDob.Text,txtChildBirthCertificate.Text);
+                upstaff.fillChildrentable(ASID, tblChildren);
             }
             else
             {
@@ -765,6 +812,14 @@ namespace Staff_Registration_System
             if (tblChildren.Rows.Count == 0)
             {
                 MessageBox.Show("The table is empty. No record has been selected");
+            }
+            else if (updateStatus == true)
+            {
+                DialogResult answer;
+                answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (answer == DialogResult.Yes)
+                    upstaff.deleteFromChildrenTable(ASID, tblChildren[6, tblChildren.CurrentRow.Index].Value.ToString());
+                upstaff.fillChildrentable(ASID, tblChildren);
             }
             else
             {
@@ -827,7 +882,11 @@ namespace Staff_Registration_System
                 
                 upstaff.fillForm(ID,ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
                     ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement,
-                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren,tblEducation,tblOtherPositions,tblService);
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode);
+                upstaff.fillChildrentable(ID,tblChildren);
+                upstaff.fillEducationTable(ID,tblEducation);
+                upstaff.fillOtherPositionsTable(ID,tblOtherPositions);
+                upstaff.fillServiceRecords(ID,tblService);
                 updateStatus = true;
             }
         }
@@ -1246,6 +1305,21 @@ namespace Staff_Registration_System
                 //opt.loadSalaryStep(tblOldStep, "");
             //else
                 opt.loadSalaryStep(tblOldStep, tblOldScale[0, tblOldScale.CurrentRow.Index].Value.ToString());
+        }
+
+        private void bttnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult answer;
+            answer = MessageBox.Show("Do you want to delete this record?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+                dstaff.deleteAcademicStaff(tblSearch[0, tblSearch.CurrentRow.Index].Value.ToString());
+            staff.fillSearchTable(tblSearch);
+            
+        }
+
+        private void btnShowExcel_Click(object sender, EventArgs e)
+        {
+            report.ExportToExcel(tblReport);
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)
