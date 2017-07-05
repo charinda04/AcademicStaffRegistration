@@ -11,13 +11,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Staff_Registration_System.Reports
 {
     class CustomReport
     {
         Connection conn = new Connection();
 
-        public void loadReportTable( CheckedListBox chkLBxPersonal, CheckedListBox chkLBxFamily, CheckedListBox chkLBxEducational, CheckedListBox chkLBxService, CheckedListBox chkLBxOtherPositions, DataGridView tblReport)
+        public void loadReportTable( CheckedListBox chkLBxPersonal, CheckedListBox chkLBxFamily, CheckedListBox chkLBxEducational, CheckedListBox chkLBxService, CheckedListBox chkLBxOtherPositions, DataGridView tblReport,
+            CheckedListBox chkLBAddress,CheckedListBox chkLBFaculty, CheckedListBox chkLBSalary)
         {
             try
             {
@@ -52,18 +54,44 @@ namespace Staff_Registration_System.Reports
                     query += "[OtherPositions].[" + itemChecked.ToString() + "]" + ",";
                     //MessageBox.Show(itemChecked.ToString());
                 }
+                foreach (object itemChecked in chkLBAddress.CheckedItems)
+                {
+                    query += "[Address].[" + itemChecked.ToString() + "]" + ",";
+                    //MessageBox.Show(itemChecked.ToString());
+                }
+                foreach (object itemChecked in chkLBFaculty.CheckedItems)
+                {
+                    query += "[Department].[" + itemChecked.ToString() + "]" + ",";
+                    //MessageBox.Show(itemChecked.ToString());
+                }
+                foreach (object itemChecked in chkLBSalary.CheckedItems)
+                {
+                    query += "[SalaryScale].[" + itemChecked.ToString() + "]" + ",";
+                    //MessageBox.Show(itemChecked.ToString());
+                }
 
                 query = query.Substring(0, query.Length - 1);
-                query += " FROM AcademicStaff,ChildrenDetail,EducationalQulifications,ServiceRecords,OtherPositions ";
-                if (chkLBxFamily.CheckedItems.Count>0)
+                query += " FROM AcademicStaff,ChildrenDetail,EducationalQulifications,ServiceRecords,OtherPositions,SalaryScale,Department,Address,SalaryStep ";
+               // if (chkLBxFamily.CheckedItems.Count>0)
                     query += "WHERE [AcademicStaff].[ASID] = [ChildrenDetail].[ASID] ";
                 if (chkLBxOtherPositions.CheckedItems.Count > 0)
                     query += "AND [AcademicStaff].[ASID] = [OtherPositions].[ASID] ";
                 if (chkLBxEducational.CheckedItems.Count > 0)
                     query += "AND [AcademicStaff].[ASID] = [EducationalQulifications].[ASID] ";
                 if (chkLBxService.CheckedItems.Count > 0)
-                    query += "AND [AcademicStaff].[ASID] = [ServiceRecords].[ASID];";
-                
+                    query += "AND [AcademicStaff].[ASID] = [ServiceRecords].[ASID] ";
+                if (chkLBSalary.CheckedItems.Count > 0)
+                {
+                    query += "AND [AcademicStaff].[Salary Step] = [SalaryStep].[Salary Step] ";
+                    query += "AND [SalaryStep].[Salary Scale] = [SalaryScale].[Salary Scale] ";
+                }
+                if (chkLBFaculty.CheckedItems.Count > 0)
+                {
+                    query += "AND [AcademicStaff].[Department Name] = [Department].[Department Name] ";
+                }
+                if (chkLBAddress.CheckedItems.Count > 0)
+                    query += "AND [AcademicStaff].[ASID] = [Address].[ASID] ";
+
 
 
 
@@ -93,6 +121,8 @@ namespace Staff_Registration_System.Reports
                 MessageBox.Show(ex.Message);
             }
         }
+
+
 
 
 
@@ -138,7 +168,7 @@ namespace Staff_Registration_System.Reports
                 //Loop through each row and read value from each column. 
                 for (int i = 0; i < tblReport.Rows.Count ; )
                 {
-                    MessageBox.Show(tblReport.Rows.Count.ToString());
+                    //MessageBox.Show(tblReport.Rows.Count.ToString());
                     for (int j = 0; j < tblReport.Columns.Count; j++)
                     {
                         // Excel index starts from 1,1. As first Row would have the Column headers, adding a condition check. 
@@ -149,7 +179,7 @@ namespace Staff_Registration_System.Reports
                         else
                         {
                             worksheet.Cells[cellRowIndex, cellColumnIndex] = tblReport.Rows[i].Cells[j].Value.ToString();
-                            MessageBox.Show("test");
+                           // MessageBox.Show("test");
                         }
                         cellColumnIndex++;
                     }
@@ -168,11 +198,11 @@ namespace Staff_Registration_System.Reports
                 if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     workbook.SaveAs(saveDialog.FileName);
-                    MessageBox.Show("Export Successful");
+                   // MessageBox.Show("Export Successful");
                     path =  saveDialog.FileName ;
                     path += ".xlsx";
-                    MessageBox.Show(path);
-                    System.Diagnostics.Process.Start(@path);
+                   // MessageBox.Show(path);
+                    Process.Start(@path);
                 }
             }
             catch (System.Exception ex)

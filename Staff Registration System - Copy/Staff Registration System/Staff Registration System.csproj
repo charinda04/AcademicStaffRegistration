@@ -99,6 +99,7 @@
     <Compile Include="SearchAcademicStaff\DeleteStaff.cs" />
     <Compile Include="SearchAcademicStaff\SearchStaff.cs" />
     <Compile Include="SearchAcademicStaff\UpdateStaff.cs" />
+    <Compile Include="xls\Application.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

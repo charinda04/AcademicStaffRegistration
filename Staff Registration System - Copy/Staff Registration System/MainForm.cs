@@ -44,6 +44,7 @@ namespace Staff_Registration_System
         String ASID = null;
         Boolean facultyFirst = true;
         Boolean tblOldScalePopulated = false;
+        String title = null, gender = null;
 
 
         AddStaff add = new AddStaff();
@@ -222,6 +223,8 @@ namespace Staff_Registration_System
             alerts.Visible = true;
             alerts.BringToFront();
 
+            alert.tblAlerts(tblAlerts);
+
             //Make button bar visible
             picbarAddMember.Visible = false;
             picbarSearchMember.Visible = false;
@@ -229,6 +232,13 @@ namespace Staff_Registration_System
             picbarAlerts.Visible = true;
             picbarOptions.Visible = false;
             updateStatus = false;
+
+            add.clearAll(ref title, ref gender, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref personalPicLoc, ref marriageCertificateLoc, ref cmbBxSalaryCode, ref cmbBxScale, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren, tblEducation, tblOtherPositions, tblService, ref ptBxPersonalPic, ref ptBxMarriageCertificate,
+                    ref chkBxSame);
+
+            facultyFirst = true;
         }
 
         private void label16_MouseDown(object sender, MouseEventArgs e)
@@ -441,6 +451,13 @@ namespace Staff_Registration_System
             picbarAlerts.Visible = false;
             picbarOptions.Visible = false;
             updateStatus = false;
+
+            add.clearAll(ref title, ref gender, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref personalPicLoc, ref marriageCertificateLoc, ref cmbBxSalaryCode, ref cmbBxScale, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren, tblEducation, tblOtherPositions, tblService, ref ptBxPersonalPic, ref ptBxMarriageCertificate,
+                    ref chkBxSame);
+
+            facultyFirst = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -469,6 +486,13 @@ namespace Staff_Registration_System
             picbarAlerts.Visible = false;
             picbarOptions.Visible = false;
             updateStatus = false;
+
+            add.clearAll(ref title, ref gender, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref personalPicLoc, ref marriageCertificateLoc, ref cmbBxSalaryCode, ref cmbBxScale, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren, tblEducation, tblOtherPositions, tblService, ref ptBxPersonalPic, ref ptBxMarriageCertificate,
+                    ref chkBxSame);
+
+            facultyFirst = true;
         }
 
         private void pictureBox8_MouseEnter(object sender, EventArgs e)
@@ -501,7 +525,7 @@ namespace Staff_Registration_System
             panelChangeDesignation.Visible = false;
             panelChangeFaculty.Visible = false;
             panelChangeSalaryCode.Visible = false;
-            cmbBxEditField.SelectedIndex = -1;
+            cmbBxEditField.SelectedIndex = 0;
 
             opt.loadSalaryCode(tblOldCode);
             opt.loadSalaryScale(tblOldScale, tblOldCode[0, tblOldCode.CurrentRow.Index].Value.ToString(),ref tblOldScalePopulated);
@@ -513,6 +537,13 @@ namespace Staff_Registration_System
             opt.loadFaculty(tblFaculty);
             opt.loadDepartment(tblDepartment, tblFaculty[0, tblFaculty.CurrentRow.Index].Value.ToString());
             opt.loadDesignation(tblDesignation);
+
+            add.clearAll(ref title, ref gender, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref personalPicLoc, ref marriageCertificateLoc, ref cmbBxSalaryCode, ref cmbBxScale, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren, tblEducation, tblOtherPositions, tblService, ref ptBxPersonalPic, ref ptBxMarriageCertificate,
+                    ref chkBxSame);
+
+            facultyFirst = true;
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -532,7 +563,7 @@ namespace Staff_Registration_System
             try
             {
                 String primaryKey = null;
-                String title = null, gender = null;
+                
                 if (rdoBtnMr.Checked)
                     title = "Mr";
                 else if (rdoBtnMrs.Checked)
@@ -582,7 +613,7 @@ namespace Staff_Registration_System
                 }
 
 
-
+                /*
 
                 if (tblChildren.Rows.Count != 0 )
                     tblChildren.Rows.Clear();
@@ -629,7 +660,12 @@ namespace Staff_Registration_System
                 cmbBxSalaryStep.Text = "";
                 cmbBxSalaryCode.Text = "";
                 cmbBxScale.Text = "";
-                dateIncrement.Value = DateTime.Now;
+                dateIncrement.Value = DateTime.Now;*/
+
+                add.clearAll(ref title,ref gender, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref personalPicLoc, ref marriageCertificateLoc,ref cmbBxSalaryCode, ref cmbBxScale, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode, tblChildren, tblEducation,tblOtherPositions,tblService, ref ptBxPersonalPic, ref ptBxMarriageCertificate,
+                    ref chkBxSame);
 
                 facultyFirst = true;
                 
@@ -1037,21 +1073,41 @@ namespace Staff_Registration_System
             {
                 chkLBxPersonal.SetItemChecked(i, false);
             }
+            for (int i = 0; i < chkLBAddress.Items.Count; i++)
+            {
+                chkLBAddress.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBSalary.Items.Count; i++)
+            {
+                chkLBSalary.SetItemChecked(i, false);
+            }
+            for (int i = 0; i < chkLBFaculty.Items.Count; i++)
+            {
+                chkLBFaculty.SetItemChecked(i, false);
+            }
             chkBxOtherPositions.Checked = false;
             chkBxService.Checked = false;
             chkBxEducational.Checked = false;
             chkBxFamily.Checked = false;
             chkBxPersonal.Checked = false;
+            chkBxAddress.Checked = false;
 
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            report.loadReportTable(chkLBxPersonal,chkLBxFamily,chkLBxEducational,chkLBxService,chkLBxOtherPositions, tblReport);
+            if (chkLBxPersonal.CheckedItems.Count == 0 && chkLBxFamily.CheckedItems.Count == 0 && chkLBxEducational.CheckedItems.Count == 0 && 
+                chkLBxService.CheckedItems.Count == 0 && chkLBxOtherPositions.CheckedItems.Count == 0 && chkLBSalary.CheckedItems.Count == 0 && chkLBFaculty.CheckedItems.Count == 0 && chkLBAddress.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("Please select relavent fields first");
+            }
+            else
+            {
+                report.loadReportTable(chkLBxPersonal, chkLBxFamily, chkLBxEducational, chkLBxService, chkLBxOtherPositions, tblReport, chkLBAddress , chkLBFaculty , chkLBSalary);
 
-            report_view.Visible = true;
-            report_view.BringToFront();
-
+                report_view.Visible = true;
+                report_view.BringToFront();
+            }
         }
 
         private void btnPrintPdf_Click(object sender, EventArgs e)
@@ -1066,21 +1122,21 @@ namespace Staff_Registration_System
 
         private void cmbBxEditField_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbBxEditField.SelectedIndex == 0)
+            if (cmbBxEditField.SelectedIndex == 1)
             {
                 panelChangeSalaryCode.Visible = false;
                 panelChangeDesignation.Visible = false;
                 panelChangeFaculty.Visible = true;
                 panelChangeFaculty.BringToFront();
             }
-            else if (cmbBxEditField.SelectedIndex == 1)
+            else if (cmbBxEditField.SelectedIndex == 2)
             {
                 panelChangeFaculty.Visible = false;
                 panelChangeSalaryCode.Visible = false;
                 panelChangeDesignation.Visible = true;
                 panelChangeDesignation.BringToFront();
             }
-            else if (cmbBxEditField.SelectedIndex == 2)
+            else if (cmbBxEditField.SelectedIndex == 3)
             {      
                 panelChangeSalaryCode.Visible = true;
                 panelChangeSalaryCode.BringToFront();
@@ -1315,6 +1371,44 @@ namespace Staff_Registration_System
                 dstaff.deleteAcademicStaff(tblSearch[0, tblSearch.CurrentRow.Index].Value.ToString());
             staff.fillSearchTable(tblSearch);
             
+        }
+
+        private void btnAlertView_Click(object sender, EventArgs e)
+        {
+            if (tblAlerts.SelectedRows.Count == 1)
+            {
+                String ID = tblAlerts[0, tblAlerts.CurrentRow.Index].Value.ToString();
+                ASID = ID;
+                personal_detail1.Visible = true;
+                personal_detail1.BringToFront();
+
+                upstaff.fillForm(ID, ref rdoBtnMr, ref rdoBtnMrs, ref rdoBtnMiss, ref txtFullName, ref txtInitials, ref dateDob, ref rdoBtnMale, ref rdoBtnFemale, ref txtTelePrivate, ref txtTeleOffice, ref txtEmailPrivate, ref txtEmailOffice, ref txtNIC, ref txtPassport,
+                    ref cmbBxDesignation, ref cmbBxFaculty, ref cmbBxDepartment, ref txtUPF, ref dateAppointment, ref dateRetirement, ref txtMarriageCertificate, ref txtServiceNo, ref ptBxPersonalPic, ref ptBxMarriageCertificate, ref cmbBxSalaryStep, ref dateIncrement,
+                    ref txtAddress1Mail, ref txtCityMail, ref txtMailZipCode, ref txtAddress1Home, ref txtCityHome, ref txtHomeZipCode);
+                upstaff.fillChildrentable(ID, tblChildren);
+                upstaff.fillEducationTable(ID, tblEducation);
+                upstaff.fillOtherPositionsTable(ID, tblOtherPositions);
+                upstaff.fillServiceRecords(ID, tblService);
+                updateStatus = true;
+            }
+        }
+
+        private void chkBxAddress_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBxAddress.Checked)
+            {
+                for (int i = 0; i < chkLBAddress.Items.Count; i++)
+                {
+                    chkLBAddress.SetItemChecked(i, true);
+                }
+            }
+            else if (!chkBxAddress.Checked)
+            {
+                for (int i = 0; i < chkLBAddress.Items.Count; i++)
+                {
+                    chkLBAddress.SetItemChecked(i, false);
+                }
+            }
         }
 
         private void btnShowExcel_Click(object sender, EventArgs e)

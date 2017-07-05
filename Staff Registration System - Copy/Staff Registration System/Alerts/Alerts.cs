@@ -19,7 +19,7 @@ namespace Staff_Registration_System.Alerts
             {
                 conn.connOpen();
                 conn.connConnection();
-                String sql = "SELECT [Title],[Name with Initials],[Increment Date],[Private Contact No],[Office Contact No] ,[Private Email],[Office Email],[NIC No],[Appointment Date],[Retirement Date],[ServiceNo],[AcademicStaff].[Department Name],[Faculty Name],[Designation] from [AcademicStaff],[Department] where [Increment Date] < cast(dateadd(m, 1, getdate())AS DATE) and [Increment Date] > CAST(GETDATE() AS DATE) and [AcademicStaff].[Department Name] = [Department].[Department Name]";
+                String sql = "SELECT [ASID][Title],[Name with Initials],[Increment Date],[Private Contact No],[Office Contact No] ,[Private Email],[Office Email],[NIC No],[Appointment Date],[Retirement Date],[ServiceNo],[AcademicStaff].[Department Name],[Faculty Name],[Designation] from [AcademicStaff],[Department] where [Increment Date] < cast(dateadd(m, 1, getdate())AS DATE) and [Increment Date] > CAST(GETDATE() AS DATE) and [AcademicStaff].[Department Name] = [Department].[Department Name]";
                 SqlCommand cmd = conn.connConnection().CreateCommand();
                 cmd = new SqlCommand( sql, conn.connConnection());
                 //cmd.Parameters.AddWithValue("@1", txtSearchName);

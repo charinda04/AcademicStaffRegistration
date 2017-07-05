@@ -20,7 +20,7 @@ namespace Staff_Registration_System.SearchAcademicStaff
             ref MaskedTextBox txtNIC,ref TextBox txtPassport,ref  ComboBox cmbBxDesignation,ref ComboBox cmbBxFaculty, ref ComboBox cmbBxDepartment, ref TextBox txtUPF,ref  DateTimePicker dateAppointment,ref  DateTimePicker dateRetirement,ref TextBox txtMarriageCertificate, ref TextBox txtServiceNo,
             ref PictureBox personalPicLoc, ref PictureBox marriageCertificateLoc, ref ComboBox cmbBxSalaryStep, ref DateTimePicker dateIncrement, ref TextBox txtAddress1Mail, ref TextBox txtCityMail, ref TextBox txtMailZipCode, ref TextBox txtAddress1Home,  ref TextBox txtCityHome, ref TextBox txtHomeZipCode)
         {
-            //try
+            try
             {
                 
                 string selectSQL = "SELECT * FROM AcademicStaff where [ASID] = @1;";
@@ -145,9 +145,9 @@ namespace Staff_Registration_System.SearchAcademicStaff
                 cmd.Dispose();
                 dataAdapter.Dispose();
             }
-           // catch (Exception ex)
+            catch (Exception ex)
             {
-           //     MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 

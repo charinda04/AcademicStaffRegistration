@@ -607,5 +607,73 @@ namespace Staff_Registration_System.AddAcademicStaff
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public void clearAll(ref String title,ref String gender, ref RadioButton Mr, ref RadioButton Mrs, ref RadioButton Miss, ref TextBox txtFullName, ref TextBox txtInitials, ref DateTimePicker dateDob, ref RadioButton male, ref RadioButton female, ref TextBox txtTelePrivate, ref TextBox txtTeleOffice, ref TextBox txtEmailPrivate, ref TextBox txtEmailOffice,
+            ref MaskedTextBox txtNIC, ref TextBox txtPassport, ref ComboBox cmbBxDesignation, ref ComboBox cmbBxFaculty, ref ComboBox cmbBxDepartment, ref TextBox txtUPF, ref DateTimePicker dateAppointment, ref DateTimePicker dateRetirement, ref TextBox txtMarriageCertificate, ref TextBox txtServiceNo,
+            ref String personalPicLoc, ref String marriageCertificateLoc,ref ComboBox cmbBxSalaryCode, ref ComboBox cmbBxScale, ref ComboBox cmbBxSalaryStep, ref DateTimePicker dateIncrement, ref TextBox txtAddress1Mail, ref TextBox txtCityMail, ref TextBox txtMailZipCode, ref TextBox txtAddress1Home, ref TextBox txtCityHome, ref TextBox txtHomeZipCode, 
+            DataGridView tblChildren, DataGridView tblEducation, DataGridView tblOtherPositions, DataGridView tblService,ref PictureBox ptBxPersonalPic, ref PictureBox ptBxMarriageCertificate, ref CheckBox chkBxSame)
+        {
+            tblChildren.DataSource = null;
+            tblEducation.DataSource = null;
+            tblService.DataSource = null;
+            tblOtherPositions.DataSource = null;
+
+            if (tblChildren.Rows.Count != 0)
+                tblChildren.Rows.Clear();
+            if (tblEducation.Rows.Count != 0)
+                tblEducation.Rows.Clear();
+            if (tblService.Rows.Count != 0)
+                tblService.Rows.Clear();
+            if (tblOtherPositions.Rows.Count != 0)
+                tblOtherPositions.Rows.Clear();
+
+            title = null;
+            Miss.Checked = false;
+            Mr.Checked = false;
+            Mrs.Checked = false;
+
+            txtFullName.Text = "";
+            txtInitials.Text = "";
+            dateDob.Value = DateTime.Now;
+
+            gender = null;
+            male.Checked = false;
+            female.Checked = false;
+
+            txtTelePrivate.Text = "";
+            txtTeleOffice.Text = "";
+            txtEmailPrivate.Text = "";
+            txtEmailOffice.Text = "";
+            txtNIC.Text = "";
+            txtPassport.Text = "";
+            cmbBxDesignation.Text = "";
+            cmbBxFaculty.Text = "";
+            cmbBxDepartment.Text = "";
+            txtUPF.Text = "";
+            dateAppointment.Value = DateTime.Now;
+
+            dateRetirement.Value = DateTime.Now;
+            txtMarriageCertificate.Text = "";
+
+            txtServiceNo.Text = "";
+            personalPicLoc = null;
+            ptBxPersonalPic.Image = null;
+            ptBxMarriageCertificate.Image = null;
+            marriageCertificateLoc = null;
+            cmbBxSalaryStep.Text = "";
+            cmbBxSalaryCode.Text = "";
+            cmbBxScale.Text = "";
+            dateIncrement.Value = DateTime.Now;
+
+            chkBxSame.Checked = false;
+            txtAddress1Mail.Text = "";
+            txtCityMail.Text = "";
+            txtMailZipCode.Text = "";
+            txtAddress1Home.Text = "";
+            txtCityHome.Text = "";
+            txtHomeZipCode.Text = "";
+
+
+        }
     }
 }
