@@ -78,6 +78,8 @@ namespace Staff_Registration_System
             dateOtherPosistionTo.CustomFormat = "yyyy-MM-dd";
             dateServiceFrom.CustomFormat = "yyyy-MM-dd";
             dateServiceTo.CustomFormat = "yyyy-MM-dd";
+            dateReport.CustomFormat = "yyyy-MM-dd";
+            dateReport.Value = DateTime.Now;
 
             add.departmentComboBox(cmbBxDepartment);
             add.facultyComboBox(cmbBxFaculty);
@@ -1112,7 +1114,7 @@ namespace Staff_Registration_System
 
         private void btnPrintPdf_Click(object sender, EventArgs e)
         {
-            report.dataGridPdf(tblReport);
+            report.dataGridPdf(tblReport, txtHeader.Text, dateReport.Text);
         }
 
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
@@ -1413,7 +1415,7 @@ namespace Staff_Registration_System
 
         private void btnShowExcel_Click(object sender, EventArgs e)
         {
-            report.ExportToExcel(tblReport);
+            report.ExportToExcel(tblReport,txtHeader.Text,dateReport.Text);
         }
 
         private void title_bar_MouseDown(object sender, MouseEventArgs e)

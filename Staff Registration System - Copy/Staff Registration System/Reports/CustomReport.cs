@@ -96,7 +96,7 @@ namespace Staff_Registration_System.Reports
 
 
 
-                MessageBox.Show(query);
+               // MessageBox.Show(query);
 
                 conn.connOpen();
                 conn.connConnection();
@@ -146,7 +146,7 @@ namespace Staff_Registration_System.Reports
         /// <summary> 
         /// Exports the datagridview values to Excel. 
         /// </summary> 
-        public void ExportToExcel(DataGridView tblReport)
+        public void ExportToExcel(DataGridView tblReport, String txtHeader, String Date)
         {
 
             String path = null;
@@ -154,32 +154,60 @@ namespace Staff_Registration_System.Reports
             Microsoft.Office.Interop.Excel._Application excel = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = excel.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            Microsoft.Office.Interop.Excel.Range myCells;
 
-            try
+           // try
             {
+                //excel.Workbooks.Open("C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\bin\\Debug\\Test.xlsx");
+               // excel.Visible = true;
+
+                //workbook = excel.Worksheets.Item[1];
+
+
                 int rowCount = 0;
                 worksheet = workbook.ActiveSheet;
 
-                worksheet.Name = "ExportedFromDatGrid";
+                myCells = worksheet.Cells;
 
-                int cellRowIndex = 1;
+                worksheet.Name = "Report";
+
+                int cellRowIndex = 4;
                 int cellColumnIndex = 1;
 
+                myCells.Item[1, "A"].value = txtHeader;
+                myCells.Item[2, "A"].value = Date;
+
+
                 //Loop through each row and read value from each column. 
-                for (int i = 0; i < tblReport.Rows.Count ; )
+                for (int i = 0,index=1; i < tblReport.Rows.Count ; )
                 {
+                    char z = 'A';
+                    char y = 'A';
+                    char x = 'A';
                     //MessageBox.Show(tblReport.Rows.Count.ToString());
                     for (int j = 0; j < tblReport.Columns.Count; j++)
                     {
+                       
                         // Excel index starts from 1,1. As first Row would have the Column headers, adding a condition check. 
-                        if (cellRowIndex == 1)
+                        if (cellRowIndex == 4)
                         {
+
+                            myCells.Range[z.ToString()+""+ cellRowIndex.ToString()+":"+z.ToString()+""+ cellRowIndex.ToString()].Font.Bold = true;
+                            //myCells.Range["A1:A1"].Font.Bold = true;
+                            //MessageBox.Show(z.ToString() + "" + i.ToString() + ":" + z.ToString() + "" + i.ToString());
                             worksheet.Cells[cellRowIndex, cellColumnIndex] = tblReport.Columns[j].HeaderText;
+                            myCells.Range[z.ToString() + "" + cellRowIndex.ToString() + ":" + z.ToString() + "" + cellRowIndex.ToString()].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                           // myCells.Range[z.ToString() + "" + cellRowIndex.ToString() + ":" + z.ToString() + "" + cellRowIndex.ToString()].AutoFit();
+                            z++;
+
                         }
                         else
                         {
                             worksheet.Cells[cellRowIndex, cellColumnIndex] = tblReport.Rows[i].Cells[j].Value.ToString();
-                           // MessageBox.Show("test");
+                            myCells.Range[y.ToString() + "" + cellRowIndex.ToString() + ":" + y.ToString() + "" + cellRowIndex.ToString()].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                            // MessageBox.Show("test");
+                            //myCells.Range[y.ToString() + "" + cellRowIndex.ToString() + ":" + y.ToString() + "" + cellRowIndex.ToString()].AutoFit();
+                            y++;
                         }
                         cellColumnIndex++;
                     }
@@ -189,6 +217,8 @@ namespace Staff_Registration_System.Reports
                     cellColumnIndex = 1;
                     cellRowIndex++;
                 }
+                //myCells.Range["A1", "Z1"].AutoFit();
+                worksheet.Columns["A:Z"].AutoFit();
 
                 //Getting the location and file name of the excel to save from user. 
                 SaveFileDialog saveDialog = new SaveFileDialog();
@@ -202,14 +232,14 @@ namespace Staff_Registration_System.Reports
                     path =  saveDialog.FileName ;
                     path += ".xlsx";
                    // MessageBox.Show(path);
-                    Process.Start(@path);
+                   Process.Start(@path);
                 }
             }
-            catch (System.Exception ex)
+           // catch (System.Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
             }
-            finally
+           // finally
             {
                 excel.Quit();
                 workbook = null;
@@ -229,9 +259,9 @@ namespace Staff_Registration_System.Reports
 
 
 
-        public void dataGridPdf(DataGridView tblReport)
+        public void dataGridPdf(DataGridView tblReport, String txtHeader, String txtDate)
         {
-           // try
+            try
             {
                 Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
                 PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Test.pdf", FileMode.Create));
@@ -260,8 +290,8 @@ namespace Staff_Registration_System.Reports
 
 
 
-                //Paragraph paragraph = new Paragraph("ddddd");
-                //doc.Add(paragraph);
+                Paragraph paragraph = new Paragraph("                 "+txtHeader+ "\n                 " + txtDate+"\n\n");
+                doc.Add(paragraph);
                 doc.Add(table);
                 doc.Close();
 
@@ -269,10 +299,11 @@ namespace Staff_Registration_System.Reports
                 Process.Start("Test.pdf", "‪C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\bin\\Debug\\Test.pdf");
                 //System.Diagnostics.Process.Start("‪C:\\Users\\Charinda\\AcademicStaffRegistration\\Staff Registration System - Copy\\Staff Registration System\bin\\Debug\\Test.pdf");
             }
-           // catch (Exception ex)
+            catch (Exception ex)
             {
 
-               // MessageBox.Show(ex.ToString());
+                // MessageBox.Show(ex.ToString());
+                MessageBox.Show("Pdf file is alreday open. Please close that for generate a new report");
             }
         }
         /*
